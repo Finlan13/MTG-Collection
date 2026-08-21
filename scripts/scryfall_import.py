@@ -21,6 +21,33 @@ HEADERS = {
 
 
 # ============================================================
+# HELPER FUNCTIONS
+# ============================================================
+
+def to_number(value):
+    """Convert a value to a number, returning None if unavailable."""
+
+    if value is None:
+        return None
+
+    try:
+        return float(value)
+    except (ValueError, TypeError):
+        return None
+
+
+def normalise_text(value):
+    """Normalise text for comparison."""
+
+    if value is None:
+        return ""
+
+    return " ".join(
+        str(value).strip().lower().split()
+    )
+
+
+# ============================================================
 # READ EXCEL
 # ============================================================
 
@@ -105,6 +132,9 @@ print(
 scryfall_cards = {}
 errors = []
 
+name_mismatches = []
+artist_mismatches = []
+
 
 for _, row in unique_cards.iterrows():
 
@@ -135,9 +165,30 @@ for _, row in unique_cards.iterrows():
 
             card = response.json()
 
+            scryfall_name = card.get("name")
+            scryfall_artist = card.get("artist")
+
+            # ------------------------------------------------
+            # Scryfall prices
+            # ------------------------------------------------
+
+            prices = card.get("prices", {})
+
+            usd = to_number(
+                prices.get("usd")
+            )
+
+            usd_foil = to_number(
+                prices.get("usd_foil")
+            )
+
+            # ------------------------------------------------
+            # Store Scryfall information
+            # ------------------------------------------------
+
             scryfall_cards[key] = {
                 "scryfall_id": card.get("id"),
-                "scryfall_name": card.get("name"),
+                "scryfall_name": scryfall_name,
                 "scryfall_set": card.get("set"),
                 "set_name": card.get("set_name"),
                 "collector_number": card.get(
@@ -147,7 +198,7 @@ for _, row in unique_cards.iterrows():
                 "mana_cost": card.get("mana_cost"),
                 "type_line": card.get("type_line"),
                 "oracle_text": card.get("oracle_text"),
-                "scryfall_artist": card.get("artist"),
+                "scryfall_artist": scryfall_artist,
 
                 "image_url": (
                     card.get("image_uris", {})
@@ -158,20 +209,14 @@ for _, row in unique_cards.iterrows():
                     "scryfall_uri"
                 ),
 
-                "usd": (
-                    card.get("prices", {})
-                    .get("usd")
-                ),
-
-                "usd_foil": (
-                    card.get("prices", {})
-                    .get("usd_foil")
-                )
+                "usd": usd,
+                "usd_foil": usd_foil
             }
 
         else:
 
             errors.append({
+                "type": "Scryfall API error",
                 "set": set_code,
                 "card_no": card_number,
                 "status_code": response.status_code,
@@ -181,6 +226,7 @@ for _, row in unique_cards.iterrows():
     except requests.RequestException as error:
 
         errors.append({
+            "type": "Request error",
             "set": set_code,
             "card_no": card_number,
             "status_code": None,
@@ -198,6 +244,10 @@ for _, row in unique_cards.iterrows():
 
 output = []
 
+total_cost_basis = 0
+total_current_value = 0
+
+
 for _, row in df.iterrows():
 
     set_code = row["Set"]
@@ -207,7 +257,152 @@ for _, row in df.iterrows():
 
     card_data = scryfall_cards.get(key)
 
+    # --------------------------------------------------------
+    # Your collection information
+    # --------------------------------------------------------
+
+    qty = to_number(row["Qty"])
+
+    if qty is None:
+        qty = 0
+
+    qty_foil = to_number(row["Qty (Foil)"])
+
+    if qty_foil is None:
+        qty_foil = 0
+
+    purchase_price = to_number(
+        row["PurchasePrice"]
+    )
+
+    # --------------------------------------------------------
+    # Cost basis
+    # --------------------------------------------------------
+
+    if purchase_price is not None:
+
+        total_quantity = qty + qty_foil
+
+        cost_basis = (
+            total_quantity * purchase_price
+        )
+
+    else:
+
+        cost_basis = None
+
+    # --------------------------------------------------------
+    # Scryfall data
+    # --------------------------------------------------------
+
+    if card_data:
+
+        usd = card_data["usd"]
+        usd_foil = card_data["usd_foil"]
+
+        # ----------------------------------------------------
+        # Current values
+        # ----------------------------------------------------
+
+        nonfoil_value = (
+            qty * usd
+            if usd is not None
+            else None
+        )
+
+        foil_value = (
+            qty_foil * usd_foil
+            if usd_foil is not None
+            else None
+        )
+
+        # Treat missing prices as zero for total valuation,
+        # but retain the missing price in the record.
+        current_value = (
+            (nonfoil_value or 0)
+            +
+            (foil_value or 0)
+        )
+
+        # ----------------------------------------------------
+        # Gain / loss
+        # ----------------------------------------------------
+
+        unrealised_gain_loss = (
+            current_value - cost_basis
+            if cost_basis is not None
+            else None
+        )
+
+        # ----------------------------------------------------
+        # Validate name
+        # ----------------------------------------------------
+
+        excel_name = normalise_text(
+            row["Name"]
+        )
+
+        api_name = normalise_text(
+            card_data["scryfall_name"]
+        )
+
+        if excel_name != api_name:
+
+            name_mismatches.append({
+                "id": row["ID"],
+                "set": set_code,
+                "card_no": card_number,
+                "excel_name": row["Name"],
+                "scryfall_name": card_data[
+                    "scryfall_name"
+                ]
+            })
+
+        # ----------------------------------------------------
+        # Validate artist
+        # ----------------------------------------------------
+
+        if (
+            "Artist" in df.columns
+            and pd.notna(row["Artist"])
+            and str(row["Artist"]).strip() != ""
+        ):
+
+            excel_artist = normalise_text(
+                row["Artist"]
+            )
+
+            api_artist = normalise_text(
+                card_data["scryfall_artist"]
+            )
+
+            if excel_artist != api_artist:
+
+                artist_mismatches.append({
+                    "id": row["ID"],
+                    "set": set_code,
+                    "card_no": card_number,
+                    "excel_artist": row["Artist"],
+                    "scryfall_artist": card_data[
+                        "scryfall_artist"
+                    ]
+                })
+
+    else:
+
+        usd = None
+        usd_foil = None
+        nonfoil_value = None
+        foil_value = None
+        current_value = None
+        unrealised_gain_loss = None
+
+    # --------------------------------------------------------
+    # Build output record
+    # --------------------------------------------------------
+
     record = {
+        # Your collection
         "id": row["ID"],
         "set": set_code,
         "card_no": card_number,
@@ -218,16 +413,8 @@ for _, row in df.iterrows():
             and pd.notna(row["Artist"])
             else None
         ),
-        "qty": (
-            row["Qty"]
-            if pd.notna(row["Qty"])
-            else 0
-        ),
-        "qty_foil": (
-            row["Qty (Foil)"]
-            if pd.notna(row["Qty (Foil)"])
-            else 0
-        ),
+        "qty": qty,
+        "qty_foil": qty_foil,
         "acquisition_date": (
             row["AcquisitionDate"].isoformat()
             if pd.notna(row["AcquisitionDate"])
@@ -237,27 +424,114 @@ for _, row in df.iterrows():
             )
             else None
         ),
-        "purchase_price": (
-            row["PurchasePrice"]
-            if pd.notna(row["PurchasePrice"])
-            else None
-        ),
+        "purchase_price": purchase_price,
+        "cost_basis": cost_basis,
         "notes": (
             row["Notes"]
             if "Notes" in df.columns
             and pd.notna(row["Notes"])
             else None
+        ),
+
+        # Scryfall
+        "scryfall_match": bool(card_data),
+
+        "scryfall_id": (
+            card_data["scryfall_id"]
+            if card_data
+            else None
+        ),
+
+        "scryfall_name": (
+            card_data["scryfall_name"]
+            if card_data
+            else None
+        ),
+
+        "scryfall_set": (
+            card_data["scryfall_set"]
+            if card_data
+            else None
+        ),
+
+        "set_name": (
+            card_data["set_name"]
+            if card_data
+            else None
+        ),
+
+        "collector_number": (
+            card_data["collector_number"]
+            if card_data
+            else None
+        ),
+
+        "rarity": (
+            card_data["rarity"]
+            if card_data
+            else None
+        ),
+
+        "mana_cost": (
+            card_data["mana_cost"]
+            if card_data
+            else None
+        ),
+
+        "type_line": (
+            card_data["type_line"]
+            if card_data
+            else None
+        ),
+
+        "oracle_text": (
+            card_data["oracle_text"]
+            if card_data
+            else None
+        ),
+
+        "scryfall_artist": (
+            card_data["scryfall_artist"]
+            if card_data
+            else None
+        ),
+
+        "image_url": (
+            card_data["image_url"]
+            if card_data
+            else None
+        ),
+
+        "scryfall_url": (
+            card_data["scryfall_url"]
+            if card_data
+            else None
+        ),
+
+        # Pricing
+        "usd": usd,
+        "usd_foil": usd_foil,
+
+        # Valuation
+        "nonfoil_value": nonfoil_value,
+        "foil_value": foil_value,
+        "current_value": current_value,
+        "unrealised_gain_loss": (
+            unrealised_gain_loss
         )
     }
 
-    if card_data:
-        record.update(card_data)
-        record["scryfall_match"] = True
-
-    else:
-        record["scryfall_match"] = False
-
     output.append(record)
+
+    # --------------------------------------------------------
+    # Collection totals
+    # --------------------------------------------------------
+
+    if cost_basis is not None:
+        total_cost_basis += cost_basis
+
+    if current_value is not None:
+        total_current_value += current_value
 
 
 # ============================================================
@@ -287,9 +561,25 @@ with open(
 # SAVE ERRORS
 # ============================================================
 
-if errors:
+all_errors = errors.copy()
 
-    pd.DataFrame(errors).to_csv(
+for mismatch in name_mismatches:
+
+    mismatch["type"] = "Name mismatch"
+
+    all_errors.append(mismatch)
+
+
+for mismatch in artist_mismatches:
+
+    mismatch["type"] = "Artist mismatch"
+
+    all_errors.append(mismatch)
+
+
+if all_errors:
+
+    pd.DataFrame(all_errors).to_csv(
         ERROR_FILE,
         index=False
     )
@@ -299,24 +589,86 @@ if errors:
 # SUMMARY
 # ============================================================
 
-print()
-print("=" * 50)
-print("IMPORT COMPLETE")
-print("=" * 50)
+successful_matches = len(scryfall_cards)
 
-print(f"Collection rows: {len(df)}")
-print(f"Unique printings: {len(unique_cards)}")
-print(
-    f"Scryfall matches: "
-    f"{len(scryfall_cards)}"
+name_mismatch_count = len(
+    name_mismatches
 )
+
+artist_mismatch_count = len(
+    artist_mismatches
+)
+
+missing_usd_count = sum(
+    1
+    for card in scryfall_cards.values()
+    if card["usd"] is None
+)
+
+missing_foil_price_count = sum(
+    1
+    for card in scryfall_cards.values()
+    if card["usd_foil"] is None
+)
+
+print()
+print("=" * 60)
+print("MTG COLLECTION IMPORT COMPLETE")
+print("=" * 60)
+
 print(
-    f"Scryfall errors: "
-    f"{len(errors)}"
+    f"Collection rows:          {len(df)}"
+)
+
+print(
+    f"Unique printings:         {len(unique_cards)}"
+)
+
+print(
+    f"Scryfall matches:         {successful_matches}"
+)
+
+print(
+    f"Scryfall errors:          {len(errors)}"
+)
+
+print(
+    f"Name mismatches:          {name_mismatch_count}"
+)
+
+print(
+    f"Artist mismatches:        {artist_mismatch_count}"
+)
+
+print(
+    f"Missing USD prices:       {missing_usd_count}"
+)
+
+print(
+    f"Missing foil prices:      {missing_foil_price_count}"
+)
+
+print()
+print(
+    f"Total cost basis:         "
+    f"${total_cost_basis:,.2f}"
+)
+
+print(
+    f"Total current value:      "
+    f"${total_current_value:,.2f}"
+)
+
+print(
+    f"Unrealised gain/loss:     "
+    f"${total_current_value - total_cost_basis:,.2f}"
 )
 
 print()
 print(f"Created: {OUTPUT_FILE}")
 
-if errors:
-    print(f"Errors: {ERROR_FILE}")
+if all_errors:
+
+    print(
+        f"Exceptions: {ERROR_FILE}"
+    )
