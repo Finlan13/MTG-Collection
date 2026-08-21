@@ -1,4 +1,4 @@
-name: Test Collection Import
+name: Import Collection
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas openpyxl requests
 
-      - name: Run collection import
+      - name: Import collection
         run: python scripts/import_collection.py
 
       - name: Commit generated data
