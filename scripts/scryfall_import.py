@@ -10,7 +10,7 @@ import requests
 # CONFIGURATION
 # ============================================================
 
-INPUT_FILE = Path("data/collection.xlsx")
+INPUT_FILE = Path("data/Collection.xlsx")
 OUTPUT_FILE = Path("output/collection.json")
 ERROR_FILE = Path("output/import_errors.csv")
 
