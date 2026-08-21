@@ -10,11 +10,9 @@ import requests
 # CONFIGURATION
 # ============================================================
 
-CARD_FILE = Path("output/cards.json")
-
 COLLECTION_FILE = Path("output/collection.json")
-
 PRICE_HISTORY_FILE = Path("output/price_history.json")
+
 
 SCRYFALL_HEADERS = {
     "User-Agent": "MTG-Collection/1.0",
@@ -114,7 +112,7 @@ print()
 
 
 # ============================================================
-# LOAD PRICE HISTORY
+# LOAD EXISTING PRICE HISTORY
 # ============================================================
 
 if PRICE_HISTORY_FILE.exists():
@@ -141,7 +139,7 @@ print()
 
 
 # ============================================================
-# DATE / TIMESTAMP
+# CREATE CURRENT SNAPSHOT DATE
 # ============================================================
 
 now = datetime.now(
@@ -156,15 +154,14 @@ snapshot_timestamp = now.isoformat()
 
 
 print(
-    f"Price snapshot date: "
-    f"{snapshot_date}"
+    f"Snapshot date: {snapshot_date}"
 )
 
 print()
 
 
 # ============================================================
-# DETERMINE UNIQUE SCRYFALL CARDS
+# GET UNIQUE SCRYFALL IDS
 # ============================================================
 
 scryfall_ids = sorted(
@@ -185,47 +182,24 @@ print()
 
 
 # ============================================================
-# EXISTING SNAPSHOT CHECK
+# REMOVE EXISTING SNAPSHOT FOR TODAY
 # ============================================================
 
-existing_snapshot_ids = {
-    record.get("scryfall_id")
+price_history = [
+    record
     for record in price_history
-    if record.get("snapshot_date") == snapshot_date
-}
-
-
-if existing_snapshot_ids:
-
-    print(
-        f"Price history already contains "
-        f"{len(existing_snapshot_ids)} "
-        f"cards for {snapshot_date}."
-    )
-
-    print(
-        "Existing records will be replaced "
-        "for today's snapshot."
-    )
-
-    price_history = [
-        record
-        for record in price_history
-        if record.get("snapshot_date")
-        != snapshot_date
-    ]
-
-    print()
+    if record.get("snapshot_date")
+    != snapshot_date
+]
 
 
 # ============================================================
-# PRICE LOOKUPS
+# GET CURRENT PRICES
 # ============================================================
 
 prices = {}
 
 successful = 0
-
 failed = 0
 
 
@@ -270,18 +244,18 @@ for index, scryfall_id in enumerate(
 
         data = response.json()
 
-        prices_data = data.get(
+        scryfall_prices = data.get(
             "prices",
             {}
         )
 
 
         usd = number_or_none(
-            prices_data.get("usd")
+            scryfall_prices.get("usd")
         )
 
         usd_foil = number_or_none(
-            prices_data.get("usd_foil")
+            scryfall_prices.get("usd_foil")
         )
 
 
@@ -289,6 +263,30 @@ for index, scryfall_id in enumerate(
             "usd": usd,
             "usd_foil": usd_foil
         }
+
+
+        # ----------------------------------------------------
+        # STORE HISTORICAL SNAPSHOT
+        # ----------------------------------------------------
+
+        price_history.append(
+            {
+                "snapshot_date":
+                    snapshot_date,
+
+                "snapshot_timestamp":
+                    snapshot_timestamp,
+
+                "scryfall_id":
+                    scryfall_id,
+
+                "usd":
+                    usd,
+
+                "usd_foil":
+                    usd_foil
+            }
+        )
 
 
         successful += 1
@@ -301,32 +299,6 @@ for index, scryfall_id in enumerate(
         )
 
         failed += 1
-
-
-# ============================================================
-# CREATE PRICE HISTORY RECORDS
-# ============================================================
-
-for scryfall_id, price in prices.items():
-
-    price_history.append(
-        {
-            "snapshot_date":
-                snapshot_date,
-
-            "snapshot_timestamp":
-                snapshot_timestamp,
-
-            "scryfall_id":
-                scryfall_id,
-
-            "usd":
-                price["usd"],
-
-            "usd_foil":
-                price["usd_foil"]
-        }
-    )
 
 
 # ============================================================
@@ -349,7 +321,6 @@ with open(
 
 
 print()
-
 print(
     f"Price history records: "
     f"{len(price_history)}"
@@ -444,7 +415,7 @@ for record in collection:
 
 
     # --------------------------------------------------------
-    # TOTAL VALUE
+    # CURRENT VALUE
     # --------------------------------------------------------
 
     current_value = (
@@ -542,12 +513,11 @@ print(
     f"Collection updated: {updated}"
 )
 
-print(
-    f"Price history:      {PRICE_HISTORY_FILE}"
-)
+print()
 
 print(
-    f"Collection:         {COLLECTION_FILE}"
+    "Price history and collection "
+    "have been updated."
 )
 
 print()
