@@ -23,7 +23,13 @@
     "oracle_text": "Changeling (This card is every creature type.)\nWhen this creature enters, you may search your library for a basic land card, reveal it, put it into your hand, then shuffle.",
     "scryfall_artist": "Quintin Gleim",
     "image_url": "https://cards.scryfall.io/normal/front/6/c/6c6061aa-a4da-4115-85b6-d0aa22f2386c.jpg?1783904512",
-    "scryfall_url": "https://scryfall.com/card/ecl/1/changeling-wayfinder?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/1/changeling-wayfinder?utm_source=api",
+    "usd": 0.31,
+    "usd_foil": 0.35,
+    "nonfoil_value": 0.9299999999999999,
+    "foil_value": 0.0,
+    "current_value": 0.9299999999999999,
+    "unrealised_gain_loss": -0.5997333333333332
   },
   {
     "id": "ECL-2",
@@ -49,7 +55,13 @@
     "oracle_text": "Changeling (This card is every creature type.)\nFlying\nWhen this creature enters, exile up to two target cards from graveyards. You gain 3 life.",
     "scryfall_artist": "Nils Hamm",
     "image_url": "https://cards.scryfall.io/normal/front/2/d/2d89595c-1542-41fe-8d23-997522922698.jpg?1783904511",
-    "scryfall_url": "https://scryfall.com/card/ecl/2/rooftop-percher?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/2/rooftop-percher?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.54,
+    "foil_value": 0.0,
+    "current_value": 0.54,
+    "unrealised_gain_loss": -0.9897333333333331
   },
   {
     "id": "ECL-3",
@@ -101,7 +113,13 @@
     "oracle_text": "+1: Create a 1/1 green and white Kithkin creature token.\n−2: Ajani deals 4 damage to target tapped creature.\n−8: Look at the top X cards of your library, where X is your life total. You may put any number of nonland permanent cards with mana value 3 or less from among them onto the battlefield. Then shuffle.",
     "scryfall_artist": "Daren Bader",
     "image_url": "https://cards.scryfall.io/normal/front/6/1/6124a691-ae83-4d22-a177-0aee65b47064.jpg?1783904513",
-    "scryfall_url": "https://scryfall.com/card/ecl/4/ajani-outland-chaperone?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/4/ajani-outland-chaperone?utm_source=api",
+    "usd": 0.86,
+    "usd_foil": 1.35,
+    "nonfoil_value": 0.86,
+    "foil_value": 0.0,
+    "current_value": 0.86,
+    "unrealised_gain_loss": 0.3500888888888889
   },
   {
     "id": "ECL-5",
@@ -127,7 +145,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nOne or two target creatures each get +2/+1 until end of turn.",
     "scryfall_artist": "Milivoj Ćeran",
     "image_url": "https://cards.scryfall.io/normal/front/6/8/68ce9752-21f9-48e9-bf48-7f76f1cecbc5.jpg?1783904510",
-    "scryfall_url": "https://scryfall.com/card/ecl/5/appeal-to-eirdu?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/5/appeal-to-eirdu?utm_source=api",
+    "usd": 0.09,
+    "usd_foil": 0.14,
+    "nonfoil_value": 0.27,
+    "foil_value": 0.0,
+    "current_value": 0.27,
+    "unrealised_gain_loss": -1.2597333333333331
   },
   {
     "id": "ECL-6",
@@ -205,7 +229,13 @@
     "oracle_text": "This creature enters with two -1/-1 counters on it.\n{1}{W}, Remove a counter from this creature: Target creature gains indestructible until end of turn. Activate only as a sorcery. (Damage and effects that say \"destroy\" don't destroy it. If its toughness is 0 or less, it still dies.)",
     "scryfall_artist": "Carl Critchlow",
     "image_url": "https://cards.scryfall.io/normal/front/3/2/3278b8d0-3d2b-4d3d-bbf1-fd9b714b53ed.jpg?1783904510",
-    "scryfall_url": "https://scryfall.com/card/ecl/8/burdened-stoneback?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/8/burdened-stoneback?utm_source=api",
+    "usd": 0.15,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.15,
+    "foil_value": 0.0,
+    "current_value": 0.15,
+    "unrealised_gain_loss": -0.35991111111111107
   },
   {
     "id": "ECL-10",
@@ -231,7 +261,13 @@
     "oracle_text": "When this enchantment enters, create two 1/1 green and white Kithkin creature tokens.\n{4}{W}: Create a 1/1 green and white Kithkin creature token.",
     "scryfall_artist": "Kev Fang",
     "image_url": "https://cards.scryfall.io/normal/front/3/2/324b5234-ffbf-4801-a475-8f693679ae2f.jpg?1783904510",
-    "scryfall_url": "https://scryfall.com/card/ecl/10/clachan-festival?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/10/clachan-festival?utm_source=api",
+    "usd": 0.2,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.2,
+    "foil_value": 0.0,
+    "current_value": 0.2,
+    "unrealised_gain_loss": -0.3099111111111111
   },
   {
     "id": "ECL-11",
@@ -283,7 +319,13 @@
     "oracle_text": "When this creature enters, each creature target opponent controls loses all abilities, becomes a Coward in addition to its other types, and has base power and toughness 1/1.",
     "scryfall_artist": "Raoul Vitale",
     "image_url": "https://cards.scryfall.io/normal/front/5/8/582b6e5d-0bab-471d-af4d-19438c5fd524.jpg?1783904510",
-    "scryfall_url": "https://scryfall.com/card/ecl/12/curious-colossus?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/12/curious-colossus?utm_source=api",
+    "usd": 0.82,
+    "usd_foil": 0.83,
+    "nonfoil_value": 0.82,
+    "foil_value": 0.0,
+    "current_value": 0.82,
+    "unrealised_gain_loss": 0.31008888888888886
   },
   {
     "id": "ECL-13",
@@ -335,7 +377,13 @@
     "oracle_text": "This creature enters with three -1/-1 counters on it.\nWhenever this creature becomes tapped while it has a -1/-1 counter on it, remove a -1/-1 counter from it.",
     "scryfall_artist": "Jeff Miracola",
     "image_url": "https://cards.scryfall.io/normal/front/1/5/15ff6797-f59c-4333-98ea-5711150fd5b8.jpg?1783904507",
-    "scryfall_url": "https://scryfall.com/card/ecl/14/encumbered-reejerey?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/14/encumbered-reejerey?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.19,
+    "nonfoil_value": 0.13,
+    "foil_value": 0.0,
+    "current_value": 0.13,
+    "unrealised_gain_loss": -0.3799111111111111
   },
   {
     "id": "ECL-15",
@@ -361,7 +409,13 @@
     "oracle_text": "Enchant creature\nEnchanted creature gets +1/+0 and has flying.\n{1}{W}, Blight 2: Return this card from your graveyard to your hand. Activate only as a sorcery. (To blight 2, put two -1/-1 counters on a creature you control.)",
     "scryfall_artist": "Drew Tucker",
     "image_url": "https://cards.scryfall.io/normal/front/2/3/231e46b6-b91a-4582-8894-e7de1c50213f.jpg?1783904506",
-    "scryfall_url": "https://scryfall.com/card/ecl/15/evershrikes-gift?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/15/evershrikes-gift?utm_source=api",
+    "usd": 0.24,
+    "usd_foil": 0.23,
+    "nonfoil_value": 0.48,
+    "foil_value": 0.0,
+    "current_value": 0.48,
+    "unrealised_gain_loss": -0.5398222222222222
   },
   {
     "id": "ECL-16",
@@ -439,7 +493,13 @@
     "oracle_text": "{W}, Exile this card from your graveyard: Create a 1/1 green and white Kithkin creature token. Activate only as a sorcery.",
     "scryfall_artist": "Paolo Parente",
     "image_url": "https://cards.scryfall.io/normal/front/0/0/00ddbe6c-11de-4bc6-aabe-d6d8385a838a.jpg?1783904506",
-    "scryfall_url": "https://scryfall.com/card/ecl/18/goldmeadow-nomad?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/18/goldmeadow-nomad?utm_source=api",
+    "usd": 0.17,
+    "usd_foil": 0.18,
+    "nonfoil_value": 0.68,
+    "foil_value": 0.0,
+    "current_value": 0.68,
+    "unrealised_gain_loss": -1.3596444444444442
   },
   {
     "id": "ECL-19",
@@ -465,7 +525,13 @@
     "oracle_text": "Choose one —\n• Keep Out deals 4 damage to target tapped creature.\n• Destroy target enchantment.",
     "scryfall_artist": "Ron Spencer",
     "image_url": "https://cards.scryfall.io/normal/front/4/a/4ab1601c-634c-4f21-8926-ba3cb92008c1.jpg?1783904503",
-    "scryfall_url": "https://scryfall.com/card/ecl/19/keep-out?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/19/keep-out?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.48,
+    "foil_value": 0.0,
+    "current_value": 0.48,
+    "unrealised_gain_loss": -1.0497333333333332
   },
   {
     "id": "ECL-21",
@@ -491,7 +557,13 @@
     "oracle_text": "As an additional cost to cast this spell, behold a Kithkin or pay {2}. (To behold a Kithkin, choose a Kithkin you control or reveal a Kithkin card from your hand.)\nWhenever another creature you control enters, this creature gets +1/+1 until end of turn.",
     "scryfall_artist": "Margaret Organ-Kean",
     "image_url": "https://cards.scryfall.io/normal/front/5/6/56dfdab1-ea3f-4663-a855-a9e72505f85e.jpg?1783904503",
-    "scryfall_url": "https://scryfall.com/card/ecl/21/kinsbaile-aspirant?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/21/kinsbaile-aspirant?utm_source=api",
+    "usd": 0.19,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.19,
+    "foil_value": 0.0,
+    "current_value": 0.19,
+    "unrealised_gain_loss": -0.3199111111111111
   },
   {
     "id": "ECL-22",
@@ -517,7 +589,13 @@
     "oracle_text": "First strike, lifelink\nWhenever this creature attacks, you may put a creature card with mana value X or less from your hand onto the battlefield tapped and attacking, where X is the number of attacking creatures you control.",
     "scryfall_artist": "Kev Fang",
     "image_url": "https://cards.scryfall.io/normal/front/3/3/333bf101-14e8-4753-99bc-9174f42c4122.jpg?1783904507",
-    "scryfall_url": "https://scryfall.com/card/ecl/22/kinscaer-sentry?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/22/kinscaer-sentry?utm_source=api",
+    "usd": 0.45,
+    "usd_foil": 0.57,
+    "nonfoil_value": 0.45,
+    "foil_value": 0.0,
+    "current_value": 0.45,
+    "unrealised_gain_loss": -0.05991111111111108
   },
   {
     "id": "ECL-23",
@@ -647,7 +725,13 @@
     "oracle_text": "Exile target creature you control, then return that card to the battlefield under its owner's control. Create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)",
     "scryfall_artist": "Slawomir Maniak",
     "image_url": "https://cards.scryfall.io/normal/front/1/1/1172582d-fb2d-4022-95b1-e48b03df3a95.jpg?1783904503",
-    "scryfall_url": "https://scryfall.com/card/ecl/28/personify?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/28/personify?utm_source=api",
+    "usd": 0.33,
+    "usd_foil": 0.35,
+    "nonfoil_value": 0.33,
+    "foil_value": 0.0,
+    "current_value": 0.33,
+    "unrealised_gain_loss": -0.17991111111111108
   },
   {
     "id": "ECL-30",
@@ -855,7 +939,13 @@
     "oracle_text": "{4}{W}: Creatures you control get +1/+1 until end of turn.",
     "scryfall_artist": "Edgar Sánchez Hidalgo",
     "image_url": "https://cards.scryfall.io/normal/front/1/c/1c672d38-a1a6-4912-a9a6-b11e7bf0cc67.jpg?1783904496",
-    "scryfall_url": "https://scryfall.com/card/ecl/39/timid-shieldbearer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/39/timid-shieldbearer?utm_source=api",
+    "usd": 0.1,
+    "usd_foil": 0.1,
+    "nonfoil_value": 0.30000000000000004,
+    "foil_value": 0.1,
+    "current_value": 0.4,
+    "unrealised_gain_loss": -1.6396444444444445
   },
   {
     "id": "ECL-40",
@@ -907,7 +997,13 @@
     "oracle_text": "Whenever this creature becomes tapped, you gain 2 life.",
     "scryfall_artist": "Warren Mahy",
     "image_url": "https://cards.scryfall.io/normal/front/3/f/3fc3f5f2-5a83-4358-8f23-42f26f345140.jpg?1783904496",
-    "scryfall_url": "https://scryfall.com/card/ecl/41/wanderbrine-preacher?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/41/wanderbrine-preacher?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.23,
+    "nonfoil_value": 0.65,
+    "foil_value": 0.23,
+    "current_value": 0.88,
+    "unrealised_gain_loss": -2.1794666666666664
   },
   {
     "id": "ECL-42",
@@ -985,7 +1081,13 @@
     "oracle_text": "Enchant creature\nWhen this Aura enters, tap enchanted creature.\nEnchanted creature can't become untapped and can't have counters put on it.",
     "scryfall_artist": "Drew Tucker",
     "image_url": "https://cards.scryfall.io/normal/front/3/8/382b83c0-bbbc-4db8-bc04-cfea79aed1b3.jpg?1783904493",
-    "scryfall_url": "https://scryfall.com/card/ecl/45/blossombind?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/45/blossombind?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.27,
+    "nonfoil_value": 0.39,
+    "foil_value": 0.0,
+    "current_value": 0.39,
+    "unrealised_gain_loss": -1.139733333333333
   },
   {
     "id": "ECL-46",
@@ -1037,7 +1139,13 @@
     "oracle_text": "Flash\nConvoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nWhen this creature enters, return up to one other target nonland permanent to its owner's hand.",
     "scryfall_artist": "Pauline Voss",
     "image_url": "https://cards.scryfall.io/normal/front/4/c/4c6dbbaa-6844-4d7c-abbb-472a83bb99ab.jpg?1783904501",
-    "scryfall_url": "https://scryfall.com/card/ecl/47/disruptor-of-currents?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/47/disruptor-of-currents?utm_source=api",
+    "usd": 0.29,
+    "usd_foil": 0.41,
+    "nonfoil_value": 0.29,
+    "foil_value": 0.0,
+    "current_value": 0.29,
+    "unrealised_gain_loss": -0.2199111111111111
   },
   {
     "id": "ECL-48",
@@ -1141,7 +1249,13 @@
     "oracle_text": "Flash\nFlying\nThis creature enters with a -1/-1 counter on it.\n{1}{U}, Remove a counter from this creature: Counter target noncreature spell. Its controller draws a card.",
     "scryfall_artist": "Yohann Schepacz",
     "image_url": "https://cards.scryfall.io/normal/front/3/8/388d2e4a-0aa5-4b82-a86c-4777ca60161c.jpg?1783904491",
-    "scryfall_url": "https://scryfall.com/card/ecl/51/glen-elendra-guardian?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/51/glen-elendra-guardian?utm_source=api",
+    "usd": 0.42,
+    "usd_foil": 0.66,
+    "nonfoil_value": 0.84,
+    "foil_value": 0.0,
+    "current_value": 0.84,
+    "unrealised_gain_loss": -0.17982222222222222
   },
   {
     "id": "ECL-53",
@@ -1167,7 +1281,13 @@
     "oracle_text": "Vigilance\nWhenever this creature attacks, you may tap another untapped creature you control. If you do, this creature can't be blocked this turn.",
     "scryfall_artist": "John Tedrick",
     "image_url": "https://cards.scryfall.io/normal/front/3/2/320bc30c-7a8a-411a-9f36-9c69126e131b.jpg?1783904490",
-    "scryfall_url": "https://scryfall.com/card/ecl/53/gravelgill-scoundrel?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/53/gravelgill-scoundrel?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.17,
+    "nonfoil_value": 0.52,
+    "foil_value": 0.0,
+    "current_value": 0.52,
+    "unrealised_gain_loss": -1.5196444444444444
   },
   {
     "id": "ECL-54",
@@ -1193,7 +1313,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nChoose a creature type. Draw a card for each permanent you control of that type.",
     "scryfall_artist": "Tyler Walpole",
     "image_url": "https://cards.scryfall.io/normal/front/2/7/2715e0c0-9913-4bea-9a42-ad1164f6130a.jpg?1783904488",
-    "scryfall_url": "https://scryfall.com/card/ecl/54/harmonized-crescendo?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/54/harmonized-crescendo?utm_source=api",
+    "usd": 1.67,
+    "usd_foil": 1.46,
+    "nonfoil_value": 1.67,
+    "foil_value": 0.0,
+    "current_value": 1.67,
+    "unrealised_gain_loss": 1.1600888888888887
   },
   {
     "id": "ECL-55",
@@ -1245,7 +1371,13 @@
     "oracle_text": "Whenever you cast a spell with mana value 4 or greater, this creature gets +2/+0 and gains vigilance until end of turn.",
     "scryfall_artist": "Jason A. Engle",
     "image_url": "https://cards.scryfall.io/normal/front/3/7/377d257c-920c-4dd4-a4b1-01cbc631ef8f.jpg?1783904487",
-    "scryfall_url": "https://scryfall.com/card/ecl/56/kulrath-mystic?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/56/kulrath-mystic?utm_source=api",
+    "usd": 0.07,
+    "usd_foil": 0.09,
+    "nonfoil_value": 0.21000000000000002,
+    "foil_value": 0.0,
+    "current_value": 0.21000000000000002,
+    "unrealised_gain_loss": -1.3197333333333332
   },
   {
     "id": "ECL-58",
@@ -1297,7 +1429,13 @@
     "oracle_text": "Flash\nEnchant creature\nEnchanted creature loses all abilities and is a colorless Noggle with base power and toughness 1/1. (It loses all colors and all other creature types.)",
     "scryfall_artist": "Thomas M. Baxa",
     "image_url": "https://cards.scryfall.io/normal/front/0/7/076c0ac1-722e-49ef-b815-ace210069972.jpg?1783904487",
-    "scryfall_url": "https://scryfall.com/card/ecl/60/noggle-the-mind?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/60/noggle-the-mind?utm_source=api",
+    "usd": 0.28,
+    "usd_foil": 0.3,
+    "nonfoil_value": 0.28,
+    "foil_value": 0.0,
+    "current_value": 0.28,
+    "unrealised_gain_loss": -0.22991111111111107
   },
   {
     "id": "ECL-62",
@@ -1349,7 +1487,13 @@
     "oracle_text": "Whenever this creature becomes tapped, create a 1/1 blue and black Faerie creature token with flying.",
     "scryfall_artist": "Julie Dillon",
     "image_url": "https://cards.scryfall.io/normal/front/3/e/3e06c99e-ecb2-42e9-ac58-2542de8d54a5.jpg?1783904485",
-    "scryfall_url": "https://scryfall.com/card/ecl/63/pestered-wellguard?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/63/pestered-wellguard?utm_source=api",
+    "usd": 0.22,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.0,
+    "current_value": 0.22,
+    "unrealised_gain_loss": -0.2899111111111111
   },
   {
     "id": "ECL-64",
@@ -1401,7 +1545,13 @@
     "oracle_text": "As this artifact enters, choose a creature type.\nWhenever a permanent you control of the chosen type enters, put a charge counter on this artifact.\n{T}, Remove three charge counters from this artifact: When you next cast an instant or sorcery spell this turn, copy it. You may choose new targets for the copy.",
     "scryfall_artist": "Jorge Jacinto",
     "image_url": "https://cards.scryfall.io/normal/front/4/f/4f8931b2-ff3f-4167-8a40-f33460c2d27e.jpg?1783904482",
-    "scryfall_url": "https://scryfall.com/card/ecl/65/rimefire-torque?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/65/rimefire-torque?utm_source=api",
+    "usd": 0.33,
+    "usd_foil": 0.38,
+    "nonfoil_value": 0.66,
+    "foil_value": 0.0,
+    "current_value": 0.66,
+    "unrealised_gain_loss": -0.35982222222222215
   },
   {
     "id": "ECL-66",
@@ -1453,7 +1603,13 @@
     "oracle_text": "Choose two target creatures controlled by different players. Return those creatures to their owners' hands.",
     "scryfall_artist": "Annie Stegg",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/35c56aff-1f0f-464a-b705-d67803e3d060.jpg?1783904482",
-    "scryfall_url": "https://scryfall.com/card/ecl/67/run-away-together?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/67/run-away-together?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.64,
+    "foil_value": 0.0,
+    "current_value": 0.64,
+    "unrealised_gain_loss": -1.3996444444444442
   },
   {
     "id": "ECL-68",
@@ -1479,7 +1635,13 @@
     "oracle_text": "Flying\nVivid — When this creature enters, draw cards equal to the number of colors among permanents you control.",
     "scryfall_artist": "Ron Spencer",
     "image_url": "https://cards.scryfall.io/normal/front/2/1/214e78f9-5364-49ab-b17e-0c76549c583e.jpg?1783904479",
-    "scryfall_url": "https://scryfall.com/card/ecl/68/shinestriker?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/68/shinestriker?utm_source=api",
+    "usd": 0.26,
+    "usd_foil": 0.36,
+    "nonfoil_value": 0.52,
+    "foil_value": 0.0,
+    "current_value": 0.52,
+    "unrealised_gain_loss": -0.49982222222222217
   },
   {
     "id": "ECL-69",
@@ -1583,7 +1745,13 @@
     "oracle_text": "Flying\nWhen this creature enters, target creature gains flying until end of turn.\nBasic landcycling {1}{U} ({1}{U}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
     "scryfall_artist": "John Tedrick",
     "image_url": "https://cards.scryfall.io/normal/front/4/f/4f607889-6f3f-4511-8920-88a39f3b28ca.jpg?1783904478",
-    "scryfall_url": "https://scryfall.com/card/ecl/72/stratosoarer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/72/stratosoarer?utm_source=api",
+    "usd": 0.07,
+    "usd_foil": 0.1,
+    "nonfoil_value": 0.14,
+    "foil_value": 0.1,
+    "current_value": 0.24000000000000002,
+    "unrealised_gain_loss": -1.2897333333333332
   },
   {
     "id": "ECL-73",
@@ -1661,7 +1829,13 @@
     "oracle_text": "This spell costs {2} less to cast if a creature is attacking you.\nThe owner of target spell or creature puts it on their choice of the top or bottom of their library.",
     "scryfall_artist": "Julie Dillon",
     "image_url": "https://cards.scryfall.io/normal/front/2/f/2fb0ea3f-2f6d-4b64-a9d7-e822c8854a03.jpg?1783904477",
-    "scryfall_url": "https://scryfall.com/card/ecl/75/swat-away?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/75/swat-away?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.18,
+    "foil_value": 0.44,
+    "current_value": 0.62,
+    "unrealised_gain_loss": -0.9097333333333332
   },
   {
     "id": "ECL-77",
@@ -1713,7 +1887,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nThe owner of target nonland permanent puts it into their library second from the top or on the bottom.",
     "scryfall_artist": "Wylie Beckert",
     "image_url": "https://cards.scryfall.io/normal/front/5/0/50ee7315-ec53-43d2-841e-8ec192b850f1.jpg?1783904478",
-    "scryfall_url": "https://scryfall.com/card/ecl/78/temporal-cleansing?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/78/temporal-cleansing?utm_source=api",
+    "usd": 0.11,
+    "usd_foil": 0.2,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.2,
+    "current_value": 0.42000000000000004,
+    "unrealised_gain_loss": -1.1097333333333332
   },
   {
     "id": "ECL-79",
@@ -1843,7 +2023,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nReturn one or two target nonland permanents to their owners' hands. Then if you control a Merfolk, create a 1/1 white and blue Merfolk creature token for each permanent returned to its owner's hand this way.",
     "scryfall_artist": "Aldo Domínguez",
     "image_url": "https://cards.scryfall.io/normal/front/4/7/473123a0-1366-406b-9b9e-154c0e9c224f.jpg?1783904472",
-    "scryfall_url": "https://scryfall.com/card/ecl/83/wanderwine-farewell?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/83/wanderwine-farewell?utm_source=api",
+    "usd": 0.21,
+    "usd_foil": 0.29,
+    "nonfoil_value": 0.21,
+    "foil_value": 0.0,
+    "current_value": 0.21,
+    "unrealised_gain_loss": -0.29991111111111113
   },
   {
     "id": "ECL-84",
@@ -1869,7 +2055,13 @@
     "oracle_text": "As an additional cost to cast this spell, blight 2 or pay {1}. (To blight 2, put two -1/-1 counters on a creature you control.)\nCounter target spell.",
     "scryfall_artist": "Jabari Weathers",
     "image_url": "https://cards.scryfall.io/normal/front/0/1/01522fec-9136-4fa6-91a3-370a8bb08b42.jpg?1783904474",
-    "scryfall_url": "https://scryfall.com/card/ecl/84/wild-unraveling?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/84/wild-unraveling?utm_source=api",
+    "usd": 0.14,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.42000000000000004,
+    "foil_value": 0.0,
+    "current_value": 0.42000000000000004,
+    "unrealised_gain_loss": -1.1097333333333332
   },
   {
     "id": "ECL-85",
@@ -1947,7 +2139,13 @@
     "oracle_text": "When this creature dies, put a -1/-1 counter on up to one target creature.",
     "scryfall_artist": "Slawomir Maniak",
     "image_url": "https://cards.scryfall.io/normal/front/2/c/2c0fcf98-1f3c-4cff-9234-7f3d0c8b22e9.jpg?1783904471",
-    "scryfall_url": "https://scryfall.com/card/ecl/87/bile-vial-boggart?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/87/bile-vial-boggart?utm_source=api",
+    "usd": 0.19,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.76,
+    "foil_value": 0.0,
+    "current_value": 0.76,
+    "unrealised_gain_loss": -1.2796444444444444
   },
   {
     "id": "ECL-89",
@@ -1973,7 +2171,13 @@
     "oracle_text": "Put four -1/-1 counters on target creature.",
     "scryfall_artist": "Forrest Schehl",
     "image_url": "https://cards.scryfall.io/normal/front/5/2/5201bdeb-ba47-459b-ac0d-603367914578.jpg?1783904470",
-    "scryfall_url": "https://scryfall.com/card/ecl/89/blight-rot?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/89/blight-rot?utm_source=api",
+    "usd": 0.25,
+    "usd_foil": 0.29,
+    "nonfoil_value": 0.75,
+    "foil_value": 0.29,
+    "current_value": 1.04,
+    "unrealised_gain_loss": -0.9996444444444443
   },
   {
     "id": "ECL-90",
@@ -1999,7 +2203,13 @@
     "oracle_text": "Whenever this creature enters or attacks, you may blight 2. If you do, you draw a card and lose 1 life. (To blight 2, put two -1/-1 counters on a creature you control.)",
     "scryfall_artist": "Omar Rayyan",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/3515531a-45d6-4fe0-96a3-7ca1ce545068.jpg?1783904473",
-    "scryfall_url": "https://scryfall.com/card/ecl/90/blighted-blackthorn?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/90/blighted-blackthorn?utm_source=api",
+    "usd": 0.12,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.24,
+    "foil_value": 0.0,
+    "current_value": 0.24,
+    "unrealised_gain_loss": -0.7798222222222222
   },
   {
     "id": "ECL-92",
@@ -2077,7 +2287,13 @@
     "oracle_text": "As an additional cost to cast this spell, blight 1 or pay {3}. (To blight 1, put a -1/-1 counter on a creature you control.)\nExile target creature.",
     "scryfall_artist": "Justin Gerard",
     "image_url": "https://cards.scryfall.io/normal/front/4/b/4beca2e7-9c6d-493b-b15f-69e483a8dfff.jpg?1783904471",
-    "scryfall_url": "https://scryfall.com/card/ecl/94/bogslithers-embrace?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/94/bogslithers-embrace?utm_source=api",
+    "usd": 0.2,
+    "usd_foil": 0.27,
+    "nonfoil_value": 0.8,
+    "foil_value": 0.0,
+    "current_value": 0.8,
+    "unrealised_gain_loss": -1.2396444444444443
   },
   {
     "id": "ECL-97",
@@ -2155,7 +2371,13 @@
     "oracle_text": "Return target creature card from your graveyard to the battlefield. Then if it isn't your main phase, blight 2. (Put two -1/-1 counters on a creature you control.)",
     "scryfall_artist": "Quintin Gleim",
     "image_url": "https://cards.scryfall.io/normal/front/4/7/47414323-ca30-45b7-a0b2-6668312bee04.jpg?1783904465",
-    "scryfall_url": "https://scryfall.com/card/ecl/100/dose-of-dawnglow?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/100/dose-of-dawnglow?utm_source=api",
+    "usd": 0.19,
+    "usd_foil": 0.23,
+    "nonfoil_value": 0.38,
+    "foil_value": 0.0,
+    "current_value": 0.38,
+    "unrealised_gain_loss": -0.6398222222222222
   },
   {
     "id": "ECL-101",
@@ -2181,7 +2403,13 @@
     "oracle_text": "Flying\nWhen this creature enters, you may blight 1. If you do, each opponent discards a card. (To blight 1, put a -1/-1 counter on a creature you control.)",
     "scryfall_artist": "Omar Rayyan",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/3573f425-9251-4c17-9619-15278ce5d8fb.jpg?1783904466",
-    "scryfall_url": "https://scryfall.com/card/ecl/101/dream-seizer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/101/dream-seizer?utm_source=api",
+    "usd": 0.12,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.24,
+    "foil_value": 0.22,
+    "current_value": 0.45999999999999996,
+    "unrealised_gain_loss": -1.0697333333333332
   },
   {
     "id": "ECL-103",
@@ -2207,7 +2435,13 @@
     "oracle_text": "This creature enters with two -1/-1 counters on it.\n{2}{B}, Remove two counters from this creature: Target creature gets -2/-2 until end of turn. Activate only as a sorcery.",
     "scryfall_artist": "Loïc Canavaggia",
     "image_url": "https://cards.scryfall.io/normal/front/1/e/1e9d65b6-22ff-49f2-8b2a-aeaef91088d3.jpg?1783904463",
-    "scryfall_url": "https://scryfall.com/card/ecl/103/gnarlbark-elm?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/103/gnarlbark-elm?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.16,
+    "foil_value": 0.0,
+    "current_value": 0.16,
+    "unrealised_gain_loss": -0.34991111111111106
   },
   {
     "id": "ECL-104",
@@ -2259,7 +2493,13 @@
     "oracle_text": null,
     "scryfall_artist": "Jesper Ejsing",
     "image_url": null,
-    "scryfall_url": "https://scryfall.com/card/ecl/105/grub-storied-matriarch-grub-notorious-auntie?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/105/grub-storied-matriarch-grub-notorious-auntie?utm_source=api",
+    "usd": 0.34,
+    "usd_foil": 0.38,
+    "nonfoil_value": 0.0,
+    "foil_value": 0.38,
+    "current_value": 0.38,
+    "unrealised_gain_loss": -0.1299111111111111
   },
   {
     "id": "ECL-106",
@@ -2389,7 +2629,13 @@
     "oracle_text": "Menace\nThis creature enters with six -1/-1 counters on it.\nWhenever one or more permanent cards are put into your graveyard from anywhere while this creature has a -1/-1 counter on it, remove a -1/-1 counter from this creature.",
     "scryfall_artist": "Olivier Bernard",
     "image_url": "https://cards.scryfall.io/normal/front/2/5/2573e694-eaa0-42ca-b470-2ab507cbcec1.jpg?1783904461",
-    "scryfall_url": "https://scryfall.com/card/ecl/110/moonshadow?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/110/moonshadow?utm_source=api",
+    "usd": 11.84,
+    "usd_foil": 10.86,
+    "nonfoil_value": 11.84,
+    "foil_value": 0.0,
+    "current_value": 11.84,
+    "unrealised_gain_loss": 11.33008888888889
   },
   {
     "id": "ECL-112",
@@ -2415,7 +2661,13 @@
     "oracle_text": "As an additional cost to cast this spell, behold a Goblin or pay {2}. (To behold a Goblin, choose a Goblin you control or reveal a Goblin card from your hand.)\nThis creature can't block.\nWhen this creature dies, destroy target creature an opponent controls with power 2 or less.",
     "scryfall_artist": "Ioannis Fiore",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/35bc841a-9a21-4c17-a60a-a3ee01472fcb.jpg?1783904459",
-    "scryfall_url": "https://scryfall.com/card/ecl/112/mudbutton-cursetosser?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/112/mudbutton-cursetosser?utm_source=api",
+    "usd": 0.26,
+    "usd_foil": 0.34,
+    "nonfoil_value": 0.52,
+    "foil_value": 0.0,
+    "current_value": 0.52,
+    "unrealised_gain_loss": -0.49982222222222217
   },
   {
     "id": "ECL-113",
@@ -2467,7 +2719,13 @@
     "oracle_text": "Flying, lifelink\nWhenever you cast a spell during an opponent's turn, put a -1/-1 counter on up to one target creature.",
     "scryfall_artist": "Tommy Arnold",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/35dfa0f9-faf3-4a85-b02d-0c5830783511.jpg?1783904456",
-    "scryfall_url": "https://scryfall.com/card/ecl/114/nightmare-sower?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/114/nightmare-sower?utm_source=api",
+    "usd": 0.22,
+    "usd_foil": 0.29,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.0,
+    "current_value": 0.22,
+    "unrealised_gain_loss": -0.2899111111111111
   },
   {
     "id": "ECL-115",
@@ -2753,7 +3011,13 @@
     "oracle_text": "Boulder Dash deals 2 damage to any target and 1 damage to any other target.",
     "scryfall_artist": "Chuck Lukacs",
     "image_url": "https://cards.scryfall.io/normal/front/6/5/657a2a24-22d1-4bc2-9f22-ed361ae487e3.jpg?1783904449",
-    "scryfall_url": "https://scryfall.com/card/ecl/127/boulder-dash?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/127/boulder-dash?utm_source=api",
+    "usd": 0.14,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.28,
+    "foil_value": 0.0,
+    "current_value": 0.28,
+    "unrealised_gain_loss": -0.7398222222222222
   },
   {
     "id": "ECL-128",
@@ -2779,7 +3043,13 @@
     "oracle_text": "This creature enters with two -1/-1 counters on it.\n{1}{R}, Remove a counter from this creature: Target creature can't block this turn. Activate only as a sorcery.",
     "scryfall_artist": "Aaron Miller",
     "image_url": "https://cards.scryfall.io/normal/front/5/e/5ebb8365-c6e1-46e8-a242-6aa27b21e68a.jpg?1783904453",
-    "scryfall_url": "https://scryfall.com/card/ecl/128/brambleback-brute?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/128/brambleback-brute?utm_source=api",
+    "usd": 0.17,
+    "usd_foil": 0.19,
+    "nonfoil_value": 0.34,
+    "foil_value": 0.0,
+    "current_value": 0.34,
+    "unrealised_gain_loss": -0.6798222222222221
   },
   {
     "id": "ECL-129",
@@ -2805,7 +3075,13 @@
     "oracle_text": "As an additional cost to cast this spell, you may blight 1. (You may put a -1/-1 counter on a creature you control.)\nExile the top two cards of your library. If this spell's additional cost was paid, exile the top three cards instead. Until the end of your next turn, you may play those cards.",
     "scryfall_artist": "Jim Pavelec",
     "image_url": "https://cards.scryfall.io/normal/front/6/8/689ed288-6228-4d7e-b198-56a12b8be299.jpg?1783904452",
-    "scryfall_url": "https://scryfall.com/card/ecl/129/burning-curiosity?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/129/burning-curiosity?utm_source=api",
+    "usd": 0.19,
+    "usd_foil": 0.29,
+    "nonfoil_value": 0.95,
+    "foil_value": 0.0,
+    "current_value": 0.95,
+    "unrealised_gain_loss": -1.5995555555555556
   },
   {
     "id": "ECL-131",
@@ -2857,7 +3133,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nAs this enchantment enters, choose a creature type.\nDouble all damage that sources you control of the chosen type would deal.",
     "scryfall_artist": "Jason A. Engle",
     "image_url": "https://cards.scryfall.io/normal/front/1/e/1ec084cc-997d-4079-b445-8f701ec3c277.jpg?1783904449",
-    "scryfall_url": "https://scryfall.com/card/ecl/132/collective-inferno?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/132/collective-inferno?utm_source=api",
+    "usd": 2.27,
+    "usd_foil": 1.75,
+    "nonfoil_value": 2.27,
+    "foil_value": 0.0,
+    "current_value": 2.27,
+    "unrealised_gain_loss": 1.7600888888888888
   },
   {
     "id": "ECL-133",
@@ -2909,7 +3191,13 @@
     "oracle_text": "End-Blaze Epiphany deals X damage to target creature. When that creature dies this turn, exile a number of cards from the top of your library equal to its power, then choose a card exiled this way. Until the end of your next turn, you may play that card.",
     "scryfall_artist": "Tyler Walpole",
     "image_url": "https://cards.scryfall.io/normal/front/0/f/0f0a90ae-b3b3-4f52-8997-eac514b29e57.jpg?1783904455",
-    "scryfall_url": "https://scryfall.com/card/ecl/134/end-blaze-epiphany?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/134/end-blaze-epiphany?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.33,
+    "nonfoil_value": 0.18,
+    "foil_value": 0.0,
+    "current_value": 0.18,
+    "unrealised_gain_loss": -0.3299111111111111
   },
   {
     "id": "ECL-135",
@@ -2935,7 +3223,13 @@
     "oracle_text": "Reach\nWhenever you cast a spell with mana value 4 or greater, this creature deals 2 damage to each opponent.",
     "scryfall_artist": "Lars Grant-West",
     "image_url": "https://cards.scryfall.io/normal/front/1/0/104baa2c-75c5-44fc-a3b9-b19efcf3d7c2.jpg?1783904448",
-    "scryfall_url": "https://scryfall.com/card/ecl/135/enraged-flamecaster?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/135/enraged-flamecaster?utm_source=api",
+    "usd": 0.15,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.44999999999999996,
+    "foil_value": 0.0,
+    "current_value": 0.44999999999999996,
+    "unrealised_gain_loss": -1.0797333333333332
   },
   {
     "id": "ECL-136",
@@ -2961,7 +3255,13 @@
     "oracle_text": "Vivid — When this creature enters, it deals X damage to target creature an opponent controls, where X is the number of colors among permanents you control.",
     "scryfall_artist": "Joshua Raphael",
     "image_url": "https://cards.scryfall.io/normal/front/5/5/5515ea5e-ce28-4938-a31e-5e48522a5f93.jpg?1783904448",
-    "scryfall_url": "https://scryfall.com/card/ecl/136/explosive-prodigy?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/136/explosive-prodigy?utm_source=api",
+    "usd": 0.12,
+    "usd_foil": 0.19,
+    "nonfoil_value": 0.12,
+    "foil_value": 0.19,
+    "current_value": 0.31,
+    "unrealised_gain_loss": -0.7098222222222221
   },
   {
     "id": "ECL-137",
@@ -2987,7 +3287,13 @@
     "oracle_text": "Feed the Flames deals 5 damage to target creature. If that creature would die this turn, exile it instead.",
     "scryfall_artist": "Xabi Gaztelua",
     "image_url": "https://cards.scryfall.io/normal/front/5/9/59740755-c353-4b6c-a84c-3b76133ce3ec.jpg?1783904449",
-    "scryfall_url": "https://scryfall.com/card/ecl/137/feed-the-flames?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/137/feed-the-flames?utm_source=api",
+    "usd": 0.11,
+    "usd_foil": 0.09,
+    "nonfoil_value": 0.33,
+    "foil_value": 0.0,
+    "current_value": 0.33,
+    "unrealised_gain_loss": -1.199733333333333
   },
   {
     "id": "ECL-138",
@@ -3091,7 +3397,13 @@
     "oracle_text": "Choose one —\n• Target creature you control deals damage equal to its power to target creature an opponent controls.\n• Destroy target artifact.",
     "scryfall_artist": "Drew Baker",
     "image_url": "https://cards.scryfall.io/normal/front/1/a/1ac52728-adb3-4220-8392-73f7bd379ab4.jpg?1783904444",
-    "scryfall_url": "https://scryfall.com/card/ecl/141/giantfall?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/141/giantfall?utm_source=api",
+    "usd": 0.22,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.0,
+    "current_value": 0.22,
+    "unrealised_gain_loss": -0.2899111111111111
   },
   {
     "id": "ECL-142",
@@ -3195,7 +3507,13 @@
     "oracle_text": "Target creature gains trample and haste until end of turn.\nDraw a card.",
     "scryfall_artist": "Scott Murphy",
     "image_url": "https://cards.scryfall.io/normal/front/4/5/45be88d8-0be1-47a2-a1c1-d6e693fc706f.jpg?1783904443",
-    "scryfall_url": "https://scryfall.com/card/ecl/146/impolite-entrance?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/146/impolite-entrance?utm_source=api",
+    "usd": 0.32,
+    "usd_foil": 0.44,
+    "nonfoil_value": 0.32,
+    "foil_value": 0.0,
+    "current_value": 0.32,
+    "unrealised_gain_loss": -0.18991111111111109
   },
   {
     "id": "ECL-147",
@@ -3247,7 +3565,13 @@
     "oracle_text": "When this creature enters, exile the top card of your library. Until the end of your next turn, you may play that card.\nBasic landcycling {1}{R} ({1}{R}, Discard this card: Search your library for a basic land card, reveal it, put it into your hand, then shuffle.)",
     "scryfall_artist": "Karl Kopinski",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/3502685d-4e57-4c5c-94c6-ae69048cdfbf.jpg?1783904441",
-    "scryfall_url": "https://scryfall.com/card/ecl/148/kulrath-zealot?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/148/kulrath-zealot?utm_source=api",
+    "usd": 0.21,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.63,
+    "foil_value": 0.0,
+    "current_value": 0.63,
+    "unrealised_gain_loss": -0.8997333333333332
   },
   {
     "id": "ECL-149",
@@ -3299,7 +3623,13 @@
     "oracle_text": "Target creature gets +3/+2 until end of turn. Create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
     "scryfall_artist": "Daren Bader",
     "image_url": "https://cards.scryfall.io/normal/front/2/4/24a5b025-4cdb-416d-aad6-0fc7e8da3df2.jpg?1783904441",
-    "scryfall_url": "https://scryfall.com/card/ecl/152/reckless-ransacking?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/152/reckless-ransacking?utm_source=api",
+    "usd": 0.29,
+    "usd_foil": 0.3,
+    "nonfoil_value": 0.8699999999999999,
+    "foil_value": 0.3,
+    "current_value": 1.17,
+    "unrealised_gain_loss": -0.8696444444444444
   },
   {
     "id": "ECL-153",
@@ -3325,7 +3655,13 @@
     "oracle_text": "At the beginning of your first main phase, you may blight 1. If you do, create a Treasure token. (To blight 1, put a -1/-1 counter on a creature you control. A Treasure token is an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
     "scryfall_artist": "Mark Zug",
     "image_url": "https://cards.scryfall.io/normal/front/0/e/0ea4a895-19c0-47af-ad9c-5db88ea9ae05.jpg?1783904441",
-    "scryfall_url": "https://scryfall.com/card/ecl/153/scuzzback-scrounger?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/153/scuzzback-scrounger?utm_source=api",
+    "usd": 1.43,
+    "usd_foil": 1.27,
+    "nonfoil_value": 1.43,
+    "foil_value": 0.0,
+    "current_value": 1.43,
+    "unrealised_gain_loss": 0.9200888888888888
   },
   {
     "id": "ECL-154",
@@ -3403,7 +3739,13 @@
     "oracle_text": "As an additional cost to cast this spell, blight X. X can't be greater than the greatest toughness among creatures you control. (Put X -1/-1 counters on a creature you control.)\nSoul Immolation deals X damage to each opponent and each creature they control.",
     "scryfall_artist": "Drew Tucker",
     "image_url": "https://cards.scryfall.io/normal/front/2/3/234b70df-8c34-4da7-946e-b8b55a8df390.jpg?1783904438",
-    "scryfall_url": "https://scryfall.com/card/ecl/156/soul-immolation?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/156/soul-immolation?utm_source=api",
+    "usd": 2.55,
+    "usd_foil": 3.23,
+    "nonfoil_value": 2.55,
+    "foil_value": 0.0,
+    "current_value": 2.55,
+    "unrealised_gain_loss": 2.0400888888888886
   },
   {
     "id": "ECL-157",
@@ -3455,7 +3797,13 @@
     "oracle_text": "When this creature enters, you may blight 2. If you do, create two 1/1 black and red Goblin creature tokens. (To blight 2, put two -1/-1 counters on a creature you control.)",
     "scryfall_artist": "John Tedrick",
     "image_url": "https://cards.scryfall.io/normal/front/3/2/32fd226f-d1c6-432c-b846-9482f1944363.jpg?1783904437",
-    "scryfall_url": "https://scryfall.com/card/ecl/158/sourbread-auntie?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/158/sourbread-auntie?utm_source=api",
+    "usd": 0.22,
+    "usd_foil": 0.29,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.29,
+    "current_value": 0.51,
+    "unrealised_gain_loss": -0.5098222222222222
   },
   {
     "id": "ECL-159",
@@ -3481,7 +3829,13 @@
     "oracle_text": "Flying\nWither (This deals damage to creatures in the form of -1/-1 counters.)\nWhenever you cast an instant or sorcery spell with a single target, you may copy it. If you do, those spells gain wither. You may choose new targets for the copy.",
     "scryfall_artist": "Cory Godbey",
     "image_url": "https://cards.scryfall.io/normal/front/4/7/478bbb7a-4b96-4e04-921e-bdf23185de25.jpg?1783904437",
-    "scryfall_url": "https://scryfall.com/card/ecl/159/spinerock-tyrant?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/159/spinerock-tyrant?utm_source=api",
+    "usd": 1.44,
+    "usd_foil": 1.64,
+    "nonfoil_value": 1.44,
+    "foil_value": 0.0,
+    "current_value": 1.44,
+    "unrealised_gain_loss": 0.9300888888888889
   },
   {
     "id": "ECL-162",
@@ -3507,7 +3861,13 @@
     "oracle_text": "Tweeze deals 3 damage to any target. You may discard a card. If you do, draw a card.",
     "scryfall_artist": "Scott Gustafson",
     "image_url": "https://cards.scryfall.io/normal/front/3/c/3ceab0e6-1bb8-487d-ab4b-2da8457b970a.jpg?1783904435",
-    "scryfall_url": "https://scryfall.com/card/ecl/162/tweeze?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/162/tweeze?utm_source=api",
+    "usd": 0.12,
+    "usd_foil": 0.17,
+    "nonfoil_value": 0.36,
+    "foil_value": 0.0,
+    "current_value": 0.36,
+    "unrealised_gain_loss": -1.1697333333333333
   },
   {
     "id": "ECL-163",
@@ -3559,7 +3919,13 @@
     "oracle_text": "Target creature you control gets +1/+0 until end of turn. It deals damage equal to its power to up to one target creature an opponent controls.",
     "scryfall_artist": "Matt Stewart",
     "image_url": "https://cards.scryfall.io/normal/front/6/9/6995b308-5582-4ca1-ab10-a536d5ca0a6d.jpg?1783904435",
-    "scryfall_url": "https://scryfall.com/card/ecl/164/assert-perfection?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/164/assert-perfection?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.19,
+    "nonfoil_value": 0.26,
+    "foil_value": 0.0,
+    "current_value": 0.26,
+    "unrealised_gain_loss": -0.7598222222222222
   },
   {
     "id": "ECL-167",
@@ -3585,7 +3951,13 @@
     "oracle_text": "Target creature you control gets +2/+2 and gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)",
     "scryfall_artist": "Eelis Kyttanen",
     "image_url": "https://cards.scryfall.io/normal/front/3/c/3cce80d0-b937-4325-a603-1278c110f244.jpg?1783904434",
-    "scryfall_url": "https://scryfall.com/card/ecl/167/blossoming-defense?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/167/blossoming-defense?utm_source=api",
+    "usd": 0.31,
+    "usd_foil": 0.33,
+    "nonfoil_value": 0.62,
+    "foil_value": 0.0,
+    "current_value": 0.62,
+    "unrealised_gain_loss": -0.3998222222222222
   },
   {
     "id": "ECL-169",
@@ -3611,7 +3983,13 @@
     "oracle_text": "This creature can't be blocked by creatures with power 2 or less.\nAs long as another creature entered the battlefield under your control this turn, this creature gets +2/+0.",
     "scryfall_artist": "Ryan Pancoast",
     "image_url": "https://cards.scryfall.io/normal/front/3/8/38b17a3c-4457-47e3-986e-ff0b94c41b1a.jpg?1783904433",
-    "scryfall_url": "https://scryfall.com/card/ecl/169/bristlebane-outrider?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/169/bristlebane-outrider?utm_source=api",
+    "usd": 0.14,
+    "usd_foil": 0.16,
+    "nonfoil_value": 0.14,
+    "foil_value": 0.0,
+    "current_value": 0.14,
+    "unrealised_gain_loss": -0.3699111111111111
   },
   {
     "id": "ECL-170",
@@ -3637,7 +4015,13 @@
     "oracle_text": "As an additional cost to cast this spell, you may choose a creature type and behold two creatures of that type.\nSearch your library for a creature card with mana value X or less, reveal it, put it into your hand, then shuffle. If this spell's additional cost was paid and the revealed card is the chosen type, put that card onto the battlefield instead of putting it into your hand.",
     "scryfall_artist": "Justin Gerard",
     "image_url": "https://cards.scryfall.io/normal/front/5/8/583b2863-aca1-4dab-9196-ea453b5d9454.jpg?1783904435",
-    "scryfall_url": "https://scryfall.com/card/ecl/170/celestial-reunion?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/170/celestial-reunion?utm_source=api",
+    "usd": 1.05,
+    "usd_foil": 1.16,
+    "nonfoil_value": 1.05,
+    "foil_value": 0.0,
+    "current_value": 1.05,
+    "unrealised_gain_loss": 0.540088888888889
   },
   {
     "id": "ECL-172",
@@ -3741,7 +4125,13 @@
     "oracle_text": "When this creature enters, if you control three or more creatures, return target permanent card from your graveyard to your hand.",
     "scryfall_artist": "Olivier Bernard",
     "image_url": "https://cards.scryfall.io/normal/front/2/2/2260912b-4dfb-49dd-bf95-060d44333645.jpg?1783904429",
-    "scryfall_url": "https://scryfall.com/card/ecl/175/dundoolin-weaver?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/175/dundoolin-weaver?utm_source=api",
+    "usd": 0.2,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.2,
+    "foil_value": 0.0,
+    "current_value": 0.2,
+    "unrealised_gain_loss": -0.3099111111111111
   },
   {
     "id": "ECL-176",
@@ -3767,7 +4157,13 @@
     "oracle_text": "When this creature enters, you may discard a card. If you do, search your library for a creature card, reveal it, put it into your hand, then shuffle.\n{1}, {T}: Untap another target permanent.",
     "scryfall_artist": "Aurore Folny",
     "image_url": "https://cards.scryfall.io/normal/front/2/6/265522eb-4f6a-40e7-b374-3833fa63c80b.jpg?1783904430",
-    "scryfall_url": "https://scryfall.com/card/ecl/176/formidable-speaker?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/176/formidable-speaker?utm_source=api",
+    "usd": 9.57,
+    "usd_foil": 10.23,
+    "nonfoil_value": 9.57,
+    "foil_value": 0.0,
+    "current_value": 9.57,
+    "unrealised_gain_loss": 9.06008888888889
   },
   {
     "id": "ECL-177",
@@ -3845,7 +4241,13 @@
     "oracle_text": "Deathtouch\nVivid — When this creature enters, you gain life equal to the number of colors among permanents you control.",
     "scryfall_artist": "Maxime Minard",
     "image_url": "https://cards.scryfall.io/normal/front/3/d/3d591e66-4bf9-47e7-bcef-57769ec3edc6.jpg?1783904428",
-    "scryfall_url": "https://scryfall.com/card/ecl/179/luminollusk?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/179/luminollusk?utm_source=api",
+    "usd": 0.11,
+    "usd_foil": 0.15,
+    "nonfoil_value": 0.22,
+    "foil_value": 0.0,
+    "current_value": 0.22,
+    "unrealised_gain_loss": -0.7998222222222222
   },
   {
     "id": "ECL-180",
@@ -3975,7 +4377,13 @@
     "oracle_text": "Trample\nThis creature gets +1/+1 for each creature you control and each creature card in your graveyard.",
     "scryfall_artist": "David Palumbo",
     "image_url": "https://cards.scryfall.io/normal/front/6/0/60621c37-62e1-4261-ae76-3946b4a0cfa3.jpg?1783904429",
-    "scryfall_url": "https://scryfall.com/card/ecl/184/moon-vigil-adherents?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/184/moon-vigil-adherents?utm_source=api",
+    "usd": 0.23,
+    "usd_foil": 0.27,
+    "nonfoil_value": 0.23,
+    "foil_value": 0.0,
+    "current_value": 0.23,
+    "unrealised_gain_loss": -0.2799111111111111
   },
   {
     "id": "ECL-185",
@@ -4053,7 +4461,13 @@
     "oracle_text": "Enchant creature you control\nWhen this Aura enters, enchanted creature fights up to one target creature an opponent controls. (Each deals damage equal to its power to the other.)\nEnchanted creature gets +2/+2.",
     "scryfall_artist": "A. M. Sartor",
     "image_url": "https://cards.scryfall.io/normal/front/2/9/295d828b-b2e7-41c7-afbc-5fb5f4eb242c.jpg?1783904424",
-    "scryfall_url": "https://scryfall.com/card/ecl/187/pitiless-fists?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/187/pitiless-fists?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.2,
+    "nonfoil_value": 0.16,
+    "foil_value": 0.0,
+    "current_value": 0.16,
+    "unrealised_gain_loss": -0.34991111111111106
   },
   {
     "id": "ECL-188",
@@ -4079,7 +4493,13 @@
     "oracle_text": "Trample\nVivid — When this creature enters, up to X target creatures you control get +X/+X until end of turn, where X is the number of colors among permanents you control.",
     "scryfall_artist": "Aaron Miller",
     "image_url": "https://cards.scryfall.io/normal/front/6/5/65c057a7-70af-4464-bd8d-1e7e158d1ae7.jpg?1783904427",
-    "scryfall_url": "https://scryfall.com/card/ecl/188/prismabasher?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/188/prismabasher?utm_source=api",
+    "usd": 0.2,
+    "usd_foil": 0.23,
+    "nonfoil_value": 0.2,
+    "foil_value": 0.0,
+    "current_value": 0.2,
+    "unrealised_gain_loss": -0.3099111111111111
   },
   {
     "id": "ECL-190",
@@ -4105,7 +4525,13 @@
     "oracle_text": "Reach, vigilance\nWard {2} (Whenever this creature becomes the target of a spell or ability an opponent controls, counter it unless that player pays {2}.)\nWhen this creature enters, you gain X life, where X is the greatest power among Giants you control.",
     "scryfall_artist": "Steve Ellis",
     "image_url": "https://cards.scryfall.io/normal/front/4/2/42208996-7b99-474e-aba7-75190d7ee8e2.jpg?1783904425",
-    "scryfall_url": "https://scryfall.com/card/ecl/190/pummeler-for-hire?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/190/pummeler-for-hire?utm_source=api",
+    "usd": 0.09,
+    "usd_foil": 0.11,
+    "nonfoil_value": 0.09,
+    "foil_value": 0.0,
+    "current_value": 0.09,
+    "unrealised_gain_loss": -0.4199111111111111
   },
   {
     "id": "ECL-191",
@@ -4157,7 +4583,13 @@
     "oracle_text": "Affinity for Forests (This spell costs {1} less to cast for each Forest you control.)\nLandfall — Whenever a land you control enters, create a 3/4 green Treefolk creature token with reach.\n{1}{G}, Exile this enchantment: Treefolk and Forests you control gain indestructible until end of turn.",
     "scryfall_artist": "Vincent Christiaens",
     "image_url": "https://cards.scryfall.io/normal/front/3/1/3199bea9-fef7-45fe-8777-2103d84a9347.jpg?1783904423",
-    "scryfall_url": "https://scryfall.com/card/ecl/192/sapling-nursery?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/192/sapling-nursery?utm_source=api",
+    "usd": 1.71,
+    "usd_foil": 2.11,
+    "nonfoil_value": 1.71,
+    "foil_value": 2.11,
+    "current_value": 3.82,
+    "unrealised_gain_loss": 2.800177777777778
   },
   {
     "id": "ECL-194",
@@ -4209,7 +4641,13 @@
     "oracle_text": "{T}: Target creature you control gets +1/+1 and gains vigilance until end of turn. Activate only as a sorcery.",
     "scryfall_artist": "Jake Murray",
     "image_url": "https://cards.scryfall.io/normal/front/0/5/056f7f51-18a9-4d80-8928-decaf4d12c0d.jpg?1783904422",
-    "scryfall_url": "https://scryfall.com/card/ecl/196/surly-farrier?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/196/surly-farrier?utm_source=api",
+    "usd": 0.09,
+    "usd_foil": 0.12,
+    "nonfoil_value": 0.27,
+    "foil_value": 0.0,
+    "current_value": 0.27,
+    "unrealised_gain_loss": -1.2597333333333331
   },
   {
     "id": "ECL-197",
@@ -4235,7 +4673,13 @@
     "oracle_text": "Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control seven or more lands and/or Treefolk, create a 3/4 green Treefolk creature token with reach. (It can block creatures with flying.)",
     "scryfall_artist": "Iris Compiet",
     "image_url": "https://cards.scryfall.io/normal/front/3/8/388f6d9d-bb9a-4a3d-93c5-701db194863c.jpg?1783904419",
-    "scryfall_url": "https://scryfall.com/card/ecl/197/tend-the-sprigs?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/197/tend-the-sprigs?utm_source=api",
+    "usd": 0.17,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.51,
+    "foil_value": 0.0,
+    "current_value": 0.51,
+    "unrealised_gain_loss": -1.0197333333333332
   },
   {
     "id": "ECL-198",
@@ -4261,7 +4705,13 @@
     "oracle_text": "Target creature gets +3/+3 until end of turn. If a creature entered the battlefield under your control this turn, draw a card.",
     "scryfall_artist": "Josiah \"Jo\" Cameron",
     "image_url": "https://cards.scryfall.io/normal/front/1/9/19cfc015-b6d5-4918-99a7-990209e77441.jpg?1783904420",
-    "scryfall_url": "https://scryfall.com/card/ecl/198/thoughtweft-charge?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/198/thoughtweft-charge?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.22,
+    "nonfoil_value": 0.16,
+    "foil_value": 0.0,
+    "current_value": 0.16,
+    "unrealised_gain_loss": -0.34991111111111106
   },
   {
     "id": "ECL-200",
@@ -4287,7 +4737,13 @@
     "oracle_text": "Choose one —\n• Destroy target creature with flying.\n• Destroy target enchantment.\n• Create a 2/2 black and green Elf creature token.",
     "scryfall_artist": "Filip Burburan",
     "image_url": "https://cards.scryfall.io/normal/front/0/b/0bef3905-24f8-419b-aeca-396adfc6d0dc.jpg?1783904419",
-    "scryfall_url": "https://scryfall.com/card/ecl/200/unforgiving-aim?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/200/unforgiving-aim?utm_source=api",
+    "usd": 0.16,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.48,
+    "foil_value": 0.0,
+    "current_value": 0.48,
+    "unrealised_gain_loss": -1.0497333333333332
   },
   {
     "id": "ECL-201",
@@ -4313,7 +4769,13 @@
     "oracle_text": "This creature must be blocked if able.\nWhenever this creature attacks, another target Elf you control gets +2/+1 until end of turn.",
     "scryfall_artist": "Evyn Fong",
     "image_url": "https://cards.scryfall.io/normal/front/6/3/63c573fe-e74c-48ca-ad05-92f37dc466f1.jpg?1783904419",
-    "scryfall_url": "https://scryfall.com/card/ecl/201/vinebred-brawler?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/201/vinebred-brawler?utm_source=api",
+    "usd": 0.13,
+    "usd_foil": 0.18,
+    "nonfoil_value": 0.13,
+    "foil_value": 0.0,
+    "current_value": 0.13,
+    "unrealised_gain_loss": -0.3799111111111111
   },
   {
     "id": "ECL-202",
@@ -4339,7 +4801,13 @@
     "oracle_text": "Deathtouch\nWhenever another creature you control enters, you gain 1 life.",
     "scryfall_artist": "Tiffany Turrill",
     "image_url": "https://cards.scryfall.io/normal/front/0/7/0702efed-915e-466a-96bb-ac09af06b21e.jpg?1783904418",
-    "scryfall_url": "https://scryfall.com/card/ecl/202/virulent-emissary?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/202/virulent-emissary?utm_source=api",
+    "usd": 1.39,
+    "usd_foil": 1.31,
+    "nonfoil_value": 1.39,
+    "foil_value": 0.0,
+    "current_value": 1.39,
+    "unrealised_gain_loss": 0.8800888888888888
   },
   {
     "id": "ECL-203",
@@ -4365,7 +4833,13 @@
     "oracle_text": "Vivid — This spell costs {1} less to cast for each color among permanents you control.\nReach, trample",
     "scryfall_artist": "Kev Walker",
     "image_url": "https://cards.scryfall.io/normal/front/1/1/11bad5c7-fe9a-4d89-a531-8d4f03d5a0e4.jpg?1783904419",
-    "scryfall_url": "https://scryfall.com/card/ecl/203/wildvine-pummeler?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/203/wildvine-pummeler?utm_source=api",
+    "usd": 0.1,
+    "usd_foil": 0.15,
+    "nonfoil_value": 0.4,
+    "foil_value": 0.0,
+    "current_value": 0.4,
+    "unrealised_gain_loss": -1.6396444444444445
   },
   {
     "id": "ECL-206",
@@ -4417,7 +4891,13 @@
     "oracle_text": "{1}{W}, {T}: Another target creature you control gains flying and lifelink until end of turn.\nAt the beginning of your end step, if you gained life this turn, exile cards from the top of your library until you exile a nonland card. You may cast that card without paying its mana cost if the spell's mana value is less than or equal to the amount of life you gained this turn. Otherwise, put it into your hand.",
     "scryfall_artist": "Jesper Ejsing",
     "image_url": "https://cards.scryfall.io/normal/front/0/1/013cefb7-a059-45c2-81b0-187f35aac4a2.jpg?1783904415",
-    "scryfall_url": "https://scryfall.com/card/ecl/207/bre-of-clan-stoutarm?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/207/bre-of-clan-stoutarm?utm_source=api",
+    "usd": 0.31,
+    "usd_foil": 0.37,
+    "nonfoil_value": 0.62,
+    "foil_value": 0.0,
+    "current_value": 0.62,
+    "unrealised_gain_loss": -0.3998222222222222
   },
   {
     "id": "ECL-210",
@@ -4521,7 +5001,13 @@
     "oracle_text": "Each creature spell you cast with toughness greater than its power costs {1} less to cast.\nWhenever a creature you control attacks or blocks, it gets +X/+X until end of turn, where X is the difference between its power and toughness.",
     "scryfall_artist": "Carl Critchlow",
     "image_url": "https://cards.scryfall.io/normal/front/5/6/568aa70a-6765-486a-bd37-5d38b16c46de.jpg?1783904413",
-    "scryfall_url": "https://scryfall.com/card/ecl/215/doran-besieged-by-time?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/215/doran-besieged-by-time?utm_source=api",
+    "usd": 0.55,
+    "usd_foil": 0.88,
+    "nonfoil_value": 0.55,
+    "foil_value": 0.0,
+    "current_value": 0.55,
+    "unrealised_gain_loss": 0.04008888888888895
   },
   {
     "id": "ECL-216",
@@ -4573,7 +5059,13 @@
     "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal a Goblin, Swamp, or Mountain card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
     "scryfall_artist": "Tiffany Turrill",
     "image_url": "https://cards.scryfall.io/normal/front/0/a/0ac1d0b2-92a4-4a10-b2d1-e9bb90265cc3.jpg?1783904413",
-    "scryfall_url": "https://scryfall.com/card/ecl/217/eclipsed-boggart?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/217/eclipsed-boggart?utm_source=api",
+    "usd": 0.29,
+    "usd_foil": 0.32,
+    "nonfoil_value": 0.58,
+    "foil_value": 0.0,
+    "current_value": 0.58,
+    "unrealised_gain_loss": -0.4398222222222222
   },
   {
     "id": "ECL-219",
@@ -4625,7 +5117,13 @@
     "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal a Kithkin, Forest, or Plains card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
     "scryfall_artist": "Filip Burburan",
     "image_url": "https://cards.scryfall.io/normal/front/2/9/29e1cfa4-0ad8-4228-9f7e-cbab114d1d5f.jpg?1783904412",
-    "scryfall_url": "https://scryfall.com/card/ecl/220/eclipsed-kithkin?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/220/eclipsed-kithkin?utm_source=api",
+    "usd": 0.27,
+    "usd_foil": 0.18,
+    "nonfoil_value": 0.27,
+    "foil_value": 0.0,
+    "current_value": 0.27,
+    "unrealised_gain_loss": -0.23991111111111108
   },
   {
     "id": "ECL-221",
@@ -4651,7 +5149,13 @@
     "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal a Merfolk, Plains, or Island card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
     "scryfall_artist": "Chris Rahn",
     "image_url": "https://cards.scryfall.io/normal/front/2/3/2352750d-404d-4928-9bdb-1b0db599b70f.jpg?1783904411",
-    "scryfall_url": "https://scryfall.com/card/ecl/221/eclipsed-merrow?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/221/eclipsed-merrow?utm_source=api",
+    "usd": 0.27,
+    "usd_foil": 0.2,
+    "nonfoil_value": 0.27,
+    "foil_value": 0.0,
+    "current_value": 0.27,
+    "unrealised_gain_loss": -0.23991111111111108
   },
   {
     "id": "ECL-223",
@@ -4703,7 +5207,13 @@
     "oracle_text": "When this creature enters and whenever you cast a spell with mana value 4 or greater, you may discard a card. If you do, draw a card.",
     "scryfall_artist": "Kai Carpenter",
     "image_url": "https://cards.scryfall.io/normal/front/0/6/0691a1a9-18e7-44b7-9a34-764b1ab45a76.jpg?1783904410",
-    "scryfall_url": "https://scryfall.com/card/ecl/225/flaring-cinder?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/225/flaring-cinder?utm_source=api",
+    "usd": 0.14,
+    "usd_foil": 0.12,
+    "nonfoil_value": 0.56,
+    "foil_value": 0.0,
+    "current_value": 0.56,
+    "unrealised_gain_loss": -1.4796444444444443
   },
   {
     "id": "ECL-226",
@@ -4729,7 +5239,13 @@
     "oracle_text": "Changeling (This card is every creature type.)\nTrample",
     "scryfall_artist": "Scott Murphy",
     "image_url": "https://cards.scryfall.io/normal/front/5/0/502000a7-a3c1-4259-aea5-ff01724396a1.jpg?1783904409",
-    "scryfall_url": "https://scryfall.com/card/ecl/226/gangly-stompling?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/226/gangly-stompling?utm_source=api",
+    "usd": 0.19,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.76,
+    "foil_value": 0.0,
+    "current_value": 0.76,
+    "unrealised_gain_loss": -1.2796444444444444
   },
   {
     "id": "ECL-227",
@@ -4833,7 +5349,13 @@
     "oracle_text": "When Lluwen enters, mill four cards, then you may put a creature or land card from among the milled cards on top of your library.\n{2}{B/G}{B/G}{B/G}, {T}, Discard a land card: Create a 1/1 black and green Worm creature token for each land card in your graveyard.",
     "scryfall_artist": "Evyn Fong",
     "image_url": "https://cards.scryfall.io/normal/front/1/2/127a30a6-c25a-448a-a242-dc04f273a854.jpg?1783904408",
-    "scryfall_url": "https://scryfall.com/card/ecl/232/lluwen-imperfect-naturalist?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/232/lluwen-imperfect-naturalist?utm_source=api",
+    "usd": 0.4,
+    "usd_foil": 0.4,
+    "nonfoil_value": 0.4,
+    "foil_value": 0.0,
+    "current_value": 0.4,
+    "unrealised_gain_loss": -0.10991111111111107
   },
   {
     "id": "ECL-234",
@@ -4859,7 +5381,13 @@
     "oracle_text": "Convoke (Your creatures can help cast this spell. Each creature you tap while casting this spell pays for {1} or one mana of that creature's color.)\nFlying, vigilance\nWhen this creature enters, create a 1/1 white and blue Merfolk creature token.",
     "scryfall_artist": "Richard Kane Ferguson",
     "image_url": "https://cards.scryfall.io/normal/front/0/7/075b419a-fd44-4a9a-8c40-474562b7e11a.jpg?1783904404",
-    "scryfall_url": "https://scryfall.com/card/ecl/234/merrow-skyswimmer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/234/merrow-skyswimmer?utm_source=api",
+    "usd": 0.17,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.51,
+    "foil_value": 0.0,
+    "current_value": 0.51,
+    "unrealised_gain_loss": -1.0197333333333332
   },
   {
     "id": "ECL-235",
@@ -4885,7 +5413,13 @@
     "oracle_text": "Changeling (This card is every creature type.)\nFlash",
     "scryfall_artist": "Ron Spears",
     "image_url": "https://cards.scryfall.io/normal/front/3/b/3b66fa00-2fa6-4060-9e7f-8e3fde6deb73.jpg?1783904405",
-    "scryfall_url": "https://scryfall.com/card/ecl/235/mischievous-sneakling?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/235/mischievous-sneakling?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.72,
+    "foil_value": 0.0,
+    "current_value": 0.72,
+    "unrealised_gain_loss": -1.3196444444444444
   },
   {
     "id": "ECL-236",
@@ -4911,7 +5445,13 @@
     "oracle_text": "Other Elves you control get +1/+1.\nWhen this creature dies, return another target Elf card from your graveyard to your hand.",
     "scryfall_artist": "Evyn Fong",
     "image_url": "https://cards.scryfall.io/normal/front/1/7/175c6b1c-8790-41a2-ae15-5031206c410f.jpg?1783904405",
-    "scryfall_url": "https://scryfall.com/card/ecl/236/morcants-loyalist?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/236/morcants-loyalist?utm_source=api",
+    "usd": 0.36,
+    "usd_foil": 0.33,
+    "nonfoil_value": 0.72,
+    "foil_value": 0.0,
+    "current_value": 0.72,
+    "unrealised_gain_loss": -0.2998222222222222
   },
   {
     "id": "ECL-237",
@@ -4937,7 +5477,13 @@
     "oracle_text": "When this creature enters or dies, create a Treasure token. (It's an artifact with \"{T}, Sacrifice this token: Add one mana of any color.\")",
     "scryfall_artist": "Steve Ellis",
     "image_url": "https://cards.scryfall.io/normal/front/0/0/0082ca96-10f3-4823-be16-117556b2afc3.jpg?1783904408",
-    "scryfall_url": "https://scryfall.com/card/ecl/237/noggle-robber?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/237/noggle-robber?utm_source=api",
+    "usd": 0.11,
+    "usd_foil": 0.21,
+    "nonfoil_value": 0.11,
+    "foil_value": 0.0,
+    "current_value": 0.11,
+    "unrealised_gain_loss": -0.3999111111111111
   },
   {
     "id": "ECL-238",
@@ -5015,7 +5561,13 @@
     "oracle_text": "Whenever this creature attacks, blight 1. (Put a -1/-1 counter on a creature you control.)\nWhenever a creature you control with one or more counters on it dies, exile that many cards from the top of your library. Until your next end step, you may play those cards.",
     "scryfall_artist": "Ron Spencer",
     "image_url": "https://cards.scryfall.io/normal/front/4/e/4e54c39b-6149-467b-a9a8-7ad09ca0cbd4.jpg?1783904402",
-    "scryfall_url": "https://scryfall.com/card/ecl/242/shadow-urchin?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/242/shadow-urchin?utm_source=api",
+    "usd": 0.25,
+    "usd_foil": 0.38,
+    "nonfoil_value": 0.0,
+    "foil_value": 0.38,
+    "current_value": 0.38,
+    "unrealised_gain_loss": -0.1299111111111111
   },
   {
     "id": "ECL-243",
@@ -5041,7 +5593,13 @@
     "oracle_text": "{1}{B/G}, Exile this card from your graveyard: Create a 2/2 black and green Elf creature token. Activate only as a sorcery.",
     "scryfall_artist": "Tran Nguyen",
     "image_url": "https://cards.scryfall.io/normal/front/3/d/3d5a3e25-c17a-47b1-a36d-d24d50e5bab3.jpg?1783904402",
-    "scryfall_url": "https://scryfall.com/card/ecl/243/stoic-grove-guide?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/243/stoic-grove-guide?utm_source=api",
+    "usd": 0.07,
+    "usd_foil": 0.2,
+    "nonfoil_value": 0.21000000000000002,
+    "foil_value": 0.0,
+    "current_value": 0.21000000000000002,
+    "unrealised_gain_loss": -1.3197333333333332
   },
   {
     "id": "ECL-245",
@@ -5067,7 +5625,13 @@
     "oracle_text": "Each other creature you control has hexproof from each of its colors.\n{T}: Target creature you control becomes all colors until end of turn.",
     "scryfall_artist": "Zoltan Boros",
     "image_url": "https://cards.scryfall.io/normal/front/6/c/6cb0f825-b75b-4f2a-803c-08142ca07e76.jpg?1783904402",
-    "scryfall_url": "https://scryfall.com/card/ecl/245/tam-mindful-first-year?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/245/tam-mindful-first-year?utm_source=api",
+    "usd": 0.39,
+    "usd_foil": 0.56,
+    "nonfoil_value": 0.39,
+    "foil_value": 0.0,
+    "current_value": 0.39,
+    "unrealised_gain_loss": -0.11991111111111108
   },
   {
     "id": "ECL-246",
@@ -5093,7 +5657,13 @@
     "oracle_text": "Whenever this creature or another Kithkin you control enters, target creature you control gets +1/+1 and gains trample until end of turn.",
     "scryfall_artist": "Matt Stewart",
     "image_url": "https://cards.scryfall.io/normal/front/2/c/2c54ec67-9317-455e-a045-fa4ed9cb676f.jpg?1783904401",
-    "scryfall_url": "https://scryfall.com/card/ecl/246/thoughtweft-lieutenant?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/246/thoughtweft-lieutenant?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.24,
+    "nonfoil_value": 0.36,
+    "foil_value": 0.0,
+    "current_value": 0.36,
+    "unrealised_gain_loss": -0.6598222222222222
   },
   {
     "id": "ECL-247",
@@ -5145,7 +5715,13 @@
     "oracle_text": "Flying\nIf a triggered ability of another Elemental you control triggers, it triggers an additional time.",
     "scryfall_artist": "Jeff Miracola",
     "image_url": "https://cards.scryfall.io/normal/front/5/f/5fc9f409-3aef-4403-bf17-6e9a72ecfada.jpg?1783904400",
-    "scryfall_url": "https://scryfall.com/card/ecl/248/twinflame-travelers?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/248/twinflame-travelers?utm_source=api",
+    "usd": 0.37,
+    "usd_foil": 0.3,
+    "nonfoil_value": 0.37,
+    "foil_value": 0.0,
+    "current_value": 0.37,
+    "unrealised_gain_loss": -0.1399111111111111
   },
   {
     "id": "ECL-249",
@@ -5197,7 +5773,13 @@
     "oracle_text": "Flying\nWhenever you cast a spell during an opponent's turn, you may pay 1 life. If you do, draw a card.",
     "scryfall_artist": "Loïc Canavaggia",
     "image_url": "https://cards.scryfall.io/normal/front/1/a/1a696fe5-410c-4699-b1d1-1a9c771d664a.jpg?1783904399",
-    "scryfall_url": "https://scryfall.com/card/ecl/250/voracious-tome-skimmer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/250/voracious-tome-skimmer?utm_source=api",
+    "usd": 0.3,
+    "usd_foil": 0.33,
+    "nonfoil_value": 0.3,
+    "foil_value": 0.0,
+    "current_value": 0.3,
+    "unrealised_gain_loss": -0.2099111111111111
   },
   {
     "id": "ECL-251",
@@ -5223,7 +5805,13 @@
     "oracle_text": "At the beginning of your end step, if another creature entered the battlefield under your control this turn, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
     "scryfall_artist": "Ron Spears",
     "image_url": "https://cards.scryfall.io/normal/front/2/2/22d20c0d-176d-49c9-aa0b-2c5778548cc5.jpg?1783904399",
-    "scryfall_url": "https://scryfall.com/card/ecl/251/wary-farmer?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/251/wary-farmer?utm_source=api",
+    "usd": 0.12,
+    "usd_foil": 0.14,
+    "nonfoil_value": 0.24,
+    "foil_value": 0.0,
+    "current_value": 0.24,
+    "unrealised_gain_loss": -0.7798222222222222
   },
   {
     "id": "ECL-252",
@@ -5405,7 +5993,13 @@
     "oracle_text": "When this Equipment enters, create a 1/1 colorless Shapeshifter creature token with changeling. (It's every creature type.)\nEquipped creature gets +1/+1 and is all creature types.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)",
     "scryfall_artist": "Drew Tucker",
     "image_url": "https://cards.scryfall.io/normal/front/6/9/6954df09-95f3-46cf-9ba8-2a1aea653d8f.jpg?1783904396",
-    "scryfall_url": "https://scryfall.com/card/ecl/261/stalactite-dagger?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/261/stalactite-dagger?utm_source=api",
+    "usd": 0.23,
+    "usd_foil": 0.25,
+    "nonfoil_value": 0.6900000000000001,
+    "foil_value": 0.0,
+    "current_value": 0.6900000000000001,
+    "unrealised_gain_loss": -0.8397333333333331
   },
   {
     "id": "ECL-263",
@@ -5535,7 +6129,13 @@
     "oracle_text": "({T}: Add {G} or {W}.)\nAs this land enters, you may pay 2 life. If you don't, it enters tapped.",
     "scryfall_artist": "Adam Paquette",
     "image_url": "https://cards.scryfall.io/normal/front/6/c/6cdd2a74-63b3-4ff2-9c5a-a85dee63c3c9.jpg?1783904394",
-    "scryfall_url": "https://scryfall.com/card/ecl/268/temple-garden?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/268/temple-garden?utm_source=api",
+    "usd": 7.71,
+    "usd_foil": 7.35,
+    "nonfoil_value": 7.71,
+    "foil_value": 0.0,
+    "current_value": 7.71,
+    "unrealised_gain_loss": 7.200088888888889
   },
   {
     "id": "ECL-269",
@@ -5561,7 +6161,13 @@
     "oracle_text": "({T}: Add {W}.)",
     "scryfall_artist": "Zoltan Boros",
     "image_url": "https://cards.scryfall.io/normal/front/3/a/3a438199-54f8-4702-81cf-a9d42e7cd9f1.jpg?1783904393",
-    "scryfall_url": "https://scryfall.com/card/ecl/269/plains?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/269/plains?utm_source=api",
+    "usd": 0.2,
+    "usd_foil": 0.26,
+    "nonfoil_value": 0.6000000000000001,
+    "foil_value": 0.26,
+    "current_value": 0.8600000000000001,
+    "unrealised_gain_loss": -1.1796444444444443
   },
   {
     "id": "ECL-270",
@@ -5613,7 +6219,13 @@
     "oracle_text": "({T}: Add {B}.)",
     "scryfall_artist": "Jorge Jacinto",
     "image_url": "https://cards.scryfall.io/normal/front/1/d/1dd4d605-02a2-4183-b191-0bca8dfbf962.jpg?1783904394",
-    "scryfall_url": "https://scryfall.com/card/ecl/271/swamp?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/271/swamp?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.28,
+    "nonfoil_value": 0.36,
+    "foil_value": 0.0,
+    "current_value": 0.36,
+    "unrealised_gain_loss": -0.6598222222222222
   },
   {
     "id": "ECL-272",
@@ -5639,7 +6251,13 @@
     "oracle_text": "({T}: Add {R}.)",
     "scryfall_artist": "Raymond Bonilla",
     "image_url": "https://cards.scryfall.io/normal/front/2/9/295b92bc-d66f-45d8-9bbe-5f5f13e39fd4.jpg?1783904393",
-    "scryfall_url": "https://scryfall.com/card/ecl/272/mountain?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/272/mountain?utm_source=api",
+    "usd": 0.17,
+    "usd_foil": 0.23,
+    "nonfoil_value": 0.51,
+    "foil_value": 0.0,
+    "current_value": 0.51,
+    "unrealised_gain_loss": -1.0197333333333332
   },
   {
     "id": "ECL-273",
@@ -5691,7 +6309,13 @@
     "oracle_text": "({T}: Add {W}.)",
     "scryfall_artist": "Justin Gerard",
     "image_url": "https://cards.scryfall.io/normal/front/6/2/6242dbef-8412-4ebd-9486-42cec1dc6794.jpg?1783904391",
-    "scryfall_url": "https://scryfall.com/card/ecl/274/plains?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/274/plains?utm_source=api",
+    "usd": 0.31,
+    "usd_foil": 0.42,
+    "nonfoil_value": 0.31,
+    "foil_value": 0.0,
+    "current_value": 0.31,
+    "unrealised_gain_loss": -0.1999111111111111
   },
   {
     "id": "ECL-275",
@@ -5717,7 +6341,13 @@
     "oracle_text": "({T}: Add {U}.)",
     "scryfall_artist": "Annie Stegg",
     "image_url": "https://cards.scryfall.io/normal/front/1/2/12ebd9c8-6587-456e-aba9-7aad1c2a09ea.jpg?1783904392",
-    "scryfall_url": "https://scryfall.com/card/ecl/275/island?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/275/island?utm_source=api",
+    "usd": 0.32,
+    "usd_foil": 0.4,
+    "nonfoil_value": 0.64,
+    "foil_value": 0.4,
+    "current_value": 1.04,
+    "unrealised_gain_loss": -0.48973333333333313
   },
   {
     "id": "ECL-276",
@@ -5743,7 +6373,13 @@
     "oracle_text": "({T}: Add {B}.)",
     "scryfall_artist": "Raoul Vitale",
     "image_url": "https://cards.scryfall.io/normal/front/0/c/0cf904da-496c-4d88-a62b-c736ba895078.jpg?1783904392",
-    "scryfall_url": "https://scryfall.com/card/ecl/276/swamp?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/276/swamp?utm_source=api",
+    "usd": 0.32,
+    "usd_foil": 0.33,
+    "nonfoil_value": 0.32,
+    "foil_value": 0.33,
+    "current_value": 0.65,
+    "unrealised_gain_loss": -0.36982222222222216
   },
   {
     "id": "ECL-277",
@@ -5873,7 +6509,13 @@
     "oracle_text": "({T}: Add {B}.)",
     "scryfall_artist": "Raoul Vitale",
     "image_url": "https://cards.scryfall.io/normal/front/3/5/35fe42f9-dd55-4ca4-af0a-59ecdff0dba8.jpg?1783904386",
-    "scryfall_url": "https://scryfall.com/card/ecl/281/swamp?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/281/swamp?utm_source=api",
+    "usd": 0.4,
+    "usd_foil": 0.7,
+    "nonfoil_value": 1.2000000000000002,
+    "foil_value": 0.0,
+    "current_value": 1.2000000000000002,
+    "unrealised_gain_loss": -0.329733333333333
   },
   {
     "id": "ECL-282",
@@ -6055,7 +6697,13 @@
     "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal an Elf, Swamp, or Forest card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
     "scryfall_artist": "Heikala",
     "image_url": "https://cards.scryfall.io/normal/front/5/7/57708ef7-ef10-49c4-8cf7-7055cf7280a0.jpg?1783904370",
-    "scryfall_url": "https://scryfall.com/card/ecl/336/eclipsed-elf?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/336/eclipsed-elf?utm_source=api",
+    "usd": 0.32,
+    "usd_foil": 0.36,
+    "nonfoil_value": 0.32,
+    "foil_value": 0.0,
+    "current_value": 0.32,
+    "unrealised_gain_loss": -0.18991111111111109
   },
   {
     "id": "ECL-337",
@@ -6081,7 +6729,13 @@
     "oracle_text": "When this creature enters, look at the top four cards of your library. You may reveal an Elemental, Island, or Mountain card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
     "scryfall_artist": "Vanessa Gillings",
     "image_url": "https://cards.scryfall.io/normal/front/6/2/6271b82d-5922-4de0-b763-129908ece6ee.jpg?1783904368",
-    "scryfall_url": "https://scryfall.com/card/ecl/337/eclipsed-flamekin?utm_source=api"
+    "scryfall_url": "https://scryfall.com/card/ecl/337/eclipsed-flamekin?utm_source=api",
+    "usd": 0.18,
+    "usd_foil": 0.28,
+    "nonfoil_value": 0.18,
+    "foil_value": 0.0,
+    "current_value": 0.18,
+    "unrealised_gain_loss": -0.3299111111111111
   },
   {
     "id": "ECL-338",
