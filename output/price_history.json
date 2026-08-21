@@ -1,0 +1,772 @@
+[
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0082ca96-10f3-4823-be16-117556b2afc3",
+    "usd": 0.11,
+    "usd_foil": 0.21
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "00ddbe6c-11de-4bc6-aabe-d6d8385a838a",
+    "usd": 0.17,
+    "usd_foil": 0.18
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "013cefb7-a059-45c2-81b0-187f35aac4a2",
+    "usd": 0.31,
+    "usd_foil": 0.37
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "01522fec-9136-4fa6-91a3-370a8bb08b42",
+    "usd": 0.14,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "056f7f51-18a9-4d80-8928-decaf4d12c0d",
+    "usd": 0.09,
+    "usd_foil": 0.12
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0691a1a9-18e7-44b7-9a34-764b1ab45a76",
+    "usd": 0.14,
+    "usd_foil": 0.12
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0702efed-915e-466a-96bb-ac09af06b21e",
+    "usd": 1.39,
+    "usd_foil": 1.31
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "075b419a-fd44-4a9a-8c40-474562b7e11a",
+    "usd": 0.17,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "076c0ac1-722e-49ef-b815-ace210069972",
+    "usd": 0.28,
+    "usd_foil": 0.3
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0ac1d0b2-92a4-4a10-b2d1-e9bb90265cc3",
+    "usd": 0.29,
+    "usd_foil": 0.32
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0bef3905-24f8-419b-aeca-396adfc6d0dc",
+    "usd": 0.16,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0cf904da-496c-4d88-a62b-c736ba895078",
+    "usd": 0.32,
+    "usd_foil": 0.33
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0ea4a895-19c0-47af-ad9c-5db88ea9ae05",
+    "usd": 1.43,
+    "usd_foil": 1.27
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "0f0a90ae-b3b3-4f52-8997-eac514b29e57",
+    "usd": 0.18,
+    "usd_foil": 0.33
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "104baa2c-75c5-44fc-a3b9-b19efcf3d7c2",
+    "usd": 0.15,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1172582d-fb2d-4022-95b1-e48b03df3a95",
+    "usd": 0.33,
+    "usd_foil": 0.35
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "11bad5c7-fe9a-4d89-a531-8d4f03d5a0e4",
+    "usd": 0.1,
+    "usd_foil": 0.15
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "127a30a6-c25a-448a-a242-dc04f273a854",
+    "usd": 0.4,
+    "usd_foil": 0.4
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "12ebd9c8-6587-456e-aba9-7aad1c2a09ea",
+    "usd": 0.32,
+    "usd_foil": 0.4
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "15ff6797-f59c-4333-98ea-5711150fd5b8",
+    "usd": 0.13,
+    "usd_foil": 0.19
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "175c6b1c-8790-41a2-ae15-5031206c410f",
+    "usd": 0.36,
+    "usd_foil": 0.33
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "19cfc015-b6d5-4918-99a7-990209e77441",
+    "usd": 0.16,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1a696fe5-410c-4699-b1d1-1a9c771d664a",
+    "usd": 0.3,
+    "usd_foil": 0.33
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1ac52728-adb3-4220-8392-73f7bd379ab4",
+    "usd": 0.22,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1c672d38-a1a6-4912-a9a6-b11e7bf0cc67",
+    "usd": 0.1,
+    "usd_foil": 0.1
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1dd4d605-02a2-4183-b191-0bca8dfbf962",
+    "usd": 0.18,
+    "usd_foil": 0.28
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1e9d65b6-22ff-49f2-8b2a-aeaef91088d3",
+    "usd": 0.16,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1ec084cc-997d-4079-b445-8f701ec3c277",
+    "usd": 2.27,
+    "usd_foil": 1.75
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "1f51adf8-8234-4dae-aedf-7633310d5111",
+    "usd": 0.34,
+    "usd_foil": 0.38
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "214e78f9-5364-49ab-b17e-0c76549c583e",
+    "usd": 0.26,
+    "usd_foil": 0.36
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2260912b-4dfb-49dd-bf95-060d44333645",
+    "usd": 0.2,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "22d20c0d-176d-49c9-aa0b-2c5778548cc5",
+    "usd": 0.12,
+    "usd_foil": 0.14
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "231e46b6-b91a-4582-8894-e7de1c50213f",
+    "usd": 0.24,
+    "usd_foil": 0.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "234b70df-8c34-4da7-946e-b8b55a8df390",
+    "usd": 2.55,
+    "usd_foil": 3.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2352750d-404d-4928-9bdb-1b0db599b70f",
+    "usd": 0.27,
+    "usd_foil": 0.2
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "24a5b025-4cdb-416d-aad6-0fc7e8da3df2",
+    "usd": 0.29,
+    "usd_foil": 0.3
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2573e694-eaa0-42ca-b470-2ab507cbcec1",
+    "usd": 11.84,
+    "usd_foil": 10.86
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "265522eb-4f6a-40e7-b374-3833fa63c80b",
+    "usd": 9.57,
+    "usd_foil": 10.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2715e0c0-9913-4bea-9a42-ad1164f6130a",
+    "usd": 1.67,
+    "usd_foil": 1.46
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "295b92bc-d66f-45d8-9bbe-5f5f13e39fd4",
+    "usd": 0.17,
+    "usd_foil": 0.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "295d828b-b2e7-41c7-afbc-5fb5f4eb242c",
+    "usd": 0.16,
+    "usd_foil": 0.2
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "29e1cfa4-0ad8-4228-9f7e-cbab114d1d5f",
+    "usd": 0.27,
+    "usd_foil": 0.18
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2c0fcf98-1f3c-4cff-9234-7f3d0c8b22e9",
+    "usd": 0.19,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2c54ec67-9317-455e-a045-fa4ed9cb676f",
+    "usd": 0.18,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2d89595c-1542-41fe-8d23-997522922698",
+    "usd": 0.18,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "2fb0ea3f-2f6d-4b64-a9d7-e822c8854a03",
+    "usd": 0.18,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3199bea9-fef7-45fe-8777-2103d84a9347",
+    "usd": 1.71,
+    "usd_foil": 2.11
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "320bc30c-7a8a-411a-9f36-9c69126e131b",
+    "usd": 0.13,
+    "usd_foil": 0.17
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "324b5234-ffbf-4801-a475-8f693679ae2f",
+    "usd": 0.2,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3278b8d0-3d2b-4d3d-bbf1-fd9b714b53ed",
+    "usd": 0.15,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "32fd226f-d1c6-432c-b846-9482f1944363",
+    "usd": 0.22,
+    "usd_foil": 0.29
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "333bf101-14e8-4753-99bc-9174f42c4122",
+    "usd": 0.45,
+    "usd_foil": 0.57
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3502685d-4e57-4c5c-94c6-ae69048cdfbf",
+    "usd": 0.21,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3515531a-45d6-4fe0-96a3-7ca1ce545068",
+    "usd": 0.12,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3573f425-9251-4c17-9619-15278ce5d8fb",
+    "usd": 0.12,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "35bc841a-9a21-4c17-a60a-a3ee01472fcb",
+    "usd": 0.26,
+    "usd_foil": 0.34
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "35c56aff-1f0f-464a-b705-d67803e3d060",
+    "usd": 0.16,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "35dfa0f9-faf3-4a85-b02d-0c5830783511",
+    "usd": 0.22,
+    "usd_foil": 0.29
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "35fe42f9-dd55-4ca4-af0a-59ecdff0dba8",
+    "usd": 0.4,
+    "usd_foil": 0.7
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "377d257c-920c-4dd4-a4b1-01cbc631ef8f",
+    "usd": 0.07,
+    "usd_foil": 0.09
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "382b83c0-bbbc-4db8-bc04-cfea79aed1b3",
+    "usd": 0.13,
+    "usd_foil": 0.27
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "388d2e4a-0aa5-4b82-a86c-4777ca60161c",
+    "usd": 0.42,
+    "usd_foil": 0.66
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "388f6d9d-bb9a-4a3d-93c5-701db194863c",
+    "usd": 0.17,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "38b17a3c-4457-47e3-986e-ff0b94c41b1a",
+    "usd": 0.14,
+    "usd_foil": 0.16
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3a438199-54f8-4702-81cf-a9d42e7cd9f1",
+    "usd": 0.2,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3b66fa00-2fa6-4060-9e7f-8e3fde6deb73",
+    "usd": 0.18,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3cce80d0-b937-4325-a603-1278c110f244",
+    "usd": 0.31,
+    "usd_foil": 0.33
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3ceab0e6-1bb8-487d-ab4b-2da8457b970a",
+    "usd": 0.12,
+    "usd_foil": 0.17
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3d591e66-4bf9-47e7-bcef-57769ec3edc6",
+    "usd": 0.11,
+    "usd_foil": 0.15
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3d5a3e25-c17a-47b1-a36d-d24d50e5bab3",
+    "usd": 0.07,
+    "usd_foil": 0.2
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3e06c99e-ecb2-42e9-ac58-2542de8d54a5",
+    "usd": 0.22,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "3fc3f5f2-5a83-4358-8f23-42f26f345140",
+    "usd": 0.13,
+    "usd_foil": 0.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "42208996-7b99-474e-aba7-75190d7ee8e2",
+    "usd": 0.09,
+    "usd_foil": 0.11
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "45be88d8-0be1-47a2-a1c1-d6e693fc706f",
+    "usd": 0.32,
+    "usd_foil": 0.44
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "473123a0-1366-406b-9b9e-154c0e9c224f",
+    "usd": 0.21,
+    "usd_foil": 0.29
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "47414323-ca30-45b7-a0b2-6668312bee04",
+    "usd": 0.19,
+    "usd_foil": 0.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "478bbb7a-4b96-4e04-921e-bdf23185de25",
+    "usd": 1.44,
+    "usd_foil": 1.64
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4ab1601c-634c-4f21-8926-ba3cb92008c1",
+    "usd": 0.16,
+    "usd_foil": 0.22
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4beca2e7-9c6d-493b-b15f-69e483a8dfff",
+    "usd": 0.2,
+    "usd_foil": 0.27
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4c6dbbaa-6844-4d7c-abbb-472a83bb99ab",
+    "usd": 0.29,
+    "usd_foil": 0.41
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4e54c39b-6149-467b-a9a8-7ad09ca0cbd4",
+    "usd": 0.25,
+    "usd_foil": 0.38
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4f607889-6f3f-4511-8920-88a39f3b28ca",
+    "usd": 0.07,
+    "usd_foil": 0.1
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "4f8931b2-ff3f-4167-8a40-f33460c2d27e",
+    "usd": 0.33,
+    "usd_foil": 0.38
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "502000a7-a3c1-4259-aea5-ff01724396a1",
+    "usd": 0.19,
+    "usd_foil": 0.26
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "50ee7315-ec53-43d2-841e-8ec192b850f1",
+    "usd": 0.11,
+    "usd_foil": 0.2
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "5201bdeb-ba47-459b-ac0d-603367914578",
+    "usd": 0.25,
+    "usd_foil": 0.29
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "5515ea5e-ce28-4938-a31e-5e48522a5f93",
+    "usd": 0.12,
+    "usd_foil": 0.19
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "568aa70a-6765-486a-bd37-5d38b16c46de",
+    "usd": 0.55,
+    "usd_foil": 0.88
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "56dfdab1-ea3f-4663-a855-a9e72505f85e",
+    "usd": 0.19,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "57708ef7-ef10-49c4-8cf7-7055cf7280a0",
+    "usd": 0.32,
+    "usd_foil": 0.36
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "582b6e5d-0bab-471d-af4d-19438c5fd524",
+    "usd": 0.82,
+    "usd_foil": 0.83
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "583b2863-aca1-4dab-9196-ea453b5d9454",
+    "usd": 1.05,
+    "usd_foil": 1.16
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "59740755-c353-4b6c-a84c-3b76133ce3ec",
+    "usd": 0.11,
+    "usd_foil": 0.09
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "5ebb8365-c6e1-46e8-a242-6aa27b21e68a",
+    "usd": 0.17,
+    "usd_foil": 0.19
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "5fc9f409-3aef-4403-bf17-6e9a72ecfada",
+    "usd": 0.37,
+    "usd_foil": 0.3
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "60621c37-62e1-4261-ae76-3946b4a0cfa3",
+    "usd": 0.23,
+    "usd_foil": 0.27
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "6124a691-ae83-4d22-a177-0aee65b47064",
+    "usd": 0.86,
+    "usd_foil": 1.35
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "6242dbef-8412-4ebd-9486-42cec1dc6794",
+    "usd": 0.31,
+    "usd_foil": 0.42
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "6271b82d-5922-4de0-b763-129908ece6ee",
+    "usd": 0.18,
+    "usd_foil": 0.28
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "63c573fe-e74c-48ca-ad05-92f37dc466f1",
+    "usd": 0.13,
+    "usd_foil": 0.18
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "657a2a24-22d1-4bc2-9f22-ed361ae487e3",
+    "usd": 0.14,
+    "usd_foil": 0.24
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "65c057a7-70af-4464-bd8d-1e7e158d1ae7",
+    "usd": 0.2,
+    "usd_foil": 0.23
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "689ed288-6228-4d7e-b198-56a12b8be299",
+    "usd": 0.19,
+    "usd_foil": 0.29
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "68ce9752-21f9-48e9-bf48-7f76f1cecbc5",
+    "usd": 0.09,
+    "usd_foil": 0.14
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "6954df09-95f3-46cf-9ba8-2a1aea653d8f",
+    "usd": 0.23,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "8c632984-5176-4c37-91df-6577cc294b85",
+    "usd": 0.32,
+    "usd_foil": 0.25
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "a79649c4-559e-4306-a102-5fd8750629c7",
+    "usd": 0.14,
+    "usd_foil": 0.15
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "b357022c-7cd5-4e82-a183-7144f5a84102",
+    "usd": 0.23,
+    "usd_foil": 0.28
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "e056b55f-82ed-4fe0-ab0c-bb20fa4a218a",
+    "usd": 6.98,
+    "usd_foil": 7.93
+  },
+  {
+    "snapshot_date": "2026-08-21",
+    "snapshot_timestamp": "2026-08-21T05:22:19.793280+00:00",
+    "scryfall_id": "e1acdd9c-4a6d-4373-950c-f5539b54679f",
+    "usd": 0.25,
+    "usd_foil": 0.37
+  }
+]
