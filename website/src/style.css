@@ -12,21 +12,148 @@ body {
     "Segoe UI",
     sans-serif;
 
-  background: #111111;
+  background: #111;
   color: #f5f5f5;
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 40px;
 }
 
-h1 {
-  margin: 0 0 8px;
-  font-size: 36px;
+.header {
+  margin-bottom: 35px;
 }
 
-p {
-  color: #aaaaaa;
+.header h1 {
+  margin: 0;
+  font-size: 42px;
+  letter-spacing: -1px;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #999;
+  font-size: 16px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+  margin-bottom: 45px;
+}
+
+.stat-card {
+  background: #1b1b1b;
+  border: 1px solid #292929;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.stat-card span {
+  display: block;
+  color: #999;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.stat-card strong {
+  font-size: 30px;
+}
+
+.collection h2 {
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(190px, 1fr)
+    );
+
+  gap: 22px;
+}
+
+.card {
+  background: #1b1b1b;
+  border: 1px solid #292929;
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #555;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.716;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 14px;
+}
+
+.card-info h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+
+.card-info p {
+  margin: 0;
+  color: #888;
+  font-size: 12px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 14px;
+
+  font-size: 12px;
+}
+
+.card-footer strong {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+
+  main {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+  }
+
 }
