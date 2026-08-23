@@ -1,8 +1,7 @@
 import json
-from datetime import datetime, timezone
+import time
 from pathlib import Path
 
-import pandas as pd
 import requests
 
 
@@ -11,71 +10,19 @@ import requests
 # ============================================================
 
 COLLECTION_FILE = Path("output/collection.json")
-PRICE_HISTORY_FILE = Path("output/price_history.json")
 
+SCRYFALL_DELAY = 0.11
 
 SCRYFALL_HEADERS = {
     "User-Agent": "MTG-Collection/1.0",
     "Accept": "application/json"
 }
 
-
-# ============================================================
-# HELPER FUNCTIONS
-# ============================================================
-
-def number_or_zero(value):
-    """
-    Convert blank/non-numeric values to zero.
-    """
-
-    if value is None:
-        return 0.0
-
-    try:
-
-        if pd.isna(value):
-            return 0.0
-
-    except (TypeError, ValueError):
-
-        pass
-
-    try:
-        return float(value)
-
-    except (ValueError, TypeError):
-
-        return 0.0
-
-
-def number_or_none(value):
-    """
-    Convert blank/non-numeric values to None.
-    """
-
-    if value is None:
-        return None
-
-    try:
-
-        if pd.isna(value):
-            return None
-
-    except (TypeError, ValueError):
-
-        pass
-
-    try:
-        return float(value)
-
-    except (ValueError, TypeError):
-
-        return None
+MAX_RETRIES = 5
 
 
 # ============================================================
-# START
+# LOAD COLLECTION
 # ============================================================
 
 print("=" * 60)
@@ -83,15 +30,10 @@ print("MTG COLLECTION - PRICE UPDATE")
 print("=" * 60)
 print()
 
-
-# ============================================================
-# LOAD COLLECTION
-# ============================================================
-
 if not COLLECTION_FILE.exists():
 
     raise FileNotFoundError(
-        "collection.json does not exist."
+        "output/collection.json was not found."
     )
 
 
@@ -112,56 +54,7 @@ print()
 
 
 # ============================================================
-# LOAD EXISTING PRICE HISTORY
-# ============================================================
-
-if PRICE_HISTORY_FILE.exists():
-
-    with open(
-        PRICE_HISTORY_FILE,
-        "r",
-        encoding="utf-8"
-    ) as file:
-
-        price_history = json.load(file)
-
-else:
-
-    price_history = []
-
-
-print(
-    f"Existing price records: "
-    f"{len(price_history)}"
-)
-
-print()
-
-
-# ============================================================
-# CREATE CURRENT SNAPSHOT DATE
-# ============================================================
-
-now = datetime.now(
-    timezone.utc
-)
-
-snapshot_date = now.strftime(
-    "%Y-%m-%d"
-)
-
-snapshot_timestamp = now.isoformat()
-
-
-print(
-    f"Snapshot date: {snapshot_date}"
-)
-
-print()
-
-
-# ============================================================
-# GET UNIQUE SCRYFALL IDS
+# IDENTIFY UNIQUE SCRYFALL IDS
 # ============================================================
 
 scryfall_ids = sorted(
@@ -174,7 +67,7 @@ scryfall_ids = sorted(
 
 
 print(
-    f"Unique Scryfall cards: "
+    f"Unique cards requiring prices: "
     f"{len(scryfall_ids)}"
 )
 
@@ -182,19 +75,7 @@ print()
 
 
 # ============================================================
-# REMOVE EXISTING SNAPSHOT FOR TODAY
-# ============================================================
-
-price_history = [
-    record
-    for record in price_history
-    if record.get("snapshot_date")
-    != snapshot_date
-]
-
-
-# ============================================================
-# GET CURRENT PRICES
+# GET PRICES
 # ============================================================
 
 prices = {}
@@ -210,7 +91,6 @@ for index, scryfall_id in enumerate(
 
     print(
         f"[{index}/{len(scryfall_ids)}] "
-        f"Getting price for "
         f"{scryfall_id}"
     )
 
@@ -221,123 +101,156 @@ for index, scryfall_id in enumerate(
     )
 
 
-    try:
-
-        response = requests.get(
-            url,
-            headers=SCRYFALL_HEADERS,
-            timeout=20
-        )
+    success = False
 
 
-        if response.status_code != 200:
+    for attempt in range(
+        1,
+        MAX_RETRIES + 1
+    ):
 
-            print(
-                f"  ERROR: "
-                f"HTTP {response.status_code}"
+        try:
+
+            response = requests.get(
+                url,
+                headers=SCRYFALL_HEADERS,
+                timeout=30
             )
 
-            failed += 1
 
-            continue
+            # ------------------------------------------------
+            # SUCCESS
+            # ------------------------------------------------
 
+            if response.status_code == 200:
 
-        data = response.json()
+                data = response.json()
 
-        scryfall_prices = data.get(
-            "prices",
-            {}
-        )
-
-
-        usd = number_or_none(
-            scryfall_prices.get("usd")
-        )
-
-        usd_foil = number_or_none(
-            scryfall_prices.get("usd_foil")
-        )
+                card_prices = data.get(
+                    "prices",
+                    {}
+                )
 
 
-        prices[scryfall_id] = {
-            "usd": usd,
-            "usd_foil": usd_foil
-        }
+                prices[scryfall_id] = {
+
+                    "usd":
+                        card_prices.get("usd"),
+
+                    "usd_foil":
+                        card_prices.get(
+                            "usd_foil"
+                        )
+                }
 
 
-        # ----------------------------------------------------
-        # STORE HISTORICAL SNAPSHOT
-        # ----------------------------------------------------
+                successful += 1
 
-        price_history.append(
-            {
-                "snapshot_date":
-                    snapshot_date,
+                success = True
 
-                "snapshot_timestamp":
-                    snapshot_timestamp,
-
-                "scryfall_id":
-                    scryfall_id,
-
-                "usd":
-                    usd,
-
-                "usd_foil":
-                    usd_foil
-            }
-        )
+                break
 
 
-        successful += 1
+            # ------------------------------------------------
+            # RATE LIMIT
+            # ------------------------------------------------
+
+            if response.status_code == 429:
+
+                retry_after = (
+                    response.headers.get(
+                        "Retry-After"
+                    )
+                )
 
 
-    except requests.RequestException as error:
+                if retry_after:
 
-        print(
-            f"  ERROR: {error}"
-        )
+                    try:
+
+                        wait_seconds = float(
+                            retry_after
+                        )
+
+                    except ValueError:
+
+                        wait_seconds = (
+                            5 * attempt
+                        )
+
+                else:
+
+                    wait_seconds = (
+                        5 * attempt
+                    )
+
+
+                print(
+                    f"  Rate limited. "
+                    f"Waiting {wait_seconds:.1f}s..."
+                )
+
+
+                time.sleep(
+                    wait_seconds
+                )
+
+                continue
+
+
+            # ------------------------------------------------
+            # OTHER HTTP ERROR
+            # ------------------------------------------------
+
+            print(
+                f"  HTTP {response.status_code}"
+            )
+
+            break
+
+
+        except requests.RequestException as error:
+
+            print(
+                f"  Request error: {error}"
+            )
+
+
+            wait_seconds = (
+                2 * attempt
+            )
+
+
+            time.sleep(
+                wait_seconds
+            )
+
+
+    if not success:
 
         failed += 1
 
 
-# ============================================================
-# SAVE PRICE HISTORY
-# ============================================================
+    # --------------------------------------------------------
+    # SPACE REQUESTS
+    # --------------------------------------------------------
 
-with open(
-    PRICE_HISTORY_FILE,
-    "w",
-    encoding="utf-8"
-) as file:
-
-    json.dump(
-        price_history,
-        file,
-        indent=2,
-        ensure_ascii=False,
-        allow_nan=False
+    time.sleep(
+        SCRYFALL_DELAY
     )
 
 
-print()
-print(
-    f"Price history records: "
-    f"{len(price_history)}"
-)
-
-print()
-
-
 # ============================================================
-# UPDATE COLLECTION VALUES
+# UPDATE COLLECTION
 # ============================================================
 
-print(
-    "Updating collection valuations..."
-)
+print()
+print("Updating collection values...")
+print()
+
 
 updated = 0
+price_missing = 0
 
 
 for record in collection:
@@ -352,14 +265,14 @@ for record in collection:
         continue
 
 
-    price = prices.get(
-        scryfall_id
-    )
-
-
-    if not price:
+    if scryfall_id not in prices:
 
         continue
+
+
+    price = prices[
+        scryfall_id
+    ]
 
 
     usd = price.get(
@@ -371,78 +284,113 @@ for record in collection:
     )
 
 
-    qty = number_or_zero(
-        record.get("qty")
+    # ========================================================
+    # QUANTITIES
+    # ========================================================
+
+    qty = record.get(
+        "qty",
+        0
     )
 
-    qty_foil = number_or_zero(
-        record.get("qty_foil")
-    )
-
-    cost_basis = number_or_none(
-        record.get("cost_basis")
+    qty_foil = record.get(
+        "qty_foil",
+        0
     )
 
 
-    # --------------------------------------------------------
+    try:
+
+        qty = float(qty)
+
+    except (
+        ValueError,
+        TypeError
+    ):
+
+        qty = 0
+
+
+    try:
+
+        qty_foil = float(qty_foil)
+
+    except (
+        ValueError,
+        TypeError
+    ):
+
+        qty_foil = 0
+
+
+    # ========================================================
     # NON-FOIL VALUE
-    # --------------------------------------------------------
+    # ========================================================
 
     if usd is not None:
 
         nonfoil_value = (
-            qty * usd
+            qty * float(usd)
         )
 
     else:
 
-        nonfoil_value = 0.0
+        nonfoil_value = None
+
+        price_missing += 1
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # FOIL VALUE
-    # --------------------------------------------------------
+    # ========================================================
 
     if usd_foil is not None:
 
         foil_value = (
-            qty_foil * usd_foil
+            qty_foil
+            * float(usd_foil)
         )
 
     else:
 
-        foil_value = 0.0
+        foil_value = None
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # CURRENT VALUE
-    # --------------------------------------------------------
+    # ========================================================
 
-    current_value = (
-        nonfoil_value
-        + foil_value
-    )
+    values = []
 
 
-    # --------------------------------------------------------
-    # UNREALISED GAIN / LOSS
-    # --------------------------------------------------------
+    if nonfoil_value is not None:
 
-    if cost_basis is not None:
+        values.append(
+            nonfoil_value
+        )
 
-        unrealised_gain_loss = (
-            current_value
-            - cost_basis
+
+    if foil_value is not None:
+
+        values.append(
+            foil_value
+        )
+
+
+    if values:
+
+        current_value = sum(
+            values
         )
 
     else:
 
-        unrealised_gain_loss = None
+        current_value = None
 
 
-    # --------------------------------------------------------
+    # ========================================================
     # UPDATE RECORD
-    # --------------------------------------------------------
+    # ========================================================
 
     record["usd"] = usd
 
@@ -458,10 +406,6 @@ for record in collection:
 
     record["current_value"] = (
         current_value
-    )
-
-    record["unrealised_gain_loss"] = (
-        unrealised_gain_loss
     )
 
 
@@ -498,26 +442,33 @@ print("=" * 60)
 print()
 
 print(
-    f"Cards requested:    {len(scryfall_ids)}"
+    f"Collection records:     "
+    f"{len(collection)}"
 )
 
 print(
-    f"Successful prices:  {successful}"
+    f"Unique cards requested: "
+    f"{len(scryfall_ids)}"
 )
 
 print(
-    f"Failed prices:      {failed}"
+    f"Successful requests:    "
+    f"{successful}"
 )
 
 print(
-    f"Collection updated: {updated}"
+    f"Failed requests:        "
+    f"{failed}"
 )
 
-print()
+print(
+    f"Collection records updated: "
+    f"{updated}"
+)
 
 print(
-    "Price history and collection "
-    "have been updated."
+    f"Cards without USD price: "
+    f"{price_missing}"
 )
 
 print()
