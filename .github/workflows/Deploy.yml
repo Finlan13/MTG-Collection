@@ -42,8 +42,12 @@ jobs:
         working-directory: website
         run: npm install
 
-      - name: Copy collection data
-        run: cp output/collection.json website/public/collection.json
+      - name: Prepare collection data
+        run: |
+          mkdir -p website/public
+          cp output/collection.json website/public/collection.json
+          echo "Collection file:"
+          ls -lh website/public/collection.json
 
       - name: Build website
         working-directory: website
