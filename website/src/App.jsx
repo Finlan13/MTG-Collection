@@ -5,24 +5,24 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetch("/MTG-Collection/output/collection.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Unable to load collection data.");
-        }
+useEffect(() => {
+  fetch(`${import.meta.env.BASE_URL}output/collection.json`)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Unable to load collection data.");
+      }
 
-        return response.json();
-      })
-      .then((data) => {
-        setCollection(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
+      return response.json();
+    })
+    .then((data) => {
+      setCollection(data);
+      setLoading(false);
+    })
+    .catch((err) => {
+      setError(err.message);
+      setLoading(false);
+    });
+}, []);
 
   const totalCards = useMemo(() => {
     return collection.reduce(
