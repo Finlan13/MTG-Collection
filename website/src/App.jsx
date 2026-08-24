@@ -6,7 +6,7 @@ function App() {
   const [error, setError] = useState(null);
 
 useEffect(() => {
-  fetch("./collection.json")
+  fetch("/MTG-Collection/collection.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Unable to load collection data.");
