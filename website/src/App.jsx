@@ -6,7 +6,7 @@ function App() {
   const [error, setError] = useState(null);
 
 useEffect(() => {
-  fetch(`${import.meta.env.BASE_URL}collection.json`)
+  fetch("./collection.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Unable to load collection data.");
