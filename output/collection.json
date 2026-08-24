@@ -4679,11 +4679,11 @@
     "scryfall_artist": "Heather Hudson",
     "image_url": "https://cards.scryfall.io/normal/front/9/4/94e8d6a9-7aa3-4e93-8e4d-e50da7ff09d2.jpg?1783904430",
     "scryfall_url": "https://scryfall.com/card/ecl/180/lys-alana-dignitary?utm_source=api",
-    "usd": "0.26",
-    "usd_foil": "0.27",
-    "nonfoil_value": 0.52,
+    "usd": "0.27",
+    "usd_foil": "0.28",
+    "nonfoil_value": 0.54,
     "foil_value": 0.0,
-    "current_value": 0.52
+    "current_value": 0.54
   },
   {
     "id": "ECL-181",
@@ -6695,11 +6695,11 @@
     "scryfall_artist": "Adam Paquette",
     "image_url": "https://cards.scryfall.io/normal/front/6/c/6cdd2a74-63b3-4ff2-9c5a-a85dee63c3c9.jpg?1783904394",
     "scryfall_url": "https://scryfall.com/card/ecl/268/temple-garden?utm_source=api",
-    "usd": "7.51",
-    "usd_foil": "7.39",
-    "nonfoil_value": 7.51,
+    "usd": "7.62",
+    "usd_foil": "7.57",
+    "nonfoil_value": 7.62,
     "foil_value": 0.0,
-    "current_value": 7.51,
+    "current_value": 7.62,
     "unrealised_gain_loss": 7.200088888888889
   },
   {
