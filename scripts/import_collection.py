@@ -1,3 +1,4 @@
+```python
 import json
 import time
 from pathlib import Path
@@ -19,6 +20,8 @@ SCRYFALL_HEADERS = {
     "Accept": "application/json"
 }
 
+# Scryfall requests should remain comfortably below
+# their requested maximum of 10 requests per second.
 SCRYFALL_DELAY = 0.1
 
 
@@ -109,6 +112,207 @@ def normalise_text(value):
     return " ".join(
         str(value).strip().lower().split()
     )
+
+
+# ============================================================
+# SCRYFALL IMAGE EXTRACTION
+# ============================================================
+
+def extract_image_urls(data):
+    """
+    Extract front and back image URLs from a Scryfall card.
+
+    Normal single-faced cards store their image under:
+
+        image_uris.normal
+
+    Double-faced cards store their images under:
+
+        card_faces[0].image_uris.normal
+        card_faces[1].image_uris.normal
+    """
+
+    front_image_url = None
+    back_image_url = None
+
+    # --------------------------------------------------------
+    # SINGLE-FACED CARD
+    # --------------------------------------------------------
+
+    image_uris = data.get(
+        "image_uris",
+        {}
+    )
+
+    if isinstance(image_uris, dict):
+
+        front_image_url = image_uris.get(
+            "normal"
+        )
+
+    # --------------------------------------------------------
+    # DOUBLE-FACED CARD
+    # --------------------------------------------------------
+
+    card_faces = data.get(
+        "card_faces",
+        []
+    )
+
+    if isinstance(card_faces, list) and len(card_faces) >= 2:
+
+        # Front face
+        front_face = card_faces[0]
+
+        if isinstance(front_face, dict):
+
+            front_face_images = front_face.get(
+                "image_uris",
+                {}
+            )
+
+            if isinstance(
+                front_face_images,
+                dict
+            ):
+
+                front_image_url = (
+                    front_face_images.get("normal")
+                    or front_image_url
+                )
+
+        # Back face
+        back_face = card_faces[1]
+
+        if isinstance(back_face, dict):
+
+            back_face_images = back_face.get(
+                "image_uris",
+                {}
+            )
+
+            if isinstance(
+                back_face_images,
+                dict
+            ):
+
+                back_image_url = (
+                    back_face_images.get("normal")
+                )
+
+    return (
+        front_image_url,
+        back_image_url
+    )
+
+
+# ============================================================
+# BUILD CARD MASTER RECORD
+# ============================================================
+
+def build_card_record(data):
+    """
+    Convert a Scryfall response into the card master format.
+    """
+
+    (
+        front_image_url,
+        back_image_url
+    ) = extract_image_urls(data)
+
+    return {
+
+        "scryfall_id":
+            data.get("id"),
+
+        "set":
+            data.get("set"),
+
+        "set_name":
+            data.get("set_name"),
+
+        "collector_number":
+            data.get("collector_number"),
+
+        "name":
+            data.get("name"),
+
+        "artist":
+            data.get("artist"),
+
+        "rarity":
+            data.get("rarity"),
+
+        "mana_cost":
+            data.get("mana_cost"),
+
+        "type_line":
+            data.get("type_line"),
+
+        "oracle_text":
+            data.get("oracle_text"),
+
+        "image_url":
+            front_image_url,
+
+        "back_image_url":
+            back_image_url,
+
+        "scryfall_url":
+            data.get("scryfall_uri")
+    }
+
+
+# ============================================================
+# LOOK UP CARD FROM SCRYFALL
+# ============================================================
+
+def fetch_scryfall_card(
+    set_code,
+    card_number
+):
+    """
+    Retrieve a card from Scryfall using set and collector number.
+
+    Returns:
+        card record, or None if the request fails.
+    """
+
+    url = (
+        "https://api.scryfall.com/cards/"
+        f"{set_code}/{card_number}"
+    )
+
+    try:
+
+        response = requests.get(
+            url,
+            headers=SCRYFALL_HEADERS,
+            timeout=20
+        )
+
+        if response.status_code != 200:
+
+            print(
+                f"  ERROR: Scryfall returned "
+                f"{response.status_code}"
+            )
+
+            return None
+
+        data = response.json()
+
+        return build_card_record(
+            data
+        )
+
+    except requests.RequestException as error:
+
+        print(
+            f"  ERROR: {error}"
+        )
+
+        return None
 
 
 # ============================================================
@@ -319,12 +523,65 @@ print()
 
 
 # ============================================================
+# FIND EXISTING CARDS REQUIRING IMAGE REFRESH
+# ============================================================
+
+cards_needing_refresh = []
+
+
+for _, row in unique_cards.iterrows():
+
+    key = (
+        f"{row['_set']}|"
+        f"{row['_card_no']}"
+    )
+
+    if key not in card_index:
+        continue
+
+    existing_card = card_index[key]
+
+    # --------------------------------------------------------
+    # Only refresh cards where the image information is
+    # incomplete.
+    #
+    # In particular, this catches existing double-sided cards
+    # that were imported before back_image_url was supported.
+    # --------------------------------------------------------
+
+    front_image_missing = not existing_card.get(
+        "image_url"
+    )
+
+    back_image_missing = (
+        "back_image_url" not in existing_card
+        or not existing_card.get("back_image_url")
+    )
+
+    if front_image_missing or back_image_missing:
+
+        cards_needing_refresh.append(
+            (
+                row["_set"],
+                row["_card_no"]
+            )
+        )
+
+
+print(
+    "Existing cards requiring image refresh: "
+    f"{len(cards_needing_refresh)}"
+)
+
+print()
+
+
+# ============================================================
 # LOOK UP NEW CARDS
 # ============================================================
 
 successful = 0
 failed = 0
-double_faced = 0
 
 
 for index, (
@@ -336,184 +593,27 @@ for index, (
 ):
 
     print(
-        f"[{index}/{len(new_cards)}] "
+        f"[NEW {index}/{len(new_cards)}] "
         f"Looking up "
         f"{set_code.upper()} "
         f"{card_number}"
     )
 
-
-    url = (
-        "https://api.scryfall.com/cards/"
-        f"{set_code}/{card_number}"
+    card = fetch_scryfall_card(
+        set_code,
+        card_number
     )
 
+    if card is None:
 
-    try:
+        failed += 1
 
-        response = requests.get(
-            url,
-            headers=SCRYFALL_HEADERS,
-            timeout=20
-        )
-
-
-        if response.status_code != 200:
-
-            print(
-                f"  ERROR: "
-                f"Scryfall returned "
-                f"{response.status_code}"
-            )
-
-            failed += 1
-
-            continue
-
-
-        data = response.json()
-
-
-        # ----------------------------------------------------
-        # FRONT IMAGE
-        # ----------------------------------------------------
-
-        image_uris = data.get(
-            "image_uris",
-            {}
-        )
-
-        front_image_url = image_uris.get(
-            "normal"
-        )
-
-
-        # ----------------------------------------------------
-        # BACK IMAGE
-        # ----------------------------------------------------
-
-        back_image_url = None
-
-
-        card_faces = data.get(
-            "card_faces",
-            []
-        )
-
-
-        if card_faces:
-
-            # First face
-            first_face = card_faces[0]
-
-            # If the top-level card does not have an image,
-            # use the first face's image.
-            if not front_image_url:
-
-                first_face_images = first_face.get(
-                    "image_uris",
-                    {}
-                )
-
-                front_image_url = (
-                    first_face_images.get("normal")
-                )
-
-
-            # Second face
-            if len(card_faces) > 1:
-
-                second_face = card_faces[1]
-
-                second_face_images = second_face.get(
-                    "image_uris",
-                    {}
-                )
-
-                back_image_url = (
-                    second_face_images.get("normal")
-                )
-
-
-        # ----------------------------------------------------
-        # REPORT DOUBLE-SIDED CARDS
-        # ----------------------------------------------------
-
-        if back_image_url:
-
-            double_faced += 1
-
-            print(
-                "  Double-sided card detected"
-            )
-
-            print(
-                f"  Front image: {front_image_url}"
-            )
-
-            print(
-                f"  Back image:  {back_image_url}"
-            )
-
-
-        # ----------------------------------------------------
-        # CREATE CARD MASTER RECORD
-        # ----------------------------------------------------
-
-        card = {
-
-            "scryfall_id":
-                data.get("id"),
-
-            "set":
-                data.get("set"),
-
-            "set_name":
-                data.get("set_name"),
-
-            "collector_number":
-                data.get(
-                    "collector_number"
-                ),
-
-            "name":
-                data.get("name"),
-
-            "artist":
-                data.get("artist"),
-
-            "rarity":
-                data.get("rarity"),
-
-            "mana_cost":
-                data.get("mana_cost"),
-
-            "type_line":
-                data.get("type_line"),
-
-            "oracle_text":
-                data.get("oracle_text"),
-
-            "image_url":
-                front_image_url,
-
-            "back_image_url":
-                back_image_url,
-
-            "scryfall_url":
-                data.get("scryfall_uri")
-        }
-
-
-        # ----------------------------------------------------
-        # ADD TO CARD INDEX
-        # ----------------------------------------------------
+    else:
 
         key = (
             f"{normalise_text(set_code)}|"
             f"{normalise_text(card_number)}"
         )
-
 
         card_index[key] = card
 
@@ -521,15 +621,78 @@ for index, (
 
         successful += 1
 
+    time.sleep(
+        SCRYFALL_DELAY
+    )
 
-    except requests.RequestException as error:
 
-        print(
-            f"  ERROR: {error}"
+# ============================================================
+# REFRESH EXISTING CARDS
+# ============================================================
+
+refreshed = 0
+refresh_failed = 0
+
+
+for index, (
+    set_code,
+    card_number
+) in enumerate(
+    cards_needing_refresh,
+    start=1
+):
+
+    print(
+        f"[REFRESH {index}/{len(cards_needing_refresh)}] "
+        f"Checking "
+        f"{set_code.upper()} "
+        f"{card_number}"
+    )
+
+    refreshed_card = fetch_scryfall_card(
+        set_code,
+        card_number
+    )
+
+    if refreshed_card is None:
+
+        refresh_failed += 1
+
+    else:
+
+        key = (
+            f"{normalise_text(set_code)}|"
+            f"{normalise_text(card_number)}"
         )
 
-        failed += 1
+        existing_card = card_index.get(
+            key
+        )
 
+        if existing_card is not None:
+
+            # ------------------------------------------------
+            # Update the Scryfall-derived fields.
+            #
+            # We preserve the existing card record and only
+            # replace the Scryfall data.
+            # ------------------------------------------------
+
+            existing_card.update(
+                refreshed_card
+            )
+
+        else:
+
+            card_index[key] = (
+                refreshed_card
+            )
+
+            cards.append(
+                refreshed_card
+            )
+
+        refreshed += 1
 
     time.sleep(
         SCRYFALL_DELAY
@@ -561,6 +724,7 @@ with open(
 
 print()
 print("Building collection.json...")
+print()
 
 
 collection = []
@@ -582,15 +746,14 @@ for _, row in df.iterrows():
         .strip()
     )
 
-
     key = (
         f"{normalise_text(set_code)}|"
         f"{normalise_text(card_number)}"
     )
 
-
-    card = card_index.get(key)
-
+    card = card_index.get(
+        key
+    )
 
     if card:
 
@@ -808,6 +971,17 @@ with open(
 
 
 # ============================================================
+# COUNT DOUBLE-SIDED CARDS
+# ============================================================
+
+double_sided_count = sum(
+    1
+    for card in cards
+    if card.get("back_image_url")
+)
+
+
+# ============================================================
 # SUMMARY
 # ============================================================
 
@@ -818,31 +992,39 @@ print("=" * 60)
 print()
 
 print(
-    f"Collection rows:       {len(collection)}"
+    f"Collection rows:             {len(collection)}"
 )
 
 print(
-    f"Existing cards reused: {existing_cards}"
+    f"Existing cards reused:       {existing_cards}"
 )
 
 print(
-    f"New cards added:       {successful}"
+    f"New cards added:              {successful}"
 )
 
 print(
-    f"Failed Scryfall calls: {failed}"
+    f"Failed Scryfall calls:        {failed}"
 )
 
 print(
-    f"Double-sided cards:    {double_faced}"
+    f"Existing cards refreshed:     {refreshed}"
 )
 
 print(
-    f"Matched collection:    {matched}"
+    f"Failed refreshes:             {refresh_failed}"
 )
 
 print(
-    f"Unmatched collection:  {unmatched}"
+    f"Matched collection:           {matched}"
+)
+
+print(
+    f"Unmatched collection:         {unmatched}"
+)
+
+print(
+    f"Cards with back images:       {double_sided_count}"
 )
 
 print()
@@ -863,3 +1045,4 @@ print(
 )
 
 print()
+```
