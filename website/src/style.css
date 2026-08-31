@@ -1,608 +1,786 @@
 /* ============================================================
-   MTG COLLECTION WEBSITE
-   ============================================================ */
+MTG COLLECTION WEBSITE
+============================================================ */
 
 :root {
-  font-family:
-    Inter,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
+font-family:
+Inter,
+system-ui,
+-apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+sans-serif;
 
-  color: #1f2937;
-  background: #f5f7fa;
+color: #1f2937;
+background: #f5f7fa;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-synthesis: none;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
-
 /* ============================================================
-   GLOBAL
-   ============================================================ */
+GLOBAL
+============================================================ */
 
 * {
   box-sizing: border-box;
-}
+  }
 
 html {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: #f5f7fa;
+margin: 0;
+padding: 0;
+
+min-width: 320px;
+min-height: 100vh;
+
+background: #f5f7fa;
 }
 
 button,
 input,
 select {
-  font: inherit;
+font: inherit;
 }
 
-
 /* ============================================================
-   MAIN CONTAINER
-   ============================================================ */
+MAIN CONTAINER
+============================================================ */
 
 main {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 40px 32px 60px;
+width: 100%;
+max-width: 1600px;
+
+margin: 0 auto;
+
+padding: 40px 32px 60px;
 }
 
-
 /* ============================================================
-   HEADER
-   ============================================================ */
+HEADER
+============================================================ */
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+display: flex;
 
-  margin-bottom: 32px;
+align-items: center;
+justify-content: space-between;
+
+margin-bottom: 32px;
 }
 
 .header h1 {
-  margin: 0;
+margin: 0;
 
-  font-size: 2.25rem;
-  font-weight: 750;
-  line-height: 1.1;
+font-size: 2.25rem;
+font-weight: 750;
 
-  letter-spacing: -0.03em;
-  color: #111827;
+line-height: 1.1;
+
+letter-spacing: -0.03em;
+
+color: #111827;
 }
 
 .header p {
-  margin: 8px 0 0;
+margin: 8px 0 0;
 
-  font-size: 1rem;
-  color: #6b7280;
+font-size: 1rem;
+
+color: #6b7280;
 }
 
-
 /* ============================================================
-   STATISTICS
-   ============================================================ */
+STATISTICS
+============================================================ */
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+display: grid;
 
-  gap: 20px;
+grid-template-columns:
+repeat(3, minmax(0, 1fr));
 
-  margin-bottom: 40px;
+gap: 20px;
+
+margin-bottom: 40px;
 }
 
 .stat-card {
-  padding: 24px;
+padding: 24px;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+border: 1px solid #e5e7eb;
 
-  box-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.04);
+border-radius: 14px;
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+box-shadow:
+0 1px 2px rgba(0, 0, 0, 0.04);
+
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease;
 }
 
 .stat-card:hover {
-  transform: translateY(-2px);
+transform: translateY(-2px);
 
-  box-shadow:
-    0 6px 18px rgba(0, 0, 0, 0.07);
+box-shadow:
+0 6px 18px rgba(0, 0, 0, 0.07);
 }
 
 .stat-card span {
-  display: block;
+display: block;
 
-  margin-bottom: 8px;
+margin-bottom: 8px;
 
-  font-size: 0.85rem;
-  font-weight: 600;
+font-size: 0.85rem;
+font-weight: 600;
 
-  color: #6b7280;
+color: #6b7280;
 
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+text-transform: uppercase;
+
+letter-spacing: 0.04em;
 }
 
 .stat-card strong {
-  display: block;
+display: block;
 
-  font-size: 2rem;
-  font-weight: 750;
+font-size: 2rem;
+font-weight: 750;
 
-  line-height: 1.1;
+line-height: 1.1;
 
-  color: #111827;
+color: #111827;
 }
 
-
 /* ============================================================
-   COLLECTION SECTION
-   ============================================================ */
+COLLECTION
+============================================================ */
 
 .collection {
-  width: 100%;
+width: 100%;
+}
+
+.collection-header {
+display: flex;
+
+align-items: flex-end;
+justify-content: space-between;
+
+gap: 24px;
+
+margin-bottom: 20px;
 }
 
 .collection h2 {
-  margin: 0 0 20px;
+margin: 0;
 
-  font-size: 1.5rem;
-  font-weight: 700;
+font-size: 1.5rem;
+font-weight: 700;
 
-  color: #111827;
+color: #111827;
 }
 
+.result-count {
+margin: 5px 0 0;
+
+font-size: 0.8rem;
+
+color: #6b7280;
+}
 
 /* ============================================================
-   CARD GRID
-   ============================================================ */
+SEARCH
+============================================================ */
+
+.search-container {
+position: relative;
+
+width: 320px;
+
+flex-shrink: 0;
+}
+
+.search-input {
+width: 100%;
+
+height: 42px;
+
+padding: 0 42px 0 14px;
+
+background: #ffffff;
+
+border: 1px solid #d1d5db;
+
+border-radius: 9px;
+
+outline: none;
+
+font-size: 0.9rem;
+
+color: #111827;
+
+box-shadow:
+0 1px 2px rgba(0, 0, 0, 0.03);
+
+transition:
+border-color 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.search-input::placeholder {
+color: #9ca3af;
+}
+
+.search-input:focus {
+border-color: #6b7280;
+
+box-shadow:
+0 0 0 3px rgba(107, 114, 128, 0.12);
+}
+
+.clear-search {
+position: absolute;
+
+right: 8px;
+top: 50%;
+
+transform: translateY(-50%);
+
+width: 28px;
+height: 28px;
+
+display: flex;
+
+align-items: center;
+justify-content: center;
+
+padding: 0;
+
+border: none;
+border-radius: 50%;
+
+background: #f3f4f6;
+
+color: #6b7280;
+
+font-size: 1.15rem;
+
+line-height: 1;
+
+cursor: pointer;
+}
+
+.clear-search:hover {
+background: #e5e7eb;
+
+color: #111827;
+}
+
+/* ============================================================
+CARD GRID
+============================================================ */
 
 .card-grid {
-  display: grid;
+display: grid;
 
-  grid-template-columns:
-    repeat(auto-fill, minmax(210px, 1fr));
+grid-template-columns:
+repeat(auto-fill, minmax(210px, 1fr));
 
-  gap: 24px;
+gap: 24px;
 }
 
-
 /* ============================================================
-   CARD
-   ============================================================ */
+CARD
+============================================================ */
 
 .card {
-  position: relative;
+position: relative;
 
-  overflow: hidden;
+overflow: hidden;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+border: 1px solid #e5e7eb;
 
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.05);
+border-radius: 14px;
 
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+box-shadow:
+0 2px 5px rgba(0, 0, 0, 0.05);
+
+transition:
+transform 0.2s ease,
+box-shadow 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+transform: translateY(-4px);
 
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.10);
+box-shadow:
+0 10px 25px rgba(0, 0, 0, 0.10);
 }
 
-
 /* ============================================================
-   CARD IMAGE
-   ============================================================ */
+CARD IMAGE
+============================================================ */
 
 .card-image-container {
-  position: relative;
+position: relative;
 
-  width: 100%;
+width: 100%;
 
-  background: #e5e7eb;
+aspect-ratio: 488 / 680;
 
-  aspect-ratio: 488 / 680;
+overflow: hidden;
 
-  overflow: hidden;
+background: #e5e7eb;
 }
 
 .card-image {
-  display: block;
+display: block;
 
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 
-  object-fit: cover;
+object-fit: cover;
 
-  transition:
-    opacity 0.2s ease;
+transition:
+opacity 0.2s ease;
 }
 
 .card-image:hover {
-  opacity: 0.96;
+opacity: 0.96;
 }
 
-
 /* ============================================================
-   IMAGE PLACEHOLDER
-   ============================================================ */
+IMAGE PLACEHOLDER
+============================================================ */
 
 .card-image-placeholder {
-  display: flex;
+display: flex;
 
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
 
-  width: 100%;
-  height: 100%;
+width: 100%;
+height: 100%;
 
-  min-height: 250px;
+min-height: 250px;
 
-  padding: 20px;
+padding: 20px;
 
-  text-align: center;
+text-align: center;
 
-  color: #6b7280;
+color: #6b7280;
 
-  background: #f3f4f6;
+background: #f3f4f6;
 
-  font-size: 0.9rem;
+font-size: 0.9rem;
 }
 
-
 /* ============================================================
-   REVERSE CARD BUTTON
-   ============================================================ */
+REVERSE CARD BUTTON
+============================================================ */
 
 .reverse-button {
-  position: absolute;
+position: absolute;
 
-  right: 10px;
-  bottom: 10px;
+right: 10px;
+bottom: 10px;
 
-  z-index: 5;
+z-index: 5;
 
-  display: flex;
+display: flex;
 
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
 
-  min-width: 42px;
-  height: 36px;
+min-width: 42px;
+height: 36px;
 
-  padding: 0 12px;
+padding: 0 12px;
 
-  border: none;
-  border-radius: 8px;
+border: none;
 
-  background: rgba(17, 24, 39, 0.88);
+border-radius: 8px;
 
-  color: #ffffff;
+background: rgba(17, 24, 39, 0.88);
 
-  font-size: 0.8rem;
-  font-weight: 650;
+color: #ffffff;
 
-  cursor: pointer;
+font-size: 0.8rem;
+font-weight: 650;
 
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.25);
+cursor: pointer;
 
-  backdrop-filter: blur(4px);
+box-shadow:
+0 2px 6px rgba(0, 0, 0, 0.25);
 
-  transition:
-    background 0.2s ease,
-    transform 0.2s ease;
+backdrop-filter: blur(4px);
+
+transition:
+background 0.2s ease,
+transform 0.2s ease;
 }
 
 .reverse-button:hover {
-  background: rgba(17, 24, 39, 0.98);
+background: rgba(17, 24, 39, 0.98);
 
-  transform: translateY(-1px);
+transform: translateY(-1px);
 }
 
 .reverse-button:active {
-  transform: translateY(0);
+transform: translateY(0);
 }
 
 .reverse-button:focus-visible {
-  outline: 2px solid #2563eb;
-  outline-offset: 2px;
+outline: 2px solid #2563eb;
+
+outline-offset: 2px;
 }
 
-
 /* ============================================================
-   CARD INFORMATION
-   ============================================================ */
+CARD INFORMATION
+============================================================ */
 
 .card-info {
-  padding: 16px;
+padding: 16px;
 }
 
 .card-info h3 {
-  margin: 0 0 6px;
+margin: 0 0 6px;
 
-  font-size: 1rem;
-  font-weight: 700;
+font-size: 1rem;
+font-weight: 700;
 
-  line-height: 1.3;
+line-height: 1.3;
 
-  color: #111827;
+color: #111827;
 }
 
 .card-info p {
-  margin: 0;
+margin: 0;
 
-  font-size: 0.8rem;
+font-size: 0.8rem;
 
-  line-height: 1.4;
+line-height: 1.4;
 
-  color: #6b7280;
+color: #6b7280;
 }
 
-
 /* ============================================================
-   CARD FOOTER
-   ============================================================ */
+CARD FOOTER
+============================================================ */
 
 .card-footer {
-  display: flex;
+display: flex;
 
-  align-items: center;
-  justify-content: space-between;
+align-items: center;
+justify-content: space-between;
 
-  gap: 12px;
+gap: 12px;
 
-  margin-top: 14px;
-  padding-top: 12px;
+margin-top: 14px;
 
-  border-top: 1px solid #f0f1f3;
+padding-top: 12px;
+
+border-top: 1px solid #f0f1f3;
 }
 
 .card-footer span {
-  font-size: 0.8rem;
-  font-weight: 500;
+font-size: 0.8rem;
+font-weight: 500;
 
-  color: #6b7280;
+color: #6b7280;
 }
 
 .card-footer strong {
-  font-size: 0.95rem;
-  font-weight: 700;
+font-size: 0.95rem;
+font-weight: 700;
 
-  color: #111827;
+color: #111827;
 }
 
+/* ============================================================
+NO RESULTS
+============================================================ */
+
+.no-results {
+padding: 60px 20px;
+
+text-align: center;
+
+background: #ffffff;
+
+border: 1px solid #e5e7eb;
+
+border-radius: 14px;
+}
+
+.no-results h3 {
+margin: 0 0 8px;
+
+font-size: 1.1rem;
+
+color: #111827;
+}
+
+.no-results p {
+margin: 0;
+
+color: #6b7280;
+
+font-size: 0.9rem;
+}
 
 /* ============================================================
-   LOADING STATE
-   ============================================================ */
+LOADING
+============================================================ */
 
 .loading {
-  display: flex;
+display: flex;
 
-  align-items: center;
-  justify-content: center;
+align-items: center;
+justify-content: center;
 
-  min-height: 50vh;
+min-height: 50vh;
 
-  color: #6b7280;
+color: #6b7280;
 
-  font-size: 1rem;
+font-size: 1rem;
 }
 
-
 /* ============================================================
-   ERROR STATE
-   ============================================================ */
+ERROR
+============================================================ */
 
 .error {
-  max-width: 600px;
+max-width: 600px;
 
-  margin: 80px auto;
+margin: 80px auto;
 
-  padding: 32px;
+padding: 32px;
 
-  text-align: center;
+text-align: center;
 
-  background: #ffffff;
+background: #ffffff;
 
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+border: 1px solid #e5e7eb;
 
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.05);
+border-radius: 14px;
+
+box-shadow:
+0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .error h1 {
-  margin: 0 0 12px;
+margin: 0 0 12px;
 
-  font-size: 1.5rem;
+font-size: 1.5rem;
 
-  color: #111827;
+color: #111827;
 }
 
 .error p {
-  margin: 6px 0;
+margin: 6px 0;
 
-  color: #6b7280;
+color: #6b7280;
 }
 
-
 /* ============================================================
-   RESPONSIVE - TABLET
-   ============================================================ */
+TABLET
+============================================================ */
 
 @media (max-width: 900px) {
 
-  main {
-    padding: 32px 24px 50px;
-  }
-
-  .stats {
-    gap: 16px;
-  }
-
-  .stat-card {
-    padding: 20px;
-  }
-
-  .stat-card strong {
-    font-size: 1.7rem;
-  }
-
-  .card-grid {
-    grid-template-columns:
-      repeat(auto-fill, minmax(180px, 1fr));
-
-    gap: 18px;
-  }
+main {
+padding: 32px 24px 50px;
 }
 
+.stats {
+gap: 16px;
+}
+
+.stat-card {
+padding: 20px;
+}
+
+.stat-card strong {
+font-size: 1.7rem;
+}
+
+.card-grid {
+grid-template-columns:
+repeat(auto-fill, minmax(180px, 1fr));
+
+```
+gap: 18px;
+```
+
+}
+
+}
 
 /* ============================================================
-   RESPONSIVE - MOBILE
-   ============================================================ */
+MOBILE
+============================================================ */
 
 @media (max-width: 600px) {
 
-  main {
-    padding: 24px 16px 40px;
-  }
-
-  .header {
-    margin-bottom: 24px;
-  }
-
-  .header h1 {
-    font-size: 1.8rem;
-  }
-
-  .header p {
-    font-size: 0.9rem;
-  }
-
-  .stats {
-    grid-template-columns: 1fr;
-
-    gap: 12px;
-
-    margin-bottom: 32px;
-  }
-
-  .stat-card {
-    padding: 18px;
-  }
-
-  .stat-card strong {
-    font-size: 1.6rem;
-  }
-
-  .collection h2 {
-    font-size: 1.3rem;
-  }
-
-  .card-grid {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
-
-    gap: 12px;
-  }
-
-  .card {
-    border-radius: 10px;
-  }
-
-  .card-info {
-    padding: 12px;
-  }
-
-  .card-info h3 {
-    font-size: 0.85rem;
-  }
-
-  .card-info p {
-    font-size: 0.7rem;
-  }
-
-  .card-footer {
-    margin-top: 10px;
-    padding-top: 9px;
-  }
-
-  .card-footer span,
-  .card-footer strong {
-    font-size: 0.72rem;
-  }
-
-  .reverse-button {
-    right: 7px;
-    bottom: 7px;
-
-    min-width: 36px;
-    height: 32px;
-
-    padding: 0 9px;
-
-    font-size: 0.7rem;
-  }
+main {
+padding: 24px 16px 40px;
 }
 
+.header {
+margin-bottom: 24px;
+}
+
+.header h1 {
+font-size: 1.8rem;
+}
+
+.header p {
+font-size: 0.9rem;
+}
+
+.stats {
+grid-template-columns: 1fr;
+
+```
+gap: 12px;
+
+margin-bottom: 32px;
+```
+
+}
+
+.stat-card {
+padding: 18px;
+}
+
+.stat-card strong {
+font-size: 1.6rem;
+}
+
+.collection h2 {
+font-size: 1.3rem;
+}
+
+.collection-header {
+align-items: stretch;
+
+```
+flex-direction: column;
+
+gap: 14px;
+```
+
+}
+
+.search-container {
+width: 100%;
+}
+
+.card-grid {
+grid-template-columns:
+repeat(2, minmax(0, 1fr));
+
+```
+gap: 12px;
+```
+
+}
+
+.card {
+border-radius: 10px;
+}
+
+.card-info {
+padding: 12px;
+}
+
+.card-info h3 {
+font-size: 0.85rem;
+}
+
+.card-info p {
+font-size: 0.7rem;
+}
+
+.card-footer {
+margin-top: 10px;
+
+```
+padding-top: 9px;
+```
+
+}
+
+.card-footer span,
+.card-footer strong {
+font-size: 0.72rem;
+}
+
+.reverse-button {
+right: 7px;
+bottom: 7px;
+
+```
+min-width: 36px;
+height: 32px;
+
+padding: 0 9px;
+
+font-size: 0.7rem;
+```
+
+}
+
+}
 
 /* ============================================================
-   VERY SMALL SCREENS
-   ============================================================ */
+VERY SMALL SCREENS
+============================================================ */
 
 @media (max-width: 380px) {
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header h1 {
-    font-size: 1.6rem;
-  }
+.card-grid {
+grid-template-columns: 1fr;
 }
 
+.header h1 {
+font-size: 1.6rem;
+}
+
+}
 
 /* ============================================================
-   ACCESSIBILITY
-   ============================================================ */
+ACCESSIBILITY
+============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
 
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
+*,
+*::before,
+*::after {
+scroll-behavior: auto !important;
 
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
+```
+transition-duration: 0.01ms !important;
+
+animation-duration: 0.01ms !important;
+
+animation-iteration-count: 1 !important;
+```
+
+}
+
 }
