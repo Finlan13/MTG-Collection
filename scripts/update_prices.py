@@ -3,7 +3,6 @@ name: Update MTG Prices
 on:
   schedule:
     - cron: "0 20 * * *"
-
   workflow_dispatch:
 
 permissions:
@@ -11,11 +10,9 @@ permissions:
 
 jobs:
   update-prices:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -30,7 +27,7 @@ jobs:
           pip install requests pandas openpyxl
 
       - name: Update prices
-        run: python scripts/update_prices.py
+        run: python scripts/update_price.py
 
       - name: Commit updated collection
         run: |
