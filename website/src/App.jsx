@@ -17,20 +17,15 @@ function CardImage({ card }) {
       ? backImage
       : frontImage;
 
-
   if (!currentImage) {
-
     return (
       <div className="card-image-placeholder">
         No image available
       </div>
     );
-
   }
 
-
   return (
-
     <div className="card-image-container">
 
       <img
@@ -44,27 +39,20 @@ function CardImage({ card }) {
         loading="lazy"
       />
 
-
       {backImage && (
-
         <button
           type="button"
           className="reverse-button"
           onClick={() =>
-            setShowBack(
-              (current) => !current
-            )
+            setShowBack((current) => !current)
           }
         >
           {showBack ? "Front" : "Reverse"}
         </button>
-
       )}
 
     </div>
-
   );
-
 }
 
 
@@ -74,17 +62,35 @@ function CardImage({ card }) {
 
 function App() {
 
-  const [collection, setCollection] =
-    useState([]);
+  const [collection, setCollection] = useState([]);
 
-  const [loading, setLoading] =
-    useState(true);
+  const [loading, setLoading] = useState(true);
 
-  const [error, setError] =
-    useState(null);
+  const [error, setError] = useState(null);
 
-  const [searchTerm, setSearchTerm] =
-    useState("");
+
+  /* ==========================================================
+     FILTER STATE
+     ========================================================== */
+
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const [selectedSet, setSelectedSet] = useState("All");
+
+  const [selectedRarity, setSelectedRarity] = useState("All");
+
+  const [selectedFoil, setSelectedFoil] = useState("All");
+
+  const [selectedPrice, setSelectedPrice] = useState("All");
+
+
+  /* ==========================================================
+     SORT STATE
+     ========================================================== */
+
+  const [sortBy, setSortBy] = useState("name");
+
+  const [sortDirection, setSortDirection] = useState("asc");
 
 
   /* ==========================================================
@@ -113,6 +119,14 @@ function App() {
 
       .then((data) => {
 
+        if (!Array.isArray(data)) {
+
+          throw new Error(
+            "Collection data is not in the expected format."
+          );
+
+        }
+
         setCollection(data);
 
         setLoading(false);
@@ -128,6 +142,77 @@ function App() {
       });
 
   }, []);
+
+
+  /* ==========================================================
+     UNIQUE SETS
+     ========================================================== */
+
+  const sets = useMemo(() => {
+
+    const values = collection
+      .map((card) => card.set_name || card.set)
+      .filter(Boolean);
+
+    return [
+      ...new Set(values)
+    ].sort((a, b) =>
+      String(a).localeCompare(String(b))
+    );
+
+  }, [collection]);
+
+
+  /* ==========================================================
+     UNIQUE RARITIES
+     ========================================================== */
+
+  const rarities = useMemo(() => {
+
+    const values = collection
+      .map((card) => card.rarity)
+      .filter(Boolean);
+
+    const rarityOrder = [
+      "common",
+      "uncommon",
+      "rare",
+      "mythic",
+      "special",
+      "bonus"
+    ];
+
+    return [
+      ...new Set(values)
+    ].sort((a, b) => {
+
+      const indexA =
+        rarityOrder.indexOf(
+          String(a).toLowerCase()
+        );
+
+      const indexB =
+        rarityOrder.indexOf(
+          String(b).toLowerCase()
+        );
+
+      if (indexA === -1 && indexB === -1) {
+        return String(a).localeCompare(String(b));
+      }
+
+      if (indexA === -1) {
+        return 1;
+      }
+
+      if (indexB === -1) {
+        return -1;
+      }
+
+      return indexA - indexB;
+
+    });
+
+  }, [collection]);
 
 
   /* ==========================================================
@@ -151,8 +236,7 @@ function App() {
      UNIQUE CARDS
      ========================================================== */
 
-  const uniqueCards =
-    collection.length;
+  const uniqueCards = collection.length;
 
 
   /* ==========================================================
@@ -164,9 +248,7 @@ function App() {
     return collection.reduce(
       (total, card) =>
         total +
-        Number(
-          card.current_value || 0
-        ),
+        Number(card.current_value || 0),
       0
     );
 
@@ -174,7 +256,7 @@ function App() {
 
 
   /* ==========================================================
-     FILTER COLLECTION
+     FILTER + SORT
      ========================================================== */
 
   const filteredCollection = useMemo(() => {
@@ -185,57 +267,349 @@ function App() {
         .toLowerCase();
 
 
-    if (!search) {
+    const filtered = collection.filter((card) => {
 
-      return collection;
+      /* ------------------------------------------------------
+         SEARCH
+         ------------------------------------------------------ */
 
-    }
+      if (search) {
+
+        const searchableText = [
+
+          card.name,
+
+          card.set,
+
+          card.set_name,
+
+          card.card_no,
+
+          card.collector_number,
+
+          card.artist,
+
+          card.scryfall_artist
+
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
 
 
-    return collection.filter((card) => {
+        if (
+          !searchableText.includes(search)
+        ) {
 
-      const name =
-        String(
-          card.name || ""
-        ).toLowerCase();
+          return false;
 
-      const set =
-        String(
-          card.set || ""
-        ).toLowerCase();
+        }
 
-      const setName =
-        String(
-          card.set_name || ""
-        ).toLowerCase();
+      }
 
-      const cardNumber =
-        String(
-          card.card_no || ""
-        ).toLowerCase();
 
-      const artist =
-        String(
-          card.artist ||
-          card.scryfall_artist ||
-          ""
-        ).toLowerCase();
+      /* ------------------------------------------------------
+         SET
+         ------------------------------------------------------ */
+
+      if (
+        selectedSet !== "All"
+      ) {
+
+        const cardSet =
+          card.set_name ||
+          card.set;
+
+        if (
+          cardSet !== selectedSet
+        ) {
+
+          return false;
+
+        }
+
+      }
+
+
+      /* ------------------------------------------------------
+         RARITY
+         ------------------------------------------------------ */
+
+      if (
+        selectedRarity !== "All"
+      ) {
+
+        if (
+          String(card.rarity || "")
+            .toLowerCase() !==
+          String(selectedRarity)
+            .toLowerCase()
+        ) {
+
+          return false;
+
+        }
+
+      }
+
+
+      /* ------------------------------------------------------
+         FOIL
+         ------------------------------------------------------ */
+
+      const regularQty =
+        Number(card.qty || 0);
+
+      const foilQty =
+        Number(card.qty_foil || 0);
+
+
+      if (
+        selectedFoil === "Foil" &&
+        foilQty <= 0
+      ) {
+
+        return false;
+
+      }
+
+
+      if (
+        selectedFoil === "Non-Foil" &&
+        regularQty <= 0
+      ) {
+
+        return false;
+
+      }
+
+
+      /* ------------------------------------------------------
+         PRICE
+         ------------------------------------------------------ */
+
+      const price =
+        Number(card.current_value || 0);
+
+
+      if (
+        selectedPrice === "Under $1" &&
+        price >= 1
+      ) {
+
+        return false;
+
+      }
+
+
+      if (
+        selectedPrice === "$1 - $5" &&
+        (price < 1 || price > 5)
+      ) {
+
+        return false;
+
+      }
+
+
+      if (
+        selectedPrice === "$5 - $10" &&
+        (price < 5 || price > 10)
+      ) {
+
+        return false;
+
+      }
+
+
+      if (
+        selectedPrice === "$10 - $25" &&
+        (price < 10 || price > 25)
+      ) {
+
+        return false;
+
+      }
+
+
+      if (
+        selectedPrice === "$25+"
+        && price < 25
+      ) {
+
+        return false;
+
+      }
+
+
+      return true;
+
+    });
+
+
+    /* ========================================================
+       SORT
+       ======================================================== */
+
+    filtered.sort((a, b) => {
+
+      let valueA;
+      let valueB;
+
+
+      switch (sortBy) {
+
+        case "price":
+
+          valueA =
+            Number(
+              a.current_value || 0
+            );
+
+          valueB =
+            Number(
+              b.current_value || 0
+            );
+
+          break;
+
+
+        case "quantity":
+
+          valueA =
+            Number(a.qty || 0) +
+            Number(a.qty_foil || 0);
+
+          valueB =
+            Number(b.qty || 0) +
+            Number(b.qty_foil || 0);
+
+          break;
+
+
+        case "set":
+
+          valueA =
+            String(
+              a.set_name ||
+              a.set ||
+              ""
+            ).toLowerCase();
+
+          valueB =
+            String(
+              b.set_name ||
+              b.set ||
+              ""
+            ).toLowerCase();
+
+          break;
+
+
+        case "rarity":
+
+          const rarityOrder = {
+            common: 1,
+            uncommon: 2,
+            rare: 3,
+            mythic: 4,
+            special: 5,
+            bonus: 6
+          };
+
+          valueA =
+            rarityOrder[
+              String(
+                a.rarity || ""
+              ).toLowerCase()
+            ] || 99;
+
+          valueB =
+            rarityOrder[
+              String(
+                b.rarity || ""
+              ).toLowerCase()
+            ] || 99;
+
+          break;
+
+
+        case "name":
+
+        default:
+
+          valueA =
+            String(
+              a.name || ""
+            ).toLowerCase();
+
+          valueB =
+            String(
+              b.name || ""
+            ).toLowerCase();
+
+          break;
+
+      }
+
+
+      if (
+        typeof valueA === "string"
+      ) {
+
+        return (
+          sortDirection === "asc"
+            ? valueA.localeCompare(valueB)
+            : valueB.localeCompare(valueA)
+        );
+
+      }
 
 
       return (
-        name.includes(search) ||
-        set.includes(search) ||
-        setName.includes(search) ||
-        cardNumber.includes(search) ||
-        artist.includes(search)
+        sortDirection === "asc"
+          ? valueA - valueB
+          : valueB - valueA
       );
 
     });
 
+
+    return filtered;
+
   }, [
     collection,
-    searchTerm
+    searchTerm,
+    selectedSet,
+    selectedRarity,
+    selectedFoil,
+    selectedPrice,
+    sortBy,
+    sortDirection
   ]);
+
+
+  /* ==========================================================
+     RESET FILTERS
+     ========================================================== */
+
+  const resetFilters = () => {
+
+    setSearchTerm("");
+
+    setSelectedSet("All");
+
+    setSelectedRarity("All");
+
+    setSelectedFoil("All");
+
+    setSelectedPrice("All");
+
+    setSortBy("name");
+
+    setSortDirection("asc");
+
+  };
 
 
   /* ==========================================================
@@ -246,7 +620,7 @@ function App() {
 
     return (
 
-      <main>
+      <main className="loading">
 
         <h1>
           MTG Collection
@@ -271,15 +645,11 @@ function App() {
 
     return (
 
-      <main>
+      <main className="error">
 
         <h1>
-          MTG Collection
+          Unable to load collection
         </h1>
-
-        <p>
-          Unable to load collection.
-        </p>
 
         <p>
           {error}
@@ -299,6 +669,7 @@ function App() {
   return (
 
     <main>
+
 
       {/* =====================================================
           HEADER
@@ -360,7 +731,8 @@ function App() {
           </span>
 
           <strong>
-            ${collectionValue.toFixed(2)}
+            $
+            {collectionValue.toFixed(2)}
           </strong>
 
         </div>
@@ -374,6 +746,11 @@ function App() {
 
       <section className="collection">
 
+
+        {/* ===================================================
+            COLLECTION HEADER
+            =================================================== */}
+
         <div className="collection-header">
 
           <div>
@@ -384,9 +761,11 @@ function App() {
 
             <p className="result-count">
 
-              {searchTerm
-                ? `${filteredCollection.length} of ${collection.length} cards`
-                : `${collection.length} cards`}
+              Showing{" "}
+              {filteredCollection.length}
+              {" "}of{" "}
+              {collection.length}
+              {" "}unique cards
 
             </p>
 
@@ -409,7 +788,7 @@ function App() {
                   event.target.value
                 )
               }
-              aria-label="Search collection"
+              aria-label="Search cards"
             />
 
 
@@ -434,115 +813,241 @@ function App() {
 
 
         {/* ===================================================
-            NO RESULTS
+            FILTERS
             =================================================== */}
 
-        {filteredCollection.length === 0 ? (
+        <div className="filters">
 
-          <div className="no-results">
 
-            <h3>
-              No cards found
-            </h3>
+          {/* =================================================
+              SET
+              ================================================= */}
 
-            <p>
-              No cards match "{searchTerm}".
-            </p>
+          <div className="filter-group">
 
-            <button
-              type="button"
-              onClick={() =>
-                setSearchTerm("")
+            <label htmlFor="set-filter">
+              Set
+            </label>
+
+            <select
+              id="set-filter"
+              value={selectedSet}
+              onChange={(event) =>
+                setSelectedSet(
+                  event.target.value
+                )
               }
             >
-              Clear search
-            </button>
+
+              <option value="All">
+                All Sets
+              </option>
+
+              {sets.map((set) => (
+
+                <option
+                  key={set}
+                  value={set}
+                >
+                  {set}
+                </option>
+
+              ))}
+
+            </select>
 
           </div>
 
-        ) : (
 
-          /* =================================================
-             CARD GRID
-             ================================================= */
+          {/* =================================================
+              RARITY
+              ================================================= */}
 
-          <div className="card-grid">
+          <div className="filter-group">
 
-            {filteredCollection.map((card) => (
+            <label htmlFor="rarity-filter">
+              Rarity
+            </label>
 
-              <article
-                className="card"
-                key={card.id}
-              >
+            <select
+              id="rarity-filter"
+              value={selectedRarity}
+              onChange={(event) =>
+                setSelectedRarity(
+                  event.target.value
+                )
+              }
+            >
 
-                <CardImage
-                  card={card}
-                />
+              <option value="All">
+                All Rarities
+              </option>
 
+              {rarities.map((rarity) => (
 
-                <div className="card-info">
+                <option
+                  key={rarity}
+                  value={rarity}
+                >
+                  {String(rarity)
+                    .charAt(0)
+                    .toUpperCase() +
+                    String(rarity)
+                      .slice(1)}
+                </option>
 
-                  <h3>
-                    {card.name}
-                  </h3>
+              ))}
 
-
-                  <p>
-
-                    {card.set
-                      ?.toUpperCase()}
-
-                    {" • #"}
-
-                    {card.card_no}
-
-                  </p>
-
-
-                  <div className="card-footer">
-
-                    <span>
-
-                      Qty:{" "}
-
-                      {Number(
-                        card.qty || 0
-                      ) +
-                        Number(
-                          card.qty_foil || 0
-                        )}
-
-                    </span>
-
-
-                    <strong>
-
-                      $
-                      {Number(
-                        card.current_value || 0
-                      ).toFixed(2)}
-
-                    </strong>
-
-                  </div>
-
-                </div>
-
-              </article>
-
-            ))}
+            </select>
 
           </div>
 
-        )}
 
-      </section>
+          {/* =================================================
+              FOIL
+              ================================================= */}
 
-    </main>
+          <div className="filter-group">
 
-  );
+            <label htmlFor="foil-filter">
+              Foil
+            </label>
 
-}
+            <select
+              id="foil-filter"
+              value={selectedFoil}
+              onChange={(event) =>
+                setSelectedFoil(
+                  event.target.value
+                )
+              }
+            >
+
+              <option value="All">
+                All Cards
+              </option>
+
+              <option value="Non-Foil">
+                Non-Foil
+              </option>
+
+              <option value="Foil">
+                Foil
+              </option>
+
+            </select>
+
+          </div>
 
 
-export default App;
+          {/* =================================================
+              PRICE
+              ================================================= */}
+
+          <div className="filter-group">
+
+            <label htmlFor="price-filter">
+              Price
+            </label>
+
+            <select
+              id="price-filter"
+              value={selectedPrice}
+              onChange={(event) =>
+                setSelectedPrice(
+                  event.target.value
+                )
+              }
+            >
+
+              <option value="All">
+                All Prices
+              </option>
+
+              <option value="Under $1">
+                Under $1
+              </option>
+
+              <option value="$1 - $5">
+                $1 - $5
+              </option>
+
+              <option value="$5 - $10">
+                $5 - $10
+              </option>
+
+              <option value="$10 - $25">
+                $10 - $25
+              </option>
+
+              <option value="$25+">
+                $25+
+              </option>
+
+            </select>
+
+          </div>
+
+
+          {/* =================================================
+              SORT
+              ================================================= */}
+
+          <div className="filter-group">
+
+            <label htmlFor="sort-filter">
+              Sort By
+            </label>
+
+            <select
+              id="sort-filter"
+              value={sortBy}
+              onChange={(event) =>
+                setSortBy(
+                  event.target.value
+                )
+              }
+            >
+
+              <option value="name">
+                Name
+              </option>
+
+              <option value="set">
+                Set
+              </option>
+
+              <option value="price">
+                Price
+              </option>
+
+              <option value="rarity">
+                Rarity
+              </option>
+
+              <option value="quantity">
+                Quantity
+              </option>
+
+            </select>
+
+          </div>
+
+
+          {/* =================================================
+              SORT DIRECTION
+              ================================================= */}
+
+          <div className="filter-group">
+
+            <label htmlFor="direction-filter">
+              Order
+            </label>
+
+            <select
+              id="direction-filter"
+              value={sortDirection}
+              onChange={(event) =>
+                setSortDirection(
+                  event.target.value
+      
