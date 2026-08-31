@@ -315,3 +315,81 @@ select {
     width: 100%;
   }
 }
+/* ============================================================
+   DOUBLE-SIDED CARD IMAGES
+   ============================================================ */
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+}
+
+
+.card-image-container img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.716;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+
+/* ============================================================
+   REVERSE BUTTON
+   ============================================================ */
+
+.reverse-button {
+  position: absolute;
+
+  right: 10px;
+  bottom: 10px;
+
+  padding: 7px 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 7px;
+
+  background: rgba(17, 24, 39, 0.88);
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+
+.reverse-button:hover {
+  background: rgba(17, 24, 39, 1);
+}
+
+
+.reverse-button:active {
+  transform: scale(0.96);
+}
+
+
+/* ============================================================
+   MISSING IMAGE
+   ============================================================ */
+
+.image-placeholder {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  aspect-ratio: 0.716;
+
+  background: #e5e7eb;
+  color: #6b7280;
+
+  font-size: 13px;
+}
