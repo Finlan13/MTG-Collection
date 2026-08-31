@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 
 
 function CardImage({ card }) {
+
   const [showBack, setShowBack] = useState(false);
 
   const frontImage = card.image_url;
@@ -12,15 +13,20 @@ function CardImage({ card }) {
       ? backImage
       : frontImage;
 
+
   if (!currentImage) {
+
     return (
       <div className="image-placeholder">
         No image available
       </div>
     );
+
   }
 
+
   return (
+
     <div className="card-image-container">
 
       <img
@@ -33,27 +39,39 @@ function CardImage({ card }) {
         loading="lazy"
       />
 
+
       {backImage && (
+
         <button
           type="button"
           className="reverse-button"
           onClick={() =>
-            setShowBack((current) => !current)
+            setShowBack(
+              (current) => !current
+            )
           }
         >
           {showBack ? "Front" : "Reverse"}
         </button>
+
       )}
 
     </div>
+
   );
 }
 
 
 function App() {
-  const [collection, setCollection] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+  const [collection, setCollection] =
+    useState([]);
+
+  const [loading, setLoading] =
+    useState(true);
+
+  const [error, setError] =
+    useState(null);
 
 
   // ==========================================================
@@ -69,17 +87,21 @@ function App() {
       .then((response) => {
 
         if (!response.ok) {
+
           throw new Error(
             "Unable to load collection data."
           );
+
         }
 
         return response.json();
+
       })
 
       .then((data) => {
 
         setCollection(data);
+
         setLoading(false);
 
       })
@@ -87,6 +109,7 @@ function App() {
       .catch((err) => {
 
         setError(err.message);
+
         setLoading(false);
 
       });
@@ -115,7 +138,8 @@ function App() {
   // UNIQUE CARDS
   // ==========================================================
 
-  const uniqueCards = collection.length;
+  const uniqueCards =
+    collection.length;
 
 
   // ==========================================================
@@ -127,7 +151,9 @@ function App() {
     return collection.reduce(
       (total, card) =>
         total +
-        Number(card.current_value || 0),
+        Number(
+          card.current_value || 0
+        ),
       0
     );
 
@@ -141,6 +167,7 @@ function App() {
   if (loading) {
 
     return (
+
       <main>
 
         <h1>
@@ -152,7 +179,9 @@ function App() {
         </p>
 
       </main>
+
     );
+
   }
 
 
@@ -163,6 +192,7 @@ function App() {
   if (error) {
 
     return (
+
       <main>
 
         <h1>
@@ -178,7 +208,9 @@ function App() {
         </p>
 
       </main>
+
     );
+
   }
 
 
@@ -287,8 +319,11 @@ function App() {
 
 
                 <p>
-                  {card.set?.toUpperCase()} • #
+
+                  {card.set?.toUpperCase()}
+                  {" • #"}
                   {card.card_no}
+
                 </p>
 
 
@@ -299,7 +334,9 @@ function App() {
                     Qty:{" "}
 
                     {Number(card.qty || 0) +
-                      Number(card.qty_foil || 0)}
+                      Number(
+                        card.qty_foil || 0
+                      )}
 
                   </span>
 
@@ -326,6 +363,7 @@ function App() {
       </section>
 
     </main>
+
   );
 }
 
