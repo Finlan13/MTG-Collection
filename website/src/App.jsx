@@ -1,371 +1,521 @@
 import { useEffect, useMemo, useState } from "react";
 
+/* ============================================================
+CARD IMAGE
+============================================================ */
 
 function CardImage({ card }) {
 
-  const [showBack, setShowBack] = useState(false);
+const [showBack, setShowBack] = useState(false);
 
-  const frontImage = card.image_url;
-  const backImage = card.back_image_url;
+const frontImage = card.image_url;
+const backImage = card.back_image_url;
 
-  const currentImage =
-    showBack && backImage
-      ? backImage
-      : frontImage;
+const currentImage =
+showBack && backImage
+? backImage
+: frontImage;
 
+if (!currentImage) {
 
-  if (!currentImage) {
+```
+return (
+  <div className="card-image-placeholder">
+    No image available
+  </div>
+);
+```
 
-    return (
-      <div className="image-placeholder">
-        No image available
-      </div>
-    );
-
-  }
-
-
-  return (
-
-    <div className="card-image-container">
-
-      <img
-        src={currentImage}
-        alt={
-          showBack
-            ? `${card.name} reverse`
-            : card.name
-        }
-        loading="lazy"
-      />
-
-
-      {backImage && (
-
-        <button
-          type="button"
-          className="reverse-button"
-          onClick={() =>
-            setShowBack(
-              (current) => !current
-            )
-          }
-        >
-          {showBack ? "Front" : "Reverse"}
-        </button>
-
-      )}
-
-    </div>
-
-  );
 }
 
+return (
+
+```
+<div className="card-image-container">
+
+  <img
+    className="card-image"
+    src={currentImage}
+    alt={
+      showBack
+        ? `${card.name} reverse`
+        : card.name
+    }
+    loading="lazy"
+  />
+
+
+  {backImage && (
+
+    <button
+      type="button"
+      className="reverse-button"
+      onClick={() =>
+        setShowBack(
+          (current) => !current
+        )
+      }
+    >
+      {showBack ? "Front" : "Reverse"}
+    </button>
+
+  )}
+
+</div>
+```
+
+);
+}
+
+/* ============================================================
+APP
+============================================================ */
 
 function App() {
 
-  const [collection, setCollection] =
-    useState([]);
+const [collection, setCollection] =
+useState([]);
 
-  const [loading, setLoading] =
-    useState(true);
+const [loading, setLoading] =
+useState(true);
 
-  const [error, setError] =
-    useState(null);
+const [error, setError] =
+useState(null);
 
+const [searchTerm, setSearchTerm] =
+useState("");
 
-  // ==========================================================
-  // LOAD COLLECTION
-  // ==========================================================
+/* ==========================================================
+LOAD COLLECTION
+========================================================== */
 
-  useEffect(() => {
+useEffect(() => {
 
-    fetch(
-      `${import.meta.env.BASE_URL}collection.json`
-    )
+```
+fetch(
+  `${import.meta.env.BASE_URL}collection.json`
+)
 
-      .then((response) => {
+  .then((response) => {
 
-        if (!response.ok) {
+    if (!response.ok) {
 
-          throw new Error(
-            "Unable to load collection data."
-          );
+      throw new Error(
+        "Unable to load collection data."
+      );
 
-        }
+    }
 
-        return response.json();
+    return response.json();
 
-      })
+  })
 
-      .then((data) => {
+  .then((data) => {
 
-        setCollection(data);
+    setCollection(data);
 
-        setLoading(false);
+    setLoading(false);
 
-      })
+  })
 
-      .catch((err) => {
+  .catch((err) => {
 
-        setError(err.message);
+    setError(err.message);
 
-        setLoading(false);
+    setLoading(false);
 
-      });
+  });
+```
 
-  }, []);
+}, []);
 
+/* ==========================================================
+TOTAL CARDS
+========================================================== */
 
-  // ==========================================================
-  // TOTAL CARDS
-  // ==========================================================
+const totalCards = useMemo(() => {
 
-  const totalCards = useMemo(() => {
+```
+return collection.reduce(
+  (total, card) =>
+    total +
+    Number(card.qty || 0) +
+    Number(card.qty_foil || 0),
+  0
+);
+```
 
-    return collection.reduce(
-      (total, card) =>
-        total +
-        Number(card.qty || 0) +
-        Number(card.qty_foil || 0),
-      0
-    );
+}, [collection]);
 
-  }, [collection]);
+/* ==========================================================
+UNIQUE CARDS
+========================================================== */
 
+const uniqueCards =
+collection.length;
 
-  // ==========================================================
-  // UNIQUE CARDS
-  // ==========================================================
+/* ==========================================================
+COLLECTION VALUE
+========================================================== */
 
-  const uniqueCards =
-    collection.length;
+const collectionValue = useMemo(() => {
 
+```
+return collection.reduce(
+  (total, card) =>
+    total +
+    Number(
+      card.current_value || 0
+    ),
+  0
+);
+```
 
-  // ==========================================================
-  // COLLECTION VALUE
-  // ==========================================================
+}, [collection]);
 
-  const collectionValue = useMemo(() => {
+/* ==========================================================
+SEARCH
+========================================================== */
 
-    return collection.reduce(
-      (total, card) =>
-        total +
-        Number(
-          card.current_value || 0
-        ),
-      0
-    );
+const filteredCollection = useMemo(() => {
 
-  }, [collection]);
+```
+const search =
+  searchTerm
+    .trim()
+    .toLowerCase();
 
+if (!search) {
+  return collection;
+}
 
-  // ==========================================================
-  // LOADING
-  // ==========================================================
+return collection.filter((card) => {
 
-  if (loading) {
+  const name =
+    String(card.name || "")
+      .toLowerCase();
 
-    return (
+  const set =
+    String(card.set || "")
+      .toLowerCase();
 
-      <main>
+  const setName =
+    String(card.set_name || "")
+      .toLowerCase();
 
-        <h1>
-          MTG Collection
-        </h1>
+  const cardNumber =
+    String(card.card_no || "")
+      .toLowerCase();
 
-        <p>
-          Loading collection...
-        </p>
-
-      </main>
-
-    );
-
-  }
-
-
-  // ==========================================================
-  // ERROR
-  // ==========================================================
-
-  if (error) {
-
-    return (
-
-      <main>
-
-        <h1>
-          MTG Collection
-        </h1>
-
-        <p>
-          Unable to load collection.
-        </p>
-
-        <p>
-          {error}
-        </p>
-
-      </main>
-
-    );
-
-  }
-
-
-  // ==========================================================
-  // WEBSITE
-  // ==========================================================
+  const collectorNumber =
+    String(card.collector_number || "")
+      .toLowerCase();
 
   return (
+    name.includes(search) ||
+    set.includes(search) ||
+    setName.includes(search) ||
+    cardNumber.includes(search) ||
+    collectorNumber.includes(search)
+  );
 
-    <main>
+});
+```
 
-      <header className="header">
+}, [collection, searchTerm]);
 
-        <div>
+/* ==========================================================
+LOADING
+========================================================== */
 
-          <h1>
-            MTG Collection
-          </h1>
+if (loading) {
 
-          <p>
-            My Magic: The Gathering collection
-          </p>
+```
+return (
 
-        </div>
+  <main>
 
-      </header>
+    <h1>
+      MTG Collection
+    </h1>
+
+    <p>
+      Loading collection...
+    </p>
+
+  </main>
+
+);
+```
+
+}
+
+/* ==========================================================
+ERROR
+========================================================== */
+
+if (error) {
+
+```
+return (
+
+  <main>
+
+    <h1>
+      MTG Collection
+    </h1>
+
+    <p>
+      Unable to load collection.
+    </p>
+
+    <p>
+      {error}
+    </p>
+
+  </main>
+
+);
+```
+
+}
+
+/* ==========================================================
+WEBSITE
+========================================================== */
+
+return (
+
+```
+<main>
+
+  {/* =====================================================
+      HEADER
+      ===================================================== */}
+
+  <header className="header">
+
+    <div>
+
+      <h1>
+        MTG Collection
+      </h1>
+
+      <p>
+        My Magic: The Gathering collection
+      </p>
+
+    </div>
+
+  </header>
 
 
-      {/* =====================================================
-          STATISTICS
-          ===================================================== */}
+  {/* =====================================================
+      STATISTICS
+      ===================================================== */}
 
-      <section className="stats">
+  <section className="stats">
 
-        <div className="stat-card">
+    <div className="stat-card">
 
-          <span>
-            Total Cards
-          </span>
+      <span>
+        Total Cards
+      </span>
 
-          <strong>
-            {totalCards}
-          </strong>
+      <strong>
+        {totalCards}
+      </strong>
 
-        </div>
-
-
-        <div className="stat-card">
-
-          <span>
-            Unique Cards
-          </span>
-
-          <strong>
-            {uniqueCards}
-          </strong>
-
-        </div>
+    </div>
 
 
-        <div className="stat-card">
+    <div className="stat-card">
 
-          <span>
-            Collection Value
-          </span>
+      <span>
+        Unique Cards
+      </span>
 
-          <strong>
-            ${collectionValue.toFixed(2)}
-          </strong>
+      <strong>
+        {uniqueCards}
+      </strong>
 
-        </div>
-
-      </section>
+    </div>
 
 
-      {/* =====================================================
-          COLLECTION
-          ===================================================== */}
+    <div className="stat-card">
 
-      <section className="collection">
+      <span>
+        Collection Value
+      </span>
+
+      <strong>
+        ${collectionValue.toFixed(2)}
+      </strong>
+
+    </div>
+
+  </section>
+
+
+  {/* =====================================================
+      COLLECTION
+      ===================================================== */}
+
+  <section className="collection">
+
+    <div className="collection-header">
+
+      <div>
 
         <h2>
           Collection
         </h2>
 
+        <p className="result-count">
 
-        <div className="card-grid">
+          Showing{" "}
+          {filteredCollection.length}
+          {" of "}
+          {collection.length}
+          {" cards"}
 
-          {collection.map((card) => (
+        </p>
 
-            <article
-              className="card"
-              key={card.id}
-            >
-
-              <CardImage
-                card={card}
-              />
+      </div>
 
 
-              <div className="card-info">
+      {/* =================================================
+          SEARCH
+          ================================================= */}
 
-                <h3>
-                  {card.name}
-                </h3>
+      <div className="search-container">
+
+        <input
+          type="search"
+          className="search-input"
+          placeholder="Search cards..."
+          value={searchTerm}
+          onChange={(event) =>
+            setSearchTerm(
+              event.target.value
+            )
+          }
+          aria-label="Search collection"
+        />
+
+        {searchTerm && (
+
+          <button
+            type="button"
+            className="clear-search"
+            onClick={() =>
+              setSearchTerm("")
+            }
+            aria-label="Clear search"
+          >
+            ×
+          </button>
+
+        )}
+
+      </div>
+
+    </div>
 
 
-                <p>
+    {/* ===================================================
+        NO RESULTS
+        =================================================== */}
 
-                  {card.set?.toUpperCase()}
-                  {" • #"}
-                  {card.card_no}
+    {filteredCollection.length === 0 ? (
 
-                </p>
+      <div className="no-results">
+
+        <h3>
+          No cards found
+        </h3>
+
+        <p>
+          Try a different card name, set or
+          collector number.
+        </p>
+
+      </div>
+
+    ) : (
+
+      <div className="card-grid">
+
+        {filteredCollection.map((card) => (
+
+          <article
+            className="card"
+            key={card.id}
+          >
+
+            <CardImage
+              card={card}
+            />
 
 
-                <div className="card-footer">
+            <div className="card-info">
 
-                  <span>
-
-                    Qty:{" "}
-
-                    {Number(card.qty || 0) +
-                      Number(
-                        card.qty_foil || 0
-                      )}
-
-                  </span>
+              <h3>
+                {card.name}
+              </h3>
 
 
-                  <strong>
+              <p>
 
-                    $
-                    {Number(
-                      card.current_value || 0
-                    ).toFixed(2)}
+                {card.set?.toUpperCase()}
+                {" • #"}
+                {card.card_no}
 
-                  </strong>
+              </p>
 
-                </div>
+
+              <div className="card-footer">
+
+                <span>
+
+                  Qty:{" "}
+
+                  {Number(card.qty || 0) +
+                    Number(
+                      card.qty_foil || 0
+                    )}
+
+                </span>
+
+
+                <strong>
+
+                  $
+                  {Number(
+                    card.current_value || 0
+                  ).toFixed(2)}
+
+                </strong>
 
               </div>
 
-            </article>
+            </div>
 
-          ))}
+          </article>
 
-        </div>
+        ))}
 
-      </section>
+      </div>
 
-    </main>
+    )}
 
-  );
+  </section>
+
+</main>
+```
+
+);
+
 }
-
 
 export default App;
