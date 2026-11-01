@@ -1166,7 +1166,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/46/champions-of-the-shoal?utm_source=api",
     "price_usd": 0.15,
-    "price_usd_foil": 0.32,
+    "price_usd_foil": 0.33,
     "current_value": 0.15
   },
   {
@@ -2876,7 +2876,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/115/perfect-intimidation?utm_source=api",
     "price_usd": 0.15,
-    "price_usd_foil": 0.28,
+    "price_usd_foil": 0.29,
     "current_value": 0.15
   },
   {
@@ -3235,9 +3235,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/6/8/689ed288-6228-4d7e-b198-56a12b8be299.jpg?1783904452",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/129/burning-curiosity?utm_source=api",
-    "price_usd": 0.16,
-    "price_usd_foil": 0.29,
-    "current_value": 0.8
+    "price_usd": 0.15,
+    "price_usd_foil": 0.32,
+    "current_value": 0.75
   },
   {
     "id": "ECL-131",
@@ -3295,9 +3295,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/1/e/1ec084cc-997d-4079-b445-8f701ec3c277.jpg?1783904449",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/132/collective-inferno?utm_source=api",
-    "price_usd": 1.23,
+    "price_usd": 1.32,
     "price_usd_foil": 2.22,
-    "current_value": 1.23
+    "current_value": 1.32
   },
   {
     "id": "ECL-133",
@@ -3506,7 +3506,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/139/flamebraider?utm_source=api",
     "price_usd": 0.19,
-    "price_usd_foil": 0.34,
+    "price_usd_foil": 0.33,
     "current_value": 0.19
   },
   {
@@ -4976,7 +4976,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/201/vinebred-brawler?utm_source=api",
     "price_usd": 0.14,
-    "price_usd_foil": 0.23,
+    "price_usd_foil": 0.24,
     "current_value": 0.14
   },
   {
@@ -6205,9 +6205,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/e/1/e15ab0aa-4059-4923-9816-6f7a9e5b5a18.jpg?1783904399",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/260/springleaf-drum?utm_source=api",
-    "price_usd": 0.35,
+    "price_usd": 0.36,
     "price_usd_foil": 0.39,
-    "current_value": 1.83
+    "current_value": 1.86
   },
   {
     "id": "ECL-261",
@@ -6265,9 +6265,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/1/a174f0db-8b4f-4c37-9583-44c92d37b9c0.jpg?1783904396",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/263/eclipsed-realms?utm_source=api",
-    "price_usd": 0.34,
-    "price_usd_foil": 0.68,
-    "current_value": 1.02
+    "price_usd": 0.35,
+    "price_usd_foil": 0.7,
+    "current_value": 1.05
   },
   {
     "id": "ECL-264",
@@ -6295,9 +6295,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/c/8c632984-5176-4c37-91df-6577cc294b85.jpg?1783904395",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ecl/264/evolving-wilds?utm_source=api",
-    "price_usd": 0.24,
-    "price_usd_foil": 0.33,
-    "current_value": 1.2
+    "price_usd": 0.23,
+    "price_usd_foil": 0.34,
+    "current_value": 1.15
   },
   {
     "id": "ECL-265",
@@ -7376,7 +7376,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/13/dual-sun-technique?utm_source=api",
     "price_usd": 0.26,
-    "price_usd_foil": 0.28,
+    "price_usd_foil": 0.27,
     "current_value": 0.52
   },
   {
@@ -10885,9 +10885,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/2/424af0d0-398c-4d78-9ad5-2171bf1bcbd1.jpg?1783905950",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/148/nova-hellkite?utm_source=api",
-    "price_usd": 0.67,
+    "price_usd": 0.62,
     "price_usd_foil": 0.75,
-    "current_value": 1.34
+    "current_value": 1.24
   },
   {
     "id": "EOE-149",
@@ -12655,9 +12655,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/5/e/5e07d3c6-60a5-44d1-a926-6414be85bd50.jpg?1783905930",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/215/cosmogoyf?utm_source=api",
-    "price_usd": 0.32,
+    "price_usd": 0.31,
     "price_usd_foil": 0.38,
-    "current_value": 0.7
+    "current_value": 0.69
   },
   {
     "id": "EOE-216",
@@ -12835,9 +12835,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/3/c/3c922347-f05f-40a4-bbee-6bc02a1e0de5.jpg?1783905924",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/223/pinnacle-emissary?utm_source=api",
-    "price_usd": 1.67,
+    "price_usd": 1.6,
     "price_usd_foil": 2.24,
-    "current_value": 1.67
+    "current_value": 1.6
   },
   {
     "id": "EOE-225",
@@ -13676,7 +13676,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/267/plains?utm_source=api",
     "price_usd": 0.19,
-    "price_usd_foil": 0.26,
+    "price_usd_foil": 0.24,
     "current_value": 0.57
   },
   {
@@ -14125,7 +14125,7 @@
     "image_url": "https://cards.scryfall.io/normal/front/2/b/2b0e16d5-a3e5-4e58-9f97-3d967618f015.jpg?1783905896",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/eoe/305/quantum-riddler?utm_source=api",
-    "price_usd": 44.04,
+    "price_usd": 44.42,
     "price_usd_foil": 56.23,
     "current_value": 56.23
   },
@@ -14425,9 +14425,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/1/c14f8bce-d5b3-4d01-8346-8a4923ec03d9.jpg?1783906385",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fca/28/brainstorm?utm_source=api",
-    "price_usd": 1.23,
+    "price_usd": 1.29,
     "price_usd_foil": 4.45,
-    "current_value": 1.23
+    "current_value": 1.29
   },
   {
     "id": "FCA-29",
@@ -15625,9 +15625,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/9/494e68e9-ecba-4482-82bc-207ad59144c1.jpg?1783906646",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/30/restoration-magic?utm_source=api",
-    "price_usd": 1.79,
-    "price_usd_foil": 2.3,
-    "current_value": 3.58
+    "price_usd": 1.81,
+    "price_usd_foil": 2.59,
+    "current_value": 3.62
   },
   {
     "id": "FIN-31",
@@ -16016,7 +16016,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/45/zack-fair?utm_source=api",
     "price_usd": 0.28,
-    "price_usd_foil": 0.36,
+    "price_usd_foil": 0.37,
     "current_value": 0.84
   },
   {
@@ -16195,9 +16195,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/e/aec83c9a-8ec4-4a5a-b27f-0e74a2b3d21e.jpg?1783906636",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/52/eject?utm_source=api",
-    "price_usd": 0.22,
-    "price_usd_foil": 0.31,
-    "current_value": 0.44
+    "price_usd": 0.19,
+    "price_usd_foil": 0.29,
+    "current_value": 0.38
   },
   {
     "id": "FIN-53",
@@ -16375,9 +16375,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/a/4a6976f2-0bd5-449a-8fcf-f5a732ce22c1.jpg?1783906634",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/59/louisoixs-sacrifice?utm_source=api",
-    "price_usd": 0.36,
-    "price_usd_foil": 1.03,
-    "current_value": 0.36
+    "price_usd": 0.35,
+    "price_usd_foil": 1.06,
+    "current_value": 0.35
   },
   {
     "id": "FIN-60",
@@ -16735,9 +16735,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/5/1/516940c7-c271-4f64-af75-c7ba98548382.jpg?1783906629",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/71/sahagin?utm_source=api",
-    "price_usd": 0.13,
-    "price_usd_foil": 0.21,
-    "current_value": 0.91
+    "price_usd": 0.12,
+    "price_usd_foil": 0.2,
+    "current_value": 0.84
   },
   {
     "id": "FIN-72",
@@ -17216,7 +17216,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/88/al-bhed-salvagers?utm_source=api",
     "price_usd": 0.22,
-    "price_usd_foil": 0.3,
+    "price_usd_foil": 0.29,
     "current_value": 0.44
   },
   {
@@ -17275,9 +17275,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/9/c969bd0f-f174-4e2f-b95c-c9ccd5d0b8ba.jpg?1783906622",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/92/circle-of-power?utm_source=api",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_usd_foil": 0.34,
-    "current_value": 1.15
+    "current_value": 1.18
   },
   {
     "id": "FIN-93",
@@ -17516,7 +17516,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/100/fight-on!?utm_source=api",
     "price_usd": 0.21,
-    "price_usd_foil": 0.23,
+    "price_usd_foil": 0.24,
     "current_value": 1.26
   },
   {
@@ -17695,9 +17695,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/e/4/e46d8048-03ce-4e07-ba24-f41ba6140a4e.jpg?1783906617",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/106/malboro?utm_source=api",
-    "price_usd": 0.21,
-    "price_usd_foil": 0.32,
-    "current_value": 1.79
+    "price_usd": 0.24,
+    "price_usd_foil": 0.31,
+    "current_value": 1.99
   },
   {
     "id": "FIN-107",
@@ -18505,9 +18505,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg?1783906611",
     "back_image_url": "https://cards.scryfall.io/normal/back/9/a/9a069e96-2786-493d-aca8-f70611435dbe.jpg?1783906611",
     "scryfall_url": "https://scryfall.com/card/fin/133/clive-ifrits-dominant-ifrit-warden-of-inferno?utm_source=api",
-    "price_usd": 3.27,
-    "price_usd_foil": 4.13,
-    "current_value": 3.27
+    "price_usd": 3.25,
+    "price_usd_foil": 4.08,
+    "current_value": 3.25
   },
   {
     "id": "FIN-134",
@@ -19225,9 +19225,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/0/d0e5cbd4-401b-4456-80bf-d90beadfd1f8.jpg?1784182970",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/162/summon:-gf-cerberus?utm_source=api",
-    "price_usd": 0.33,
-    "price_usd_foil": 0.34,
-    "current_value": 0.33
+    "price_usd": 0.34,
+    "price_usd_foil": 0.35,
+    "current_value": 0.34
   },
   {
     "id": "FIN-163",
@@ -19435,9 +19435,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/1/3/135d6b27-9168-4513-9d7d-56edae048857.jpg?1783906593",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/170/zell-dincht?utm_source=api",
-    "price_usd": 0.39,
+    "price_usd": 0.38,
     "price_usd_foil": 0.58,
-    "current_value": 0.39
+    "current_value": 0.38
   },
   {
     "id": "FIN-171",
@@ -19855,9 +19855,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/5/d585e218-3dc8-4fbd-8ad2-795fbc9b2155.jpg?1783906588",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/184/the-earth-crystal?utm_source=api",
-    "price_usd": 11.74,
-    "price_usd_foil": 14.46,
-    "current_value": 11.74
+    "price_usd": 11.76,
+    "price_usd_foil": 14.55,
+    "current_value": 11.76
   },
   {
     "id": "FIN-186",
@@ -20155,9 +20155,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/1/d1af74e4-38d5-44b5-85e1-4d13f6970453.jpg?1783906582",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/196/a-realm-reborn?utm_source=api",
-    "price_usd": 0.45,
+    "price_usd": 0.43,
     "price_usd_foil": 0.64,
-    "current_value": 0.9
+    "current_value": 0.86
   },
   {
     "id": "FIN-197",
@@ -21895,9 +21895,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1783906552",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/271/adventurers-inn?utm_source=api",
-    "price_usd": 0.31,
+    "price_usd": 0.28,
     "price_usd_foil": 0.36,
-    "current_value": 2.17
+    "current_value": 1.96
   },
   {
     "id": "FIN-272",
@@ -22225,9 +22225,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg?1783906548",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/283/ishgard-the-holy-see-faith-&-grief?utm_source=api",
-    "price_usd": 1.41,
+    "price_usd": 1.36,
     "price_usd_foil": 2.78,
-    "current_value": 1.41
+    "current_value": 1.36
   },
   {
     "id": "FIN-284",
@@ -22795,9 +22795,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/1/a18ef64b-a9de-4548-b4d5-168758442db7.jpg?1783906541",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/303/mountain?utm_source=api",
-    "price_usd": 0.28,
-    "price_usd_foil": 0.31,
-    "current_value": 0.87
+    "price_usd": 0.26,
+    "price_usd_foil": 0.3,
+    "current_value": 0.82
   },
   {
     "id": "FIN-304",
@@ -23485,9 +23485,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/8/883c6111-c921-4cd6-930d-4fa335ef2871.jpg?1783906500",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/fin/402/squall-seed-mercenary?utm_source=api",
-    "price_usd": 4.47,
-    "price_usd_foil": 7.36,
-    "current_value": 4.47
+    "price_usd": 4.45,
+    "price_usd_foil": 7.35,
+    "current_value": 4.45
   },
   {
     "id": "FIN-405",
@@ -23695,9 +23695,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/8/88f0c189-c9ed-4ea3-ae62-3d8ac6c7fecf.jpg?1784894804",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/4/belladonna-took?utm_source=api",
-    "price_usd": 2.17,
-    "price_usd_foil": 2.81,
-    "current_value": 2.17
+    "price_usd": 1.94,
+    "price_usd_foil": 2.86,
+    "current_value": 1.94
   },
   {
     "id": "HOB-5",
@@ -23995,9 +23995,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/b/0/b02142f3-5e55-40dc-a02c-9113fb7d763c.jpg?1785496367",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/14/f%C3%ADli-the-pathfinder?utm_source=api",
-    "price_usd": 0.29,
-    "price_usd_foil": 0.27,
-    "current_value": 0.27
+    "price_usd": 0.35,
+    "price_usd_foil": 0.29,
+    "current_value": 0.29
   },
   {
     "id": "HOB-16",
@@ -24445,9 +24445,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/d/8d4f3eb5-fedf-45d6-8bd8-aacbe0ce33b2.jpg?1785497034",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/31/vow-to-erebor?utm_source=api",
-    "price_usd": 0.06,
+    "price_usd": 0.08,
     "price_usd_foil": 0.26,
-    "current_value": 0.36
+    "current_value": 0.48
   },
   {
     "id": "HOB-34",
@@ -24655,9 +24655,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/b/2/b2fb3995-5b43-4776-88b2-346d353edee0.jpg?1784862975",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/42/great-gilded-boat?utm_source=api",
-    "price_usd": 0.21,
-    "price_usd_foil": 0.25,
-    "current_value": 0.46
+    "price_usd": 0.23,
+    "price_usd_foil": 0.24,
+    "current_value": 0.47
   },
   {
     "id": "HOB-43",
@@ -24745,9 +24745,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/d/cd5af94d-6321-4834-8e5f-e5d0261b3ef3.jpg?1785497055",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/45/long-lake-nuisance?utm_source=api",
-    "price_usd": 0.09,
-    "price_usd_foil": 0.16,
-    "current_value": 0.52
+    "price_usd": 0.07,
+    "price_usd_foil": 0.18,
+    "current_value": 0.46
   },
   {
     "id": "HOB-46",
@@ -25495,9 +25495,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/5/0/50d91ef3-6f5d-4255-8d47-be731b5dad30.jpg?1784733916",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/72/gollum-the-abandoned?utm_source=api",
-    "price_usd": 0.14,
+    "price_usd": 0.16,
     "price_usd_foil": 0.29,
-    "current_value": 0.14
+    "current_value": 0.16
   },
   {
     "id": "HOB-73",
@@ -25765,9 +25765,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/1/6/16765eb2-d497-4cd6-b683-20eac2f10bbf.jpg?1785497096",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/81/reverent-howl?utm_source=api",
-    "price_usd": 0.12,
+    "price_usd": 0.16,
     "price_usd_foil": 0.24,
-    "current_value": 1.2
+    "current_value": 1.36
   },
   {
     "id": "HOB-83",
@@ -27115,9 +27115,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/0/f/0feb9817-56e1-465a-851c-b2fe202aa8ae.jpg?1785323277",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/133/ordinary-bear?utm_source=api",
-    "price_usd": 0.16,
+    "price_usd": 0.17,
     "price_usd_foil": 0.31,
-    "current_value": 0.32
+    "current_value": 0.34
   },
   {
     "id": "HOB-134",
@@ -27355,9 +27355,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/f/e/fe2b4bcf-56de-44d3-83af-aeb27f82c25e.jpg?1785237990",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/143/woodland-weavemaster?utm_source=api",
-    "price_usd": 0.25,
+    "price_usd": 0.24,
     "price_usd_foil": 0.27,
-    "current_value": 0.52
+    "current_value": 0.51
   },
   {
     "id": "HOB-144",
@@ -27805,9 +27805,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/0/704b45e4-566e-40f6-a33a-9151018b44e5.jpg?1785323302",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/160/mirkwood-nurturer?utm_source=api",
-    "price_usd": 0.13,
+    "price_usd": 0.14,
     "price_usd_foil": 0.23,
-    "current_value": 0.95
+    "current_value": 0.97
   },
   {
     "id": "HOB-161",
@@ -28315,9 +28315,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/d/ad0dba36-d056-4bc1-987a-391da26ad267.jpg?1785458557",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/179/thr%C3%B3rs-map?utm_source=api",
-    "price_usd": 0.29,
+    "price_usd": 0.3,
     "price_usd_foil": 0.3,
-    "current_value": 0.58
+    "current_value": 0.6
   },
   {
     "id": "HOB-180",
@@ -29395,9 +29395,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/0/9/0992ce8b-7bef-4799-a52d-7a46021a8672.jpg?1785412593",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/hob/233/thranduil-sindarin-liege-silvan-rally?utm_source=api",
-    "price_usd": 0.38,
-    "price_usd_foil": 0.32,
-    "current_value": 0.32
+    "price_usd": 0.4,
+    "price_usd_foil": 0.31,
+    "current_value": 0.31
   },
   {
     "id": "HOB-235",
@@ -32515,9 +32515,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/6/2/62d2ee20-abbc-4a9d-8d30-4223242123e8.jpg?1783916314",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/62/meneldor-swift-savior?utm_source=api",
-    "price_usd": 0.22,
+    "price_usd": 0.21,
     "price_usd_foil": 0.32,
-    "current_value": 0.44
+    "current_value": 0.42
   },
   {
     "id": "LTR-63",
@@ -35395,9 +35395,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/1/d179dbbe-9c79-4dbc-955a-5209a3e2745a.jpg?1783916266",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/176/many-partings?utm_source=api",
-    "price_usd": 0.31,
+    "price_usd": 0.32,
     "price_usd_foil": 0.36,
-    "current_value": 0.31
+    "current_value": 0.32
   },
   {
     "id": "LTR-177",
@@ -36025,9 +36025,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/e/de1c0399-9db8-4901-b72e-0010eb9b92b0.jpg?1783916257",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/205/frodo-baggins?utm_source=api",
-    "price_usd": 0.23,
-    "price_usd_foil": 0.29,
-    "current_value": 0.46
+    "price_usd": 0.22,
+    "price_usd_foil": 0.28,
+    "current_value": 0.44
   },
   {
     "id": "LTR-207",
@@ -37195,9 +37195,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/f/7/f724ae86-b968-4f49-8267-c2c34c22f1b6.jpg?1783916231",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/262/plains?utm_source=api",
-    "price_usd": 0.22,
-    "price_usd_foil": 0.31,
-    "current_value": 0.66
+    "price_usd": 0.21,
+    "price_usd_foil": 0.3,
+    "current_value": 0.63
   },
   {
     "id": "LTR-264",
@@ -37645,9 +37645,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/6/a65a1fb5-cc2c-4556-b109-05c3d966ded9.jpg?1783916220",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/282/saradoc-master-of-buckland?utm_source=api",
-    "price_usd": 0.35,
+    "price_usd": 0.37,
     "price_usd_foil": 2.5,
-    "current_value": 0.35
+    "current_value": 0.37
   },
   {
     "id": "LTR-285",
@@ -37735,9 +37735,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/4/44c6a273-9307-432a-96f5-3e536da70f95.jpg?1783916213",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/306/samwise-the-stouthearted?utm_source=api",
-    "price_usd": 0.21,
-    "price_usd_foil": 0.37,
-    "current_value": 0.21
+    "price_usd": 0.22,
+    "price_usd_foil": 0.35,
+    "current_value": 0.22
   },
   {
     "id": "LTR-307",
@@ -37765,9 +37765,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/3/0/308465a9-2143-49f2-b9d0-a09272dd1b62.jpg?1783916213",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/307/elrond-lord-of-rivendell?utm_source=api",
-    "price_usd": 0.25,
-    "price_usd_foil": 0.33,
-    "current_value": 0.25
+    "price_usd": 0.22,
+    "price_usd_foil": 0.31,
+    "current_value": 0.22
   },
   {
     "id": "LTR-308",
@@ -38065,9 +38065,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/b/f/bf96c268-c86b-4d5e-bf04-200c427e5fa5.jpg?1783916195",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/338/nazg%C3%BBl?utm_source=api",
-    "price_usd": 16.36,
-    "price_usd_foil": 45.75,
-    "current_value": 16.36
+    "price_usd": 16.24,
+    "price_usd_foil": 44.49,
+    "current_value": 16.24
   },
   {
     "id": "LTR-407",
@@ -38306,7 +38306,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/426/oliphaunt?utm_source=api",
     "price_usd": 0.19,
-    "price_usd_foil": 0.39,
+    "price_usd_foil": 0.37,
     "current_value": 0.19
   },
   {
@@ -38515,9 +38515,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/7/7769f0ce-b31b-4cb5-8635-2b9b70114180.jpg?1783916145",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/ltr/445/many-partings?utm_source=api",
-    "price_usd": 0.27,
-    "price_usd_foil": 0.33,
-    "current_value": 1.08
+    "price_usd": 0.25,
+    "price_usd_foil": 0.32,
+    "current_value": 1.0
   },
   {
     "id": "MAR-90",
@@ -40315,9 +40315,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/c/ac3e586c-d654-4631-beda-a5e29cf04717.jpg?1783902943",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/msh/97/elektra-daughter-of-the-hand?utm_source=api",
-    "price_usd": 0.32,
+    "price_usd": 0.33,
     "price_usd_foil": 0.39,
-    "current_value": 0.64
+    "current_value": 0.66
   },
   {
     "id": "MSH-99",
@@ -41906,7 +41906,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/msh/173/hulkling-burgeoning-bruiser?utm_source=api",
     "price_usd": 0.13,
-    "price_usd_foil": 0.38,
+    "price_usd_foil": 0.39,
     "current_value": 0.13
   },
   {
@@ -43855,9 +43855,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/3/a/3a057032-6ece-4aa7-8e99-df2a07359b2b.jpg?1783903929",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soa/17/disdainful-stroke?utm_source=api",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_usd_foil": 0.39,
-    "current_value": 1.47
+    "current_value": 1.51
   },
   {
     "id": "SOA-20",
@@ -44096,7 +44096,7 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soa/31/locust-spray?utm_source=api",
     "price_usd": 0.16,
-    "price_usd_foil": 0.28,
+    "price_usd_foil": 0.27,
     "current_value": 0.48
   },
   {
@@ -44125,9 +44125,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/5/c/5c9caa7b-0268-4606-a71d-82dff16e6418.jpg?1783903924",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soa/34/stargaze?utm_source=api",
-    "price_usd": 0.24,
-    "price_usd_foil": 0.32,
-    "current_value": 0.24
+    "price_usd": 0.22,
+    "price_usd_foil": 0.31,
+    "current_value": 0.22
   },
   {
     "id": "SOA-35",
@@ -44575,7 +44575,7 @@
     "image_url": "https://cards.scryfall.io/normal/front/5/d/5dc1904b-b0e6-49e5-9ef3-7ea538db202b.jpg?1783903916",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soa/57/shamanic-revelation?utm_source=api",
-    "price_usd": 2.47,
+    "price_usd": 2.46,
     "price_usd_foil": 3.49,
     "current_value": 3.49
   },
@@ -44785,9 +44785,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/7/47927ea9-19b1-46e9-a501-12ac37715071.jpg?1783903908",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soa/82/ja/%E8%BB%BD%E8%94%91%E7%9A%84%E3%81%AA%E4%B8%80%E6%92%83-(disdainful-stroke)?utm_source=api",
-    "price_usd": 0.55,
+    "price_usd": 0.53,
     "price_usd_foil": null,
-    "current_value": 1.1
+    "current_value": 1.06
   },
   {
     "id": "SOA-88",
@@ -46975,9 +46975,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/4/7/47d6093b-b1b6-4956-8bfd-02cce899f832.jpg?1783903694",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/49/flow-state?utm_source=api",
-    "price_usd": 1.67,
-    "price_usd_foil": 1.78,
-    "current_value": 3.34
+    "price_usd": 1.7,
+    "price_usd_foil": 2.03,
+    "current_value": 3.4
   },
   {
     "id": "SOS-50",
@@ -47335,9 +47335,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/6/6/66d47940-84f9-4479-8562-45e5148435d4.jpg?1783903688",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/63/pensive-professor?utm_source=api",
-    "price_usd": 0.42,
+    "price_usd": 0.46,
     "price_usd_foil": 0.51,
-    "current_value": 0.42
+    "current_value": 0.46
   },
   {
     "id": "SOS-64",
@@ -48595,9 +48595,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/8/c85c5f06-dd31-4e2c-97be-2f64d65069ea.jpg?1783903668",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/117/goblin-glasswright-craft-with-pride?utm_source=api",
-    "price_usd": 0.2,
+    "price_usd": 0.19,
     "price_usd_foil": 0.28,
-    "current_value": 0.8
+    "current_value": 0.76
   },
   {
     "id": "SOS-118",
@@ -51985,9 +51985,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/6/f/6fa9cd18-3181-4373-ab65-49bf9de9487f.jpg?1783903625",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/241/vicious-rivalry?utm_source=api",
-    "price_usd": 0.38,
+    "price_usd": 0.4,
     "price_usd_foil": 0.35,
-    "current_value": 0.38
+    "current_value": 0.4
   },
   {
     "id": "SOS-242",
@@ -52106,8 +52106,8 @@
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/245/witherbloom-the-balancer?utm_source=api",
     "price_usd": 3.1,
-    "price_usd_foil": 4.25,
-    "current_value": 4.25
+    "price_usd_foil": 4.09,
+    "current_value": 4.09
   },
   {
     "id": "SOS-247",
@@ -52315,7 +52315,7 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/8/78897104-80e1-4d8a-9958-145b40f679e8.jpg?1783903621",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/253/deathcap-glade?utm_source=api",
-    "price_usd": 2.97,
+    "price_usd": 2.8,
     "price_usd_foil": 2.56,
     "current_value": 2.56
   },
@@ -52645,9 +52645,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/9/a/9a4c5629-fadd-42b9-850f-9f8586a2ca50.jpg?1783903615",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/265/terramorphic-expanse?utm_source=api",
-    "price_usd": 0.27,
+    "price_usd": 0.28,
     "price_usd_foil": 0.36,
-    "current_value": 1.62
+    "current_value": 1.68
   },
   {
     "id": "SOS-266",
@@ -52765,9 +52765,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/1/7/1797d5c7-d3fa-4184-85ae-46db14ddf523.jpg?1783903615",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sos/269/swamp?utm_source=api",
-    "price_usd": 0.5,
-    "price_usd_foil": 0.7,
-    "current_value": 2.6
+    "price_usd": 0.49,
+    "price_usd_foil": 0.71,
+    "current_value": 2.62
   },
   {
     "id": "SOS-270",
@@ -53875,9 +53875,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/f/f/ffdf9d2a-c163-43df-9a2f-20b8749c86ae.jpg?1783927440",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/sta/15/counterspell?utm_source=api",
-    "price_usd": 6.58,
+    "price_usd": 6.53,
     "price_usd_foil": 11.83,
-    "current_value": 6.58
+    "current_value": 6.53
   },
   {
     "id": "STA-29",
@@ -54295,9 +54295,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/f/7faa3e3d-c08a-4908-85ef-1370d3f90815.jpg?1783904987",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tla/56/iguana-parrot?utm_source=api",
-    "price_usd": 0.09,
+    "price_usd": 0.08,
     "price_usd_foil": 0.18,
-    "current_value": 0.09
+    "current_value": 0.08
   },
   {
     "id": "TLA-66",
@@ -54985,9 +54985,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/d/a/da2c83d4-a95f-47ff-a08f-694eb78d6b9b.jpg?1783904911",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tla/270/jasmine-dragon-tea-shop?utm_source=api",
-    "price_usd": 0.45,
-    "price_usd_foil": 0.66,
-    "current_value": 0.45
+    "price_usd": 0.42,
+    "price_usd_foil": 0.65,
+    "current_value": 0.42
   },
   {
     "id": "TLA-272",
@@ -55105,9 +55105,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/b/1/b10e1e95-414b-446a-bc36-56f116abfa78.jpg?1783904843",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tle/57/fabled-passage?utm_source=api",
-    "price_usd": 6.55,
-    "price_usd_foil": 11.99,
-    "current_value": 6.55
+    "price_usd": 6.52,
+    "price_usd_foil": 12.02,
+    "current_value": 6.52
   },
   {
     "id": "TLE-66",
@@ -55915,9 +55915,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/6/5/654e2646-78ac-4b08-bed1-3c71355d55fc.jpg?1783904104",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tmt/70/paramecia-coloniex?utm_source=api",
-    "price_usd": 0.25,
-    "price_usd_foil": 0.28,
-    "current_value": 0.25
+    "price_usd": 0.26,
+    "price_usd_foil": 0.3,
+    "current_value": 0.26
   },
   {
     "id": "TMT-75",
@@ -56725,9 +56725,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/f/a/faab52c0-ce79-40af-a156-b193a62d439e.jpg?1783904078",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tmt/145/epf-point-squad?utm_source=api",
-    "price_usd": 0.09,
+    "price_usd": 0.1,
     "price_usd_foil": 0.23,
-    "current_value": 0.18
+    "current_value": 0.2
   },
   {
     "id": "TMT-146",
@@ -57235,9 +57235,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/a/a/aaba62c1-760b-491b-8047-869bb1d3f67e.jpg?1783904064",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tmt/182/weather-maker?utm_source=api",
-    "price_usd": 0.37,
-    "price_usd_foil": 0.51,
-    "current_value": 0.37
+    "price_usd": 0.36,
+    "price_usd_foil": 0.49,
+    "current_value": 0.36
   },
   {
     "id": "TMT-183",
@@ -57775,9 +57775,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/9/5/95617742-548d-464a-bb89-a858ffa9018f.jpg?1783907371",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/tdm/94/strategic-betrayal?utm_source=api",
-    "price_usd": 0.83,
+    "price_usd": 0.93,
     "price_usd_foil": 1.71,
-    "current_value": 0.83
+    "current_value": 0.93
   },
   {
     "id": "LTC-209",
@@ -58672,9 +58672,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/9/3/9335e773-4b45-4b91-8140-5159fe7e0395.jpg?1783903724",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/393/path-of-ancestry?utm_source=api",
-    "price_usd": 0.34,
+    "price_usd": 0.32,
     "price_usd_foil": null,
-    "current_value": 0.34
+    "current_value": 0.32
   },
   {
     "id": "SOC-340",
@@ -59032,9 +59032,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/e/2/e2a27742-08c1-4153-af7f-25a7a98f585e.jpg?1783903721",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/398/reliquary-tower?utm_source=api",
-    "price_usd": 5.13,
+    "price_usd": 5.36,
     "price_usd_foil": null,
-    "current_value": 5.13
+    "current_value": 5.36
   },
   {
     "id": "SOC-258",
@@ -59152,9 +59152,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/7/870ec754-a76c-40ea-9b81-81b3dca1f62c.jpg?1783903816",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/128/sol-ring?utm_source=api",
-    "price_usd": 1.89,
+    "price_usd": 1.84,
     "price_usd_foil": null,
-    "current_value": 1.89
+    "current_value": 1.84
   },
   {
     "id": "SOC-113",
@@ -59512,9 +59512,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/4/c46a217c-0ed2-4b3c-9a01-ee38d12d76f3.jpg?1783903817",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/129/command-tower?utm_source=api",
-    "price_usd": 0.34,
+    "price_usd": 0.33,
     "price_usd_foil": null,
-    "current_value": 0.34
+    "current_value": 0.33
   },
   {
     "id": "SOC-341",
@@ -59842,9 +59842,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/c/7caedde3-8a02-4384-b8f5-5529b0ed27a5.jpg?1783903763",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/278/natures-lore?utm_source=api",
-    "price_usd": 2.42,
+    "price_usd": 2.47,
     "price_usd_foil": null,
-    "current_value": 2.42
+    "current_value": 2.47
   },
   {
     "id": "SOC-198",
@@ -59872,9 +59872,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/c/c/ccda5bda-5afd-4548-bd48-12c780bfa68b.jpg?1783903791",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/198/rapid-hybridization?utm_source=api",
-    "price_usd": 0.97,
+    "price_usd": 0.96,
     "price_usd_foil": null,
-    "current_value": 0.97
+    "current_value": 0.96
   },
   {
     "id": "SOC-406",
@@ -60262,9 +60262,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/8/1/8119d329-6ee5-433c-bd81-8579bb061162.jpg?1783903814",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/130/fabled-passage?utm_source=api",
-    "price_usd": 0.96,
+    "price_usd": 0.95,
     "price_usd_foil": null,
-    "current_value": 0.96
+    "current_value": 0.95
   },
   {
     "id": "SOC-59",
@@ -60412,9 +60412,9 @@
     "image_url": "https://cards.scryfall.io/normal/front/7/d/7db2934a-43a0-46ad-8380-ff6703f8fd6d.jpg?1783903732",
     "back_image_url": null,
     "scryfall_url": "https://scryfall.com/card/soc/369/exotic-orchard?utm_source=api",
-    "price_usd": 0.33,
+    "price_usd": 0.3,
     "price_usd_foil": null,
-    "current_value": 0.33
+    "current_value": 0.3
   },
   {
     "id": "SOC-425",
